@@ -1,0 +1,90 @@
+TAP version 14
+# Subtest: Should have typeof body object with no custom parser defined, null body and content type = 'text/plain'
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 1 - Should have typeof body object with no custom parser defined, null body and content type = 'text/plain' # time=35.078ms
+
+# Subtest: Should have typeof body object with no custom parser defined, undefined body and content type = 'text/plain'
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 2 - Should have typeof body object with no custom parser defined, undefined body and content type = 'text/plain' # time=5.356ms
+
+# Subtest: Should get the body as string /1
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 3 - Should get the body as string /1 # time=4.536ms
+
+# Subtest: Should get the body as string /2
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 4 - Should get the body as string /2 # time=4.657ms
+
+# Subtest: Should get the body as buffer
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 5 - Should get the body as buffer # time=13.008ms
+
+# Subtest: Should get the body as buffer
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 6 - Should get the body as buffer # time=5.335ms
+
+# Subtest: Should parse empty bodies as a string
+    1..9
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+ok 7 - Should parse empty bodies as a string # time=4.818ms
+
+# Subtest: Should parse empty bodies as a buffer
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 8 - Should parse empty bodies as a buffer # time=5.82ms
+
+# Subtest: The charset should not interfere with the content type handling
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 9 - The charset should not interfere with the content type handling # time=15.879ms
+
+1..9

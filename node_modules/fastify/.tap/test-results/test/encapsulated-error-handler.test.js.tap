@@ -1,0 +1,243 @@
+TAP version 14
+# Subtest: encapsulates an asynchronous error handler
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 1 - encapsulates an asynchronous error handler # time=22.562ms
+
+# Subtest: encapsulates a synchronous error handler
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 2 - encapsulates a synchronous error handler # time=5.482ms
+
+# Subtest: onError hook nested
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 3 - onError hook nested # time=2.564ms
+
+# Subtest: encapuslates an error handler, for errors thrown in hooks
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 4 - encapuslates an error handler, for errors thrown in hooks # time=2.045ms
+
+# Subtest: encapuslates many synchronous error handlers that rethrow errors
+    1..102
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should be equal
+    ok 20 - should be equal
+    ok 21 - should be equal
+    ok 22 - should be equal
+    ok 23 - should be equal
+    ok 24 - should be equal
+    ok 25 - should be equal
+    ok 26 - should be equal
+    ok 27 - should be equal
+    ok 28 - should be equal
+    ok 29 - should be equal
+    ok 30 - should be equal
+    ok 31 - should be equal
+    ok 32 - should be equal
+    ok 33 - should be equal
+    ok 34 - should be equal
+    ok 35 - should be equal
+    ok 36 - should be equal
+    ok 37 - should be equal
+    ok 38 - should be equal
+    ok 39 - should be equal
+    ok 40 - should be equal
+    ok 41 - should be equal
+    ok 42 - should be equal
+    ok 43 - should be equal
+    ok 44 - should be equal
+    ok 45 - should be equal
+    ok 46 - should be equal
+    ok 47 - should be equal
+    ok 48 - should be equal
+    ok 49 - should be equal
+    ok 50 - should be equal
+    ok 51 - should be equal
+    ok 52 - should be equal
+    ok 53 - should be equal
+    ok 54 - should be equal
+    ok 55 - should be equal
+    ok 56 - should be equal
+    ok 57 - should be equal
+    ok 58 - should be equal
+    ok 59 - should be equal
+    ok 60 - should be equal
+    ok 61 - should be equal
+    ok 62 - should be equal
+    ok 63 - should be equal
+    ok 64 - should be equal
+    ok 65 - should be equal
+    ok 66 - should be equal
+    ok 67 - should be equal
+    ok 68 - should be equal
+    ok 69 - should be equal
+    ok 70 - should be equal
+    ok 71 - should be equal
+    ok 72 - should be equal
+    ok 73 - should be equal
+    ok 74 - should be equal
+    ok 75 - should be equal
+    ok 76 - should be equal
+    ok 77 - should be equal
+    ok 78 - should be equal
+    ok 79 - should be equal
+    ok 80 - should be equal
+    ok 81 - should be equal
+    ok 82 - should be equal
+    ok 83 - should be equal
+    ok 84 - should be equal
+    ok 85 - should be equal
+    ok 86 - should be equal
+    ok 87 - should be equal
+    ok 88 - should be equal
+    ok 89 - should be equal
+    ok 90 - should be equal
+    ok 91 - should be equal
+    ok 92 - should be equal
+    ok 93 - should be equal
+    ok 94 - should be equal
+    ok 95 - should be equal
+    ok 96 - should be equal
+    ok 97 - should be equal
+    ok 98 - should be equal
+    ok 99 - should be equal
+    ok 100 - should be equal
+    ok 101 - should be equal
+    ok 102 - should be equal
+ok 5 - encapuslates many synchronous error handlers that rethrow errors # time=27.861ms
+
+# Subtest: encapuslates many asynchronous error handlers that rethrow errors
+    1..102
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should be equal
+    ok 20 - should be equal
+    ok 21 - should be equal
+    ok 22 - should be equal
+    ok 23 - should be equal
+    ok 24 - should be equal
+    ok 25 - should be equal
+    ok 26 - should be equal
+    ok 27 - should be equal
+    ok 28 - should be equal
+    ok 29 - should be equal
+    ok 30 - should be equal
+    ok 31 - should be equal
+    ok 32 - should be equal
+    ok 33 - should be equal
+    ok 34 - should be equal
+    ok 35 - should be equal
+    ok 36 - should be equal
+    ok 37 - should be equal
+    ok 38 - should be equal
+    ok 39 - should be equal
+    ok 40 - should be equal
+    ok 41 - should be equal
+    ok 42 - should be equal
+    ok 43 - should be equal
+    ok 44 - should be equal
+    ok 45 - should be equal
+    ok 46 - should be equal
+    ok 47 - should be equal
+    ok 48 - should be equal
+    ok 49 - should be equal
+    ok 50 - should be equal
+    ok 51 - should be equal
+    ok 52 - should be equal
+    ok 53 - should be equal
+    ok 54 - should be equal
+    ok 55 - should be equal
+    ok 56 - should be equal
+    ok 57 - should be equal
+    ok 58 - should be equal
+    ok 59 - should be equal
+    ok 60 - should be equal
+    ok 61 - should be equal
+    ok 62 - should be equal
+    ok 63 - should be equal
+    ok 64 - should be equal
+    ok 65 - should be equal
+    ok 66 - should be equal
+    ok 67 - should be equal
+    ok 68 - should be equal
+    ok 69 - should be equal
+    ok 70 - should be equal
+    ok 71 - should be equal
+    ok 72 - should be equal
+    ok 73 - should be equal
+    ok 74 - should be equal
+    ok 75 - should be equal
+    ok 76 - should be equal
+    ok 77 - should be equal
+    ok 78 - should be equal
+    ok 79 - should be equal
+    ok 80 - should be equal
+    ok 81 - should be equal
+    ok 82 - should be equal
+    ok 83 - should be equal
+    ok 84 - should be equal
+    ok 85 - should be equal
+    ok 86 - should be equal
+    ok 87 - should be equal
+    ok 88 - should be equal
+    ok 89 - should be equal
+    ok 90 - should be equal
+    ok 91 - should be equal
+    ok 92 - should be equal
+    ok 93 - should be equal
+    ok 94 - should be equal
+    ok 95 - should be equal
+    ok 96 - should be equal
+    ok 97 - should be equal
+    ok 98 - should be equal
+    ok 99 - should be equal
+    ok 100 - should be equal
+    ok 101 - should be equal
+    ok 102 - should be equal
+ok 6 - encapuslates many asynchronous error handlers that rethrow errors # time=23.008ms
+
+1..6

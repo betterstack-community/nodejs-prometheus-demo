@@ -1,0 +1,121 @@
+TAP version 14
+# Subtest: Symbols
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 1 - Symbols # time=5.015ms
+
+# Subtest: compileSchemasForValidation schema - missing schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 2 - compileSchemasForValidation schema - missing schema # time=0.391ms
+
+# Subtest: compileSchemasForValidation schema - missing output schema
+    1..1
+    ok 1 - should be equal
+ok 3 - compileSchemasForValidation schema - missing output schema # time=0.227ms
+
+# Subtest: compileSchemasForSerialization schema - missing schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 4 - compileSchemasForSerialization schema - missing schema # time=0.249ms
+
+# Subtest: compileSchemasForSerialization schema - missing output schema
+    1..1
+    ok 1 - should be equal
+ok 5 - compileSchemasForSerialization schema - missing output schema # time=0.269ms
+
+# Subtest: build schema - output schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 6 - build schema - output schema # time=21.407ms
+
+# Subtest: build schema - payload schema
+    1..1
+    ok 1 - should be equal
+ok 7 - build schema - payload schema # time=0.627ms
+
+# Subtest: build schema - avoid repeated normalize schema
+    1..3
+    ok 1 - should not be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 8 - build schema - avoid repeated normalize schema # time=0.499ms
+
+# Subtest: build schema - query schema
+    1..2
+    ok 1 - type is string
+    ok 2 - should be equal
+ok 9 - build schema - query schema # time=1.046ms
+
+# Subtest: build schema - query schema abbreviated
+    1..2
+    ok 1 - type is string
+    ok 2 - should be equal
+ok 10 - build schema - query schema abbreviated # time=0.954ms
+
+# Subtest: build schema - querystring schema
+    1..2
+    ok 1 - type is string
+    ok 2 - should be equal
+ok 11 - build schema - querystring schema # time=0.683ms
+
+# Subtest: build schema - querystring schema abbreviated
+    1..2
+    ok 1 - type is string
+    ok 2 - should be equal
+ok 12 - build schema - querystring schema abbreviated # time=0.643ms
+
+# Subtest: build schema - must throw if querystring and query schema exist
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 13 - build schema - must throw if querystring and query schema exist # time=0.996ms
+
+# Subtest: build schema - params schema
+    1..1
+    ok 1 - should be equal
+ok 14 - build schema - params schema # time=0.702ms
+
+# Subtest: build schema - headers schema
+    1..1
+    ok 1 - should be equal
+ok 15 - build schema - headers schema # time=0.733ms
+
+# Subtest: build schema - headers are lowercase
+    1..1
+    ok 1 - lowercase content-type exists
+ok 16 - build schema - headers are lowercase # time=0.287ms
+
+# Subtest: build schema - headers are not lowercased in case of custom object
+    1..1
+    ok 1 - type is Headers
+ok 17 - build schema - headers are not lowercased in case of custom object # time=0.267ms
+
+# Subtest: build schema - headers are not lowercased in case of custom validator provided
+    1..1
+    ok 1 - type is Headers
+ok 18 - build schema - headers are not lowercased in case of custom validator provided # time=0.247ms
+
+# Subtest: build schema - uppercased headers are not included
+    1..1
+    ok 1 - uppercase does not exist
+ok 19 - build schema - uppercased headers are not included # time=0.257ms
+
+# Subtest: build schema - mixed schema types are individually skipped or normalized
+    1..6
+    ok 1 - type is CustomSchemaClass
+    ok 2 - type is CustomSchemaClass
+    ok 3 - should be equivalent
+    ok 4 - type is CustomSchemaClass
+    ok 5 - type is CustomSchemaClass
+    ok 6 - should be equivalent
+ok 20 - build schema - mixed schema types are individually skipped or normalized # time=1.381ms
+
+1..20

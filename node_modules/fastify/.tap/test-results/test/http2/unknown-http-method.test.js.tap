@@ -1,0 +1,9 @@
+TAP version 14
+ok 1 - should not error
+# Subtest: http UNKNOWN_METHOD request
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+ok 2 - http UNKNOWN_METHOD request # time=16.609ms
+
+1..2

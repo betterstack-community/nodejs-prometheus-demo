@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: async dispose should close fastify
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - async dispose should close fastify # time=22.819ms
+
+1..1

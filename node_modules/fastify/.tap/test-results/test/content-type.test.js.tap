@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: should remove content-type for setErrorHandler
+    1..8
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+    ok 6 - should be equivalent
+    ok 7 - should be equivalent
+    ok 8 - should be equivalent
+ok 1 - should remove content-type for setErrorHandler # time=18.786ms
+
+1..1

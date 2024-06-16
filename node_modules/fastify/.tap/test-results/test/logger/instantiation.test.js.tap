@@ -1,0 +1,92 @@
+TAP version 14
+# Subtest: logger instantiation
+    1..11
+    # Subtest: can use external logger instance
+        1..5
+        ok 1 - should be equal
+        ok 2 - "Server listening at http://[::1]:51550" does not match "/^Server listening at /"
+        ok 3 - "incoming request" does not match "/^incoming request$/"
+        ok 4 - "log success" does not match "/^log success$/"
+        ok 5 - "request completed" does not match "/^request completed$/"
+    ok 1 - can use external logger instance # time=23.36ms
+    
+    # Subtest: should create a default logger if provided one is invalid
+        1..8
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+    ok 2 - should create a default logger if provided one is invalid # time=2.149ms
+    
+    # Subtest: expose the logger
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+    ok 3 - expose the logger # time=1.76ms
+    
+    # Subtest: Wrap IPv6 address in listening log message
+        1..1
+        ok 1 - should be equivalent
+    ok 4 - Wrap IPv6 address in listening log message # time=1.812ms
+    
+    # Subtest: Do not wrap IPv4 address
+        1..1
+        ok 1 - should be equivalent
+    ok 5 - Do not wrap IPv4 address # time=1.761ms
+    
+    # Subtest: file option
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should be equal
+        ok 4 - should match pattern
+        ok 5 - should be equal
+        ok 6 - should match pattern
+        1..6
+    ok 6 - file option # time=517.894ms
+    
+    # Subtest: should be able to use a custom logger
+        1..7
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+    ok 7 - should be able to use a custom logger # time=1.965ms
+    
+    # Subtest: should throw in case a partially matching logger is provided
+        1..1
+        ok 1 - Invalid logger object provided. The logger instance should have these functions(s): 'fatal,child'.
+    ok 8 - should throw in case a partially matching logger is provided # time=0.699ms
+    
+    # Subtest: can use external logger instance with custom serializer
+        1..5
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        ok 3 - should be equivalent
+        ok 4 - should be equivalent
+        ok 5 - should be equivalent
+    ok 9 - can use external logger instance with custom serializer # time=3.997ms
+    
+    # Subtest: The logger should accept custom serializer
+        1..5
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 10 - The logger should accept custom serializer # time=4.234ms
+    
+    # Subtest: should throw in case the external logger provided does not have a child method
+        1..1
+        ok 1 - Invalid logger object provided. The logger instance should have these functions(s): 'child'.
+    ok 11 - should throw in case the external logger provided does not have a child method # time=0.356ms
+    
+ok 1 - logger instantiation # time=575.69ms
+
+1..1

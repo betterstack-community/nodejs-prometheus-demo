@@ -1,0 +1,15 @@
+TAP version 14
+# Subtest: diagnostics channel sync events fire in expected order
+    1..9
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+ok 1 - diagnostics channel sync events fire in expected order # time=32.416ms
+
+1..1

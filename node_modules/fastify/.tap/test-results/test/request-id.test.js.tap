@@ -1,0 +1,38 @@
+TAP version 14
+# Subtest: The request id header key can be customized
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - The request id header key can be customized # time=18.391ms
+
+# Subtest: The request id header key can be customized
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 2 - The request id header key can be customized # time=1.641ms
+
+# Subtest: The request id header key can be customized
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 3 - The request id header key can be customized # time=21.205ms
+
+# Subtest: The request id header key can be customized
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 4 - The request id header key can be customized # time=4.721ms
+
+# Subtest: The request id header key can be customized
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 5 - The request id header key can be customized # time=3.677ms
+
+1..5

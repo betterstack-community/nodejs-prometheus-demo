@@ -1,0 +1,64 @@
+TAP version 14
+# Subtest: default 500
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 1 - default 500 # time=25.716ms
+
+# Subtest: custom 500
+    1..6
+    ok 1 - type is object
+    ok 2 - type is Request
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 2 - custom 500 # time=2.475ms
+
+# Subtest: encapsulated 500
+    1..10
+    ok 1 - type is object
+    ok 2 - type is Request
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equivalent
+ok 3 - encapsulated 500 # time=3.948ms
+
+# Subtest: custom 500 with hooks
+    1..7
+    ok 1 - onRequest
+    ok 2 - onSend
+    ok 3 - onResponse
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 4 - custom 500 with hooks # time=2.127ms
+
+# Subtest: cannot set errorHandler after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - (unnamed test)
+ok 5 - cannot set errorHandler after binding # time=9.607ms
+
+# Subtest: cannot set childLoggerFactory after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - (unnamed test)
+ok 6 - cannot set childLoggerFactory after binding # time=2.034ms
+
+# Subtest: catch synchronous errors
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 7 - catch synchronous errors # time=3.226ms
+
+1..7

@@ -1,0 +1,12 @@
+TAP version 14
+# Subtest: keepAliveTimeout
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not be equal
+    ok 6 - should be equal
+ok 1 - keepAliveTimeout # time=27.583ms
+
+1..1

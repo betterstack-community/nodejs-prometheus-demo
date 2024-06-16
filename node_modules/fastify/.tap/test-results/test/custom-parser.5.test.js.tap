@@ -1,0 +1,41 @@
+TAP version 14
+# Subtest: cannot remove all content type parsers after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - expected to throw
+ok 1 - cannot remove all content type parsers after binding # time=23.118ms
+
+# Subtest: cannot remove content type parsers after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - expected to throw
+ok 2 - cannot remove content type parsers after binding # time=3.798ms
+
+# Subtest: should be able to override the default json parser after removeAllContentTypeParsers
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 3 - should be able to override the default json parser after removeAllContentTypeParsers # time=14.88ms
+
+# Subtest: should be able to override the default plain text parser after removeAllContentTypeParsers
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 4 - should be able to override the default plain text parser after removeAllContentTypeParsers # time=4.655ms
+
+# Subtest: should be able to add a custom content type parser after removeAllContentTypeParsers
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 5 - should be able to add a custom content type parser after removeAllContentTypeParsers # time=6.351ms
+
+1..5

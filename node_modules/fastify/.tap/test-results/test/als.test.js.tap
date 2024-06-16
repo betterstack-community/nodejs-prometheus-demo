@@ -1,0 +1,15 @@
+TAP version 14
+ok 1 - should not error
+ok 2 - should be equal
+ok 3 - should not error
+ok 4 - should be equal
+ok 5 - should be equivalent
+ok 6 - should be equal
+ok 7 - should not error
+ok 8 - should be equal
+ok 9 - should be equivalent
+ok 10 - should be equal
+ok 11 - should not error
+ok 12 - should be equal
+ok 13 - should be equivalent
+1..13

@@ -1,0 +1,26 @@
+TAP version 14
+# Subtest: serialize the response for a Bad Request error, as defined on the schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+ok 1 - serialize the response for a Bad Request error, as defined on the schema # time=72.63ms
+
+# Subtest: serialize the response for a Not Found error, as defined on the schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+ok 2 - serialize the response for a Not Found error, as defined on the schema # time=15.37ms
+
+# Subtest: serialize the response for a Internal Server Error error, as defined on the schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+ok 3 - serialize the response for a Internal Server Error error, as defined on the schema # time=41.881ms
+
+# Subtest: serialize the success response, as defined on the schema
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+ok 4 - serialize the success response, as defined on the schema # time=20.964ms
+
+1..4

@@ -1,0 +1,40 @@
+TAP version 14
+# Subtest: code should handle null/undefined/float
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+ok 1 - code should handle null/undefined/float # time=25.114ms
+
+# Subtest: code should handle 204
+    1..13
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - stream ended
+ok 2 - code should handle 204 # time=2.876ms
+
+# Subtest: code should handle onSend hook on 204
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 3 - code should handle onSend hook on 204 # time=3.977ms
+
+1..3

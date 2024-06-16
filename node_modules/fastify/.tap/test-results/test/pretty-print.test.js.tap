@@ -1,0 +1,82 @@
+TAP version 14
+# Subtest: pretty print - static routes
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - pretty print - static routes # time=17.031ms
+
+# Subtest: pretty print - internal tree - static routes
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 2 - pretty print - internal tree - static routes # time=1.863ms
+
+# Subtest: pretty print - parametric routes
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 3 - pretty print - parametric routes # time=1.581ms
+
+# Subtest: pretty print - internal tree - parametric routes
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 4 - pretty print - internal tree - parametric routes # time=1.415ms
+
+# Subtest: pretty print - mixed parametric routes
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 5 - pretty print - mixed parametric routes # time=10.171ms
+
+# Subtest: pretty print - wildcard routes
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 6 - pretty print - wildcard routes # time=1.32ms
+
+# Subtest: pretty print - internal tree - wildcard routes
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 7 - pretty print - internal tree - wildcard routes # time=1.445ms
+
+# Subtest: pretty print - empty plugins
+    1..2
+    ok 1 - should be equal
+    ok 2 - should match pattern
+ok 8 - pretty print - empty plugins # time=1.562ms
+
+# Subtest: pretty print - nested plugins
+    1..4
+    ok 1 - should be equal
+    ok 2 - should match pattern
+    ok 3 - should match pattern
+    ok 4 - should match pattern
+ok 9 - pretty print - nested plugins # time=17.448ms
+
+# Subtest: pretty print - commonPrefix
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 10 - pretty print - commonPrefix # time=2.096ms
+
+# Subtest: pretty print - includeMeta, includeHooks
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 11 - pretty print - includeMeta, includeHooks # time=2.196ms
+
+1..11

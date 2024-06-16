@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: does a lot of nothing
+    ok 1 - type is object
+    ok 2 - should be equal
+    1..2
+ok 1 - does a lot of nothing # time=2.032ms
+
+1..1

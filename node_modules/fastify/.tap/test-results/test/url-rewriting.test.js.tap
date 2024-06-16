@@ -1,0 +1,39 @@
+TAP version 14
+# Subtest: Should rewrite url
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equivalent
+    ok 5 - should be equal
+ok 1 - Should rewrite url # time=38.251ms
+
+# Subtest: Should not rewrite if the url is the same
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 2 - Should not rewrite if the url is the same # time=5.228ms
+
+# Subtest: Should throw an error
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 3 - Should throw an error # time=8.587ms
+
+# Subtest: Should rewrite url but keep originalUrl unchanged
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+ok 4 - Should rewrite url but keep originalUrl unchanged # time=4.347ms
+
+1..4

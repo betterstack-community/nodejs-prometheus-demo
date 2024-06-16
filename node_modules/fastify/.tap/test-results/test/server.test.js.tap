@@ -1,0 +1,65 @@
+TAP version 14
+# Subtest: listen should accept null port
+    1..1
+    ok 1 - should not error
+ok 1 - listen should accept null port # time=22.466ms
+
+# Subtest: listen should accept undefined port
+    1..1
+    ok 1 - should not error
+ok 2 - listen should accept undefined port # time=12.383ms
+
+# Subtest: listen should accept stringified number port
+    1..1
+    ok 1 - should not error
+ok 3 - listen should accept stringified number port # time=3.134ms
+
+# Subtest: listen should accept log text resolution function
+    1..3
+    ok 1 - should be equal
+    ok 2 - executed
+    ok 3 - should not error
+ok 4 - listen should accept log text resolution function # time=1.441ms
+
+# Subtest: listen should reject string port
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 5 - listen should reject string port # time=2.596ms
+
+# Subtest: Test for hostname and port
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    1..3
+ok 6 - Test for hostname and port # time=15.699ms
+
+# Subtest: abort signal
+    # Subtest: listen should not start server
+        1..2
+        ok 1 - should be equal
+        ok 2 - type is [object Object]
+    ok 1 - listen should not start server # time=2.31ms
+    
+    # Subtest: listen should not start server if already aborted
+        1..2
+        ok 1 - should be equal
+        ok 2 - type is [object Object]
+    ok 2 - listen should not start server if already aborted # time=1.148ms
+    
+    # Subtest: listen should throw if received invalid signal
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 3 - listen should throw if received invalid signal # time=0.611ms
+    
+    1..3
+ok 7 - abort signal # time=7.207ms
+
+# Subtest: \#5180 - preClose should be called before closing secondary server
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 8 - \#5180 - preClose should be called before closing secondary server # time=259.102ms
+
+1..8

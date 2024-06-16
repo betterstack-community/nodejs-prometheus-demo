@@ -1,0 +1,19 @@
+TAP version 14
+# Subtest: handlers receive correct `this` context
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 1 - handlers receive correct `this` context # time=20.7ms
+
+# Subtest: handlers have access to the internal context
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - type is Object
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 2 - handlers have access to the internal context # time=1.875ms
+
+1..2

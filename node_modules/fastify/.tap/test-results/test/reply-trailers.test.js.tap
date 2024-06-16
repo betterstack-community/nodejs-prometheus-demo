@@ -1,0 +1,176 @@
+TAP version 14
+# Subtest: send trailers when payload is empty string
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - all provided fields should not be equivalent
+ok 1 - send trailers when payload is empty string # time=23.162ms
+
+# Subtest: send trailers when payload is empty buffer
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - all provided fields should not be equivalent
+ok 2 - send trailers when payload is empty buffer # time=2.219ms
+
+# Subtest: send trailers when payload is undefined
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - all provided fields should not be equivalent
+ok 3 - send trailers when payload is undefined # time=1.635ms
+
+# Subtest: send trailers when payload is json
+    1..7
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - all provided fields should not be equivalent
+ok 4 - send trailers when payload is json # time=14.877ms
+
+# Subtest: send trailers when payload is stream
+    1..7
+    ok 1 - should be equivalent
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - all provided fields should not be equivalent
+ok 5 - send trailers when payload is stream # time=14.122ms
+
+# Subtest: send trailers when using async-await
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - all provided fields should not be equivalent
+ok 6 - send trailers when using async-await # time=2.074ms
+
+# Subtest: error in trailers should be ignored
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - all provided fields should not be equivalent
+    ok 5 - all provided fields should not be equivalent
+ok 7 - error in trailers should be ignored # time=1.706ms
+
+# Subtest: should emit deprecation warning when using direct return
+    1..7
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - all provided fields should not be equivalent
+ok 8 - should emit deprecation warning when using direct return # time=2.915ms
+
+# Subtest: trailer handler counter
+    1..2
+    # Subtest: callback with timeout
+        1..9
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should not error
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - all provided fields should not be equivalent
+    ok 1 - callback with timeout # time=503.487ms
+    
+    # Subtest: async-await
+        1..9
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should not error
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - all provided fields should not be equivalent
+    ok 2 - async-await # time=503.088ms
+    
+ok 9 - trailer handler counter # time=1016.298ms
+
+# Subtest: removeTrailer
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - all provided fields should not be equivalent
+ok 10 - removeTrailer # time=1.772ms
+
+# Subtest: remove all trailers
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - all provided fields should not be equivalent
+ok 11 - remove all trailers # time=1.641ms
+
+# Subtest: hasTrailer
+    1..10
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - all provided fields should not be equivalent
+ok 12 - hasTrailer # time=1.549ms
+
+# Subtest: throw error when trailer header name is not allowed
+    1..14
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should not error
+    ok 14 - should be equal
+ok 13 - throw error when trailer header name is not allowed # time=2.783ms
+
+# Subtest: throw error when trailer header value is not function
+    1..10
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+ok 14 - throw error when trailer header value is not function # time=6.415ms
+
+1..14

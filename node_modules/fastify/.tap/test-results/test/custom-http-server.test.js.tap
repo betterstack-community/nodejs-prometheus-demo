@@ -1,0 +1,30 @@
+TAP version 14
+# Subtest: Should support a custom http server
+    1..4
+    ok 1 - it is called once for localhost
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 1 - Should support a custom http server # time=24.743ms
+
+# Subtest: Should not allow forceCloseConnection=idle if the server does not support closeIdleConnections
+    1..1
+    ok 1 - Cannot set forceCloseConnections to 'idle' as your HTTP server does not support closeIdleConnections method
+ok 2 - Should not allow forceCloseConnection=idle if the server does not support closeIdleConnections # time=0.995ms
+
+# Subtest: Should accept user defined serverFactory and ignore secondary server creation
+    ok 1 - expected to resolve
+    1..1
+ok 3 - Should accept user defined serverFactory and ignore secondary server creation # time=6.828ms
+
+# Subtest: Should not call close on the server if it has not created it
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    1..6
+ok 4 - Should not call close on the server if it has not created it # time=3.131ms
+
+1..4

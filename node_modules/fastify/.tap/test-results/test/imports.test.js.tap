@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: should import as default
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - should import as default # time=74.014ms
+
+# Subtest: should import as esm
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 2 - should import as esm # time=0.346ms
+
+1..2

@@ -1,0 +1,71 @@
+TAP version 14
+# Subtest: time resolution
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - time resolution # time=4.452ms
+
+# Subtest: The logger should add a unique id for every request
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - the id should not be duplicated
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - the id should not be duplicated
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - the id should not be duplicated
+    ok 11 - should be equal
+    ok 12 - should not error
+    ok 13 - the id should not be duplicated
+    ok 14 - should be equal
+    ok 15 - should not error
+    ok 16 - the id should not be duplicated
+    ok 17 - should be equal
+    ok 18 - should not error
+    ok 19 - the id should not be duplicated
+    ok 20 - should be equal
+    ok 21 - should not error
+    ok 22 - the id should not be duplicated
+    ok 23 - should be equal
+    ok 24 - should not error
+    ok 25 - the id should not be duplicated
+    ok 26 - should be equal
+    ok 27 - should not error
+    ok 28 - the id should not be duplicated
+    ok 29 - should be equal
+    ok 30 - should not error
+    ok 31 - the id should not be duplicated
+    1..31
+ok 2 - The logger should add a unique id for every request # time=29.673ms
+
+# Subtest: The logger should not reuse request id header for req.id
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - the request id from the header should not be returned with default configuration
+    ok 5 - should be equal
+    1..5
+ok 3 - The logger should not reuse request id header for req.id # time=3.672ms
+
+# Subtest: The logger should reuse request id header for req.id if requestIdHeader is set
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - the request id from the header should be returned
+    1..4
+ok 4 - The logger should reuse request id header for req.id if requestIdHeader is set # time=4.857ms
+
+# Subtest: The logger should error if both stream and file destination are given
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 5 - The logger should error if both stream and file destination are given # time=0.682ms
+
+# Subtest: The serializer prevent fails if the request socket is undefined
+    1..1
+    ok 1 - should be equivalent
+ok 6 - The serializer prevent fails if the request socket is undefined # time=1.162ms
+
+1..6

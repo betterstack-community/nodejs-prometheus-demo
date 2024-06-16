@@ -1,0 +1,199 @@
+TAP version 14
+# Subtest: Basic validation test
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equivalent
+    ok 6 - should be equal
+ok 1 - Basic validation test # time=45.735ms
+
+# Subtest: External AJV instance
+    1..5
+    ok 1 - custom validator compiler called
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 2 - External AJV instance # time=17.754ms
+
+# Subtest: Encapsulation
+    1..21
+    ok 1 - custom validator compiler called
+    ok 2 - custom validator compiler called
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - should be equivalent
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+    ok 12 - should not error
+    ok 13 - should be equal
+    ok 14 - the route validator does not change the instance one
+    ok 15 - should not error
+    ok 16 - should be equal
+    ok 17 - should be equivalent
+    ok 18 - should be equal
+    ok 19 - should not error
+    ok 20 - should be equal
+    ok 21 - should be equivalent
+ok 3 - Encapsulation # time=27.712ms
+
+# Subtest: Triple $ref with a simple $id
+    1..7
+    ok 1 - custom validator compiler called
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 4 - Triple $ref with a simple $id # time=27.037ms
+
+# Subtest: Extending schema
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 5 - Extending schema # time=13.35ms
+
+# Subtest: Should work with nested ids
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 6 - Should work with nested ids # time=10.977ms
+
+# Subtest: Use the same schema across multiple routes
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+ok 7 - Use the same schema across multiple routes # time=10.493ms
+
+# Subtest: JSON Schema validation keywords
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 8 - JSON Schema validation keywords # time=7.764ms
+
+# Subtest: Nested id calls
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 9 - Nested id calls # time=8.117ms
+
+# Subtest: Use the same schema id in different places
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equivalent
+ok 10 - Use the same schema id in different places # time=17.978ms
+
+# Subtest: Use shared schema and $ref with $id ($ref to $id)
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 11 - Use shared schema and $ref with $id ($ref to $id) # time=13.293ms
+
+# Subtest: Use items with $ref
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 12 - Use items with $ref # time=7.212ms
+
+# Subtest: Use $ref to /definitions
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 13 - Use $ref to /definitions # time=11.981ms
+
+# Subtest: Custom AJV settings - pt1
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 14 - Custom AJV settings - pt1 # time=23.444ms
+
+# Subtest: Custom AJV settings - pt2
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 15 - Custom AJV settings - pt2 # time=23.994ms
+
+# Subtest: Custom AJV settings on different parameters - pt1
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 16 - Custom AJV settings on different parameters - pt1 # time=11.358ms
+
+# Subtest: Custom AJV settings on different parameters - pt2
+    1..4
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+ok 17 - Custom AJV settings on different parameters - pt2 # time=10.296ms
+
+# Subtest: The same $id in route's schema must not overwrite others
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should not error
+    ok 4 - should be equivalent
+ok 18 - The same $id in route's schema must not overwrite others # time=19.122ms
+
+# Subtest: Custom validator compiler should not mutate schema
+    1..2
+    ok 1 - type is Headers
+    ok 2 - type is Headers
+ok 19 - Custom validator compiler should not mutate schema # time=1.392ms
+
+# Subtest: Custom validator builder override by custom validator compiler
+    1..3
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+ok 20 - Custom validator builder override by custom validator compiler # time=7.499ms
+
+# Subtest: Custom validator builder override by custom validator compiler in child instance
+    1..6
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+    ok 6 - should be equal
+ok 21 - Custom validator builder override by custom validator compiler in child instance # time=10.556ms
+
+1..21

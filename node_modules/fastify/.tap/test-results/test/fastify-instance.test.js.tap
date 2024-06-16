@@ -1,0 +1,114 @@
+TAP version 14
+# Subtest: root fastify instance is an object
+    1..1
+    ok 1 - type is object
+ok 1 - root fastify instance is an object # time=14.976ms
+
+# Subtest: fastify instance should contains ajv options
+    1..1
+    ok 1 - should be equivalent
+ok 2 - fastify instance should contains ajv options # time=1.639ms
+
+# Subtest: fastify instance should contains ajv options.plugins nested arrays
+    1..1
+    ok 1 - should be equivalent
+ok 3 - fastify instance should contains ajv options.plugins nested arrays # time=0.538ms
+
+# Subtest: fastify instance get invalid ajv options
+    1..1
+    ok 1 - expected to throw
+ok 4 - fastify instance get invalid ajv options # time=0.77ms
+
+# Subtest: fastify instance get invalid ajv options.plugins
+    1..1
+    ok 1 - expected to throw
+ok 5 - fastify instance get invalid ajv options.plugins # time=0.264ms
+
+# Subtest: fastify instance should contain default errorHandler
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+ok 6 - fastify instance should contain default errorHandler # time=0.48ms
+
+# Subtest: errorHandler in plugin should be separate from the external one
+    1..4
+    ok 1 - should not be equivalent
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 7 - errorHandler in plugin should be separate from the external one # time=6.778ms
+
+# Subtest: fastify instance should contain default childLoggerFactory
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+ok 8 - fastify instance should contain default childLoggerFactory # time=0.537ms
+
+# Subtest: childLoggerFactory in plugin should be separate from the external one
+    1..4
+    ok 1 - should not be equivalent
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 9 - childLoggerFactory in plugin should be separate from the external one # time=5.381ms
+
+# Subtest: ready should resolve in order when called multiply times (promises only)
+    ok 1 - Should resolve in order
+    1..1
+ok 10 - ready should resolve in order when called multiply times (promises only) # time=1.204ms
+
+# Subtest: ready should reject in order when called multiply times (promises only)
+    ok 1 - Should resolve in order
+    1..1
+ok 11 - ready should reject in order when called multiply times (promises only) # time=502.73ms
+
+# Subtest: ready should reject in order when called multiply times (callbacks only)
+    ok 1 - should be equal
+    ok 2 - Should resolve in order
+    1..2
+ok 12 - ready should reject in order when called multiply times (callbacks only) # time=503.525ms
+
+# Subtest: ready should resolve in order when called multiply times (callbacks only)
+    ok 1 - Should resolve in order
+    1..1
+ok 13 - ready should resolve in order when called multiply times (callbacks only) # time=0.981ms
+
+# Subtest: ready should resolve in order when called multiply times (mixed)
+    ok 1 - Should resolve in order
+    1..1
+ok 14 - ready should resolve in order when called multiply times (mixed) # time=0.873ms
+
+# Subtest: ready should reject in order when called multiply times (mixed)
+    ok 1 - should be equal
+    ok 2 - Should resolve in order
+    1..2
+ok 15 - ready should reject in order when called multiply times (mixed) # time=503.013ms
+
+# Subtest: ready should resolve in order when called multiply times (mixed)
+    ok 1 - Should resolve in order
+    1..1
+ok 16 - ready should resolve in order when called multiply times (mixed) # time=0.953ms
+
+# Subtest: fastify instance should contains listeningOrigin property (with port and host)
+    1..1
+    ok 1 - should be equivalent
+ok 17 - fastify instance should contains listeningOrigin property (with port and host) # time=2.872ms
+
+# Subtest: fastify instance should contains listeningOrigin property (with port and https)
+    1..1
+    ok 1 - should be equivalent
+ok 18 - fastify instance should contains listeningOrigin property (with port and https) # time=16.885ms
+
+# Subtest: fastify instance should contains listeningOrigin property (unix socket)
+    ok 1 - should be equivalent
+    1..1
+ok 19 - fastify instance should contains listeningOrigin property (unix socket) # time=1.534ms
+
+# Subtest: fastify instance should contains listeningOrigin property (IPv6)
+    1..1
+    ok 1 - should be equivalent
+ok 20 - fastify instance should contains listeningOrigin property (IPv6) # time=3.533ms
+
+1..20

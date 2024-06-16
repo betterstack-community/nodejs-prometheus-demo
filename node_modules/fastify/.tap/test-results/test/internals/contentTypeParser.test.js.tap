@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: rawBody function
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - rawBody function # time=7.765ms
+
+# Subtest: Should support Webpack and faux modules
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 2 - Should support Webpack and faux modules # time=2.92ms
+
+1..2

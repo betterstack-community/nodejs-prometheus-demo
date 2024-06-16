@@ -1,0 +1,22 @@
+TAP version 14
+# Subtest: sends early hints
+    1..6
+    ok 1 - should not error
+    ok 2 - callback called
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 1 - sends early hints # time=39.684ms
+
+# Subtest: sends early hints (http2)
+    1..6
+    ok 1 - should not error
+    ok 2 - should not be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 2 - sends early hints (http2) # time=11.092ms
+
+1..2

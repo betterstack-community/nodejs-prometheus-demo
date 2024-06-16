@@ -1,0 +1,42 @@
+TAP version 14
+# Subtest: fastify.all should add all the methods to the same url
+    1..36
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should not error
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equivalent
+    ok 9 - should not error
+    ok 10 - should be equivalent
+    ok 11 - should not error
+    ok 12 - should be equivalent
+    ok 13 - should not error
+    ok 14 - should be equivalent
+    ok 15 - should not error
+    ok 16 - should be equivalent
+    ok 17 - should not error
+    ok 18 - should be equivalent
+    ok 19 - should not error
+    ok 20 - should be equivalent
+    ok 21 - should not error
+    ok 22 - should be equivalent
+    ok 23 - should not error
+    ok 24 - should be equivalent
+    ok 25 - should not error
+    ok 26 - should be equivalent
+    ok 27 - should not error
+    ok 28 - should be equivalent
+    ok 29 - should not error
+    ok 30 - should be equivalent
+    ok 31 - should not error
+    ok 32 - should be equivalent
+    ok 33 - should not error
+    ok 34 - should be equivalent
+    ok 35 - should not error
+    ok 36 - should be equivalent
+ok 1 - fastify.all should add all the methods to the same url # time=25.892ms
+
+1..1

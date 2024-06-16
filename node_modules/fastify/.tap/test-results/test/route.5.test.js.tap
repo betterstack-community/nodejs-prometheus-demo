@@ -1,0 +1,54 @@
+TAP version 14
+# Subtest: route child logger factory does not affect other routes
+    1..6
+    ok 1 - should be equal
+    ok 2 - should not match pattern
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+ok 1 - route child logger factory does not affect other routes # time=19.989ms
+
+# Subtest: route child logger factory overrides global custom error handler
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+ok 2 - route child logger factory overrides global custom error handler # time=2.803ms
+
+# Subtest: Creates a HEAD route for each GET one (default)
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+ok 3 - Creates a HEAD route for each GET one (default) # time=2.5ms
+
+# Subtest: Do not create a HEAD route for each GET one (exposeHeadRoutes: false)
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 4 - Do not create a HEAD route for each GET one (exposeHeadRoutes: false) # time=7.442ms
+
+# Subtest: Creates a HEAD route for each GET one
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+ok 5 - Creates a HEAD route for each GET one # time=1.864ms
+
+1..5

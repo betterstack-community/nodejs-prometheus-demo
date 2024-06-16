@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: can be created - copy
+    1..1
+    ok 1 - (unnamed test)
+ok 1 - can be created - copy # time=5.746ms
+
+ok 2 - should not error
+# Subtest: request - copy
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 3 - request - copy # time=7.991ms
+
+1..3

@@ -1,0 +1,33 @@
+TAP version 14
+# Subtest: use semicolon delimiter default false
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 1 - use semicolon delimiter default false # time=34.406ms
+
+# Subtest: use semicolon delimiter set to true
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 2 - use semicolon delimiter set to true # time=4.572ms
+
+# Subtest: use semicolon delimiter set to false
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 3 - use semicolon delimiter set to false # time=3.693ms
+
+# Subtest: use semicolon delimiter set to false return 404
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 4 - use semicolon delimiter set to false return 404 # time=10.561ms
+
+1..4

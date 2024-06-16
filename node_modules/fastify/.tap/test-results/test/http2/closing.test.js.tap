@@ -1,0 +1,35 @@
+TAP version 14
+# Subtest: http/2 request while fastify closing
+    ok 1 - http2 successfully loaded
+    ok 2 - should not error
+    # Subtest: return 200
+        1..0
+    ok 3 - return 200 # time=5.39ms
+    
+    1..3
+ok 1 - http/2 request while fastify closing # time=25.219ms
+
+# Subtest: http/2 request while fastify closing - return503OnClosing: false
+    ok 1 - http2 successfully loaded
+    ok 2 - should not error
+    # Subtest: return 200
+        1..0
+    ok 3 - return 200 # time=1.423ms
+    
+    1..3
+ok 2 - http/2 request while fastify closing - return503OnClosing: false # time=6.334ms
+
+# Subtest: http/2 closes successfully with async await
+    1..0
+ok 3 - http/2 closes successfully with async await # time=5.496ms
+
+# Subtest: https/2 closes successfully with async await
+    1..0
+ok 4 - https/2 closes successfully with async await # time=21.177ms
+
+# Subtest: http/2 server side session emits a timeout event
+    ok 1 - should be equal
+    1..1
+ok 5 - http/2 server side session emits a timeout event # time=109.232ms
+
+1..5

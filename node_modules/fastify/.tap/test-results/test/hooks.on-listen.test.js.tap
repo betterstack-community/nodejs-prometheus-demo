@@ -1,0 +1,311 @@
+TAP version 14
+# Subtest: onListen should not be processed when .ready() is called
+    1..1
+    ok 1 - should not error
+ok 1 - onListen should not be processed when .ready() is called # time=9.584ms
+
+# Subtest: localhost onListen should be called in order
+    1..2
+    ok 1 - 1st called in root
+    ok 2 - 2nd called in root
+ok 2 - localhost onListen should be called in order # time=9.322ms
+
+# Subtest: localhost async onListen should be called in order
+    1..3
+    ok 1 - 1st async called in root
+    ok 2 - 2nd async called in root
+    ok 3 - the onListen hooks are awaited
+ok 3 - localhost async onListen should be called in order # time=3.165ms
+
+# Subtest: localhost onListen sync should log errors as warnings and continue /1
+    1..8
+    ok 1 - 1st call
+    ok 2 - called in root
+    ok 3 - 2nd call
+    ok 4 - called onListen error
+    ok 5 - should be equal
+    ok 6 - Logged Error Message
+    ok 7 - 3rd call
+    ok 8 - onListen hooks continue after error
+ok 4 - localhost onListen sync should log errors as warnings and continue /1 # time=5.178ms
+
+# Subtest: localhost onListen sync should log errors as warnings and continue /2
+    1..7
+    ok 1 - 1st call
+    ok 2 - called in root
+    ok 3 - 2nd call
+    ok 4 - called onListen error
+    ok 5 - Logged Error Message
+    ok 6 - 3rd call
+    ok 7 - onListen hooks continue after error
+ok 5 - localhost onListen sync should log errors as warnings and continue /2 # time=2.939ms
+
+# Subtest: localhost onListen async should log errors as warnings and continue
+    1..4
+    ok 1 - called in root
+    ok 2 - called onListen error
+    ok 3 - Logged Error Message
+    ok 4 - onListen hooks continue after error
+ok 6 - localhost onListen async should log errors as warnings and continue # time=4.243ms
+
+# Subtest: localhost Register onListen hook after a plugin inside a plugin
+    1..3
+    ok 1 - called
+    ok 2 - called
+    ok 3 - called
+ok 7 - localhost Register onListen hook after a plugin inside a plugin # time=3.68ms
+
+# Subtest: localhost Register onListen hook after a plugin inside a plugin should log errors as warnings and continue
+    1..6
+    ok 1 - called
+    ok 2 - Logged Error Message
+    ok 3 - called
+    ok 4 - Logged Error Message
+    ok 5 - called
+    ok 6 - Logged Error Message
+ok 8 - localhost Register onListen hook after a plugin inside a plugin should log errors as warnings and continue # time=6.147ms
+
+# Subtest: localhost onListen encapsulation should be called in order
+    1..8
+    ok 1 - called in root
+    ok 2 - the this binding is the right instance
+    ok 3 - called in childOne
+    ok 4 - the this binding is the right instance
+    ok 5 - called in childTwo
+    ok 6 - the this binding is the right instance
+    ok 7 - called second in childTwo
+    ok 8 - the this binding is the right instance
+ok 9 - localhost onListen encapsulation should be called in order # time=10.172ms
+
+# Subtest: localhost onListen encapsulation with only nested hook
+    1..1
+    ok 1 - (unnamed test)
+ok 10 - localhost onListen encapsulation with only nested hook # time=3.802ms
+
+# Subtest: localhost onListen peer encapsulations with only nested hooks
+    1..2
+    ok 1 - (unnamed test)
+    ok 2 - (unnamed test)
+ok 11 - localhost onListen peer encapsulations with only nested hooks # time=3.614ms
+
+# Subtest: localhost onListen encapsulation should be called in order and should log errors as warnings and continue
+    1..7
+    ok 1 - called in root
+    ok 2 - the this binding is the right instance
+    ok 3 - called in childOne
+    ok 4 - the this binding is the right instance
+    ok 5 - called in childTwo
+    ok 6 - the this binding is the right instance
+    ok 7 - Logged Error Message
+ok 12 - localhost onListen encapsulation should be called in order and should log errors as warnings and continue # time=5.392ms
+
+# Subtest: non-localhost onListen should be called in order
+    1..2
+    ok 1 - 1st called in root
+    ok 2 - 2nd called in root
+ok 13 - non-localhost onListen should be called in order # time=1.209ms
+
+# Subtest: non-localhost async onListen should be called in order
+    1..2
+    ok 1 - 1st async called in root
+    ok 2 - 2nd async called in root
+ok 14 - non-localhost async onListen should be called in order # time=1.158ms
+
+# Subtest: non-localhost sync onListen should log errors as warnings and continue
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - Logged Error Message
+    ok 4 - should still run
+ok 15 - non-localhost sync onListen should log errors as warnings and continue # time=2.028ms
+
+# Subtest: non-localhost async onListen should log errors as warnings and continue
+    1..6
+    ok 1 - should be equal
+    ok 2 - called in root
+    ok 3 - 2nd async failed in root
+    ok 4 - Logged Error Message
+    ok 5 - should be equal
+    ok 6 - should still run
+ok 16 - non-localhost async onListen should log errors as warnings and continue # time=4.052ms
+
+# Subtest: non-localhost Register onListen hook after a plugin inside a plugin
+    1..3
+    ok 1 - called
+    ok 2 - called
+    ok 3 - called
+ok 17 - non-localhost Register onListen hook after a plugin inside a plugin # time=2.208ms
+
+# Subtest: non-localhost Register onListen hook after a plugin inside a plugin should log errors as warnings and continue
+    1..6
+    ok 1 - called
+    ok 2 - Logged Error Message
+    ok 3 - called
+    ok 4 - Logged Error Message
+    ok 5 - called
+    ok 6 - Logged Error Message
+ok 18 - non-localhost Register onListen hook after a plugin inside a plugin should log errors as warnings and continue # time=2.078ms
+
+# Subtest: non-localhost onListen encapsulation should be called in order
+    1..6
+    ok 1 - called in root
+    ok 2 - the this binding is the right instance
+    ok 3 - called in childOne
+    ok 4 - the this binding is the right instance
+    ok 5 - called in childTwo
+    ok 6 - the this binding is the right instance
+ok 19 - non-localhost onListen encapsulation should be called in order # time=1.98ms
+
+# Subtest: non-localhost onListen encapsulation should be called in order and should log errors as warnings and continue
+    1..7
+    ok 1 - called in root
+    ok 2 - the this binding is the right instance
+    ok 3 - called in childOne
+    ok 4 - the this binding is the right instance
+    ok 5 - called in childTwo
+    ok 6 - the this binding is the right instance
+    ok 7 - Logged Error Message
+ok 20 - non-localhost onListen encapsulation should be called in order and should log errors as warnings and continue # time=1.967ms
+
+# Subtest: onListen localhost should work in order with callback
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - 1st called in root
+    ok 4 - 2nd called in root
+ok 21 - onListen localhost should work in order with callback # time=2.237ms
+
+# Subtest: onListen localhost should work in order with callback in async
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - 1st called in root
+    ok 4 - 2nd called in root
+ok 22 - onListen localhost should work in order with callback in async # time=2.328ms
+
+# Subtest: onListen localhost sync with callback should log errors as warnings and continue
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - 1st called in root
+    ok 4 - error sync called in root
+    ok 5 - Logged Error Message
+    ok 6 - 1st called in root
+ok 23 - onListen localhost sync with callback should log errors as warnings and continue # time=2.59ms
+
+# Subtest: onListen localhost async with callback should log errors as warnings and continue
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - 1st called in root
+    ok 4 - error sync called in root
+    ok 5 - Logged Error Message
+    ok 6 - 3rd called in root
+ok 24 - onListen localhost async with callback should log errors as warnings and continue # time=3.214ms
+
+# Subtest: Register onListen hook localhost with callback after a plugin inside a plugin
+    1..5
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - called
+    ok 4 - called
+    ok 5 - called
+ok 25 - Register onListen hook localhost with callback after a plugin inside a plugin # time=4.287ms
+
+# Subtest: onListen localhost with callback encapsulation should be called in order
+    1..8
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - called in root
+    ok 4 - the this binding is the right instance
+    ok 5 - called in childOne
+    ok 6 - the this binding is the right instance
+    ok 7 - called in childTwo
+    ok 8 - the this binding is the right instance
+ok 26 - onListen localhost with callback encapsulation should be called in order # time=2.871ms
+
+# Subtest: onListen non-localhost should work in order with callback in sync
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - 1st called in root
+    ok 4 - 2nd called in root
+ok 27 - onListen non-localhost should work in order with callback in sync # time=1.413ms
+
+# Subtest: onListen non-localhost should work in order with callback in async
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - 1st called in root
+    ok 4 - 2nd called in root
+ok 28 - onListen non-localhost should work in order with callback in async # time=1.094ms
+
+# Subtest: onListen non-localhost sync with callback should log errors as warnings and continue
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - 1st called in root
+    ok 5 - should be equal
+    ok 6 - Logged Error Message
+    ok 7 - should be equal
+    ok 8 - 3rd called in root
+ok 29 - onListen non-localhost sync with callback should log errors as warnings and continue # time=1.625ms
+
+# Subtest: onListen non-localhost async with callback should log errors as warnings and continue
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - 1st called in root
+    ok 5 - error sync called in root
+    ok 6 - Logged Error Message
+    ok 7 - should be equal
+    ok 8 - 3rd called in root
+ok 30 - onListen non-localhost async with callback should log errors as warnings and continue # time=1.434ms
+
+# Subtest: Register onListen hook non-localhost with callback after a plugin inside a plugin
+    1..5
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - called
+    ok 4 - called
+    ok 5 - called
+ok 31 - Register onListen hook non-localhost with callback after a plugin inside a plugin # time=1.316ms
+
+# Subtest: onListen non-localhost with callback encapsulation should be called in order
+    1..8
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - called in root
+    ok 4 - the this binding is the right instance
+    ok 5 - called in childOne
+    ok 6 - the this binding is the right instance
+    ok 7 - called in childTwo
+    ok 8 - the this binding is the right instance
+ok 32 - onListen non-localhost with callback encapsulation should be called in order # time=1.758ms
+
+# Subtest: onListen sync should work if user does not pass done
+    1..2
+    ok 1 - 1st called in root
+    ok 2 - 2nd called in root
+ok 33 - onListen sync should work if user does not pass done # time=4.188ms
+
+# Subtest: async onListen does not need to be awaited
+    ok 1 - 1st async called in root
+    ok 2 - 2nd async called in root
+    1..2
+ok 34 - async onListen does not need to be awaited # time=1.899ms
+
+# Subtest: onListen hooks do not block /1
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 35 - onListen hooks do not block /1 # time=1.893ms
+
+# Subtest: onListen hooks do not block /2
+    1..1
+    ok 1 - should be equal
+ok 36 - onListen hooks do not block /2 # time=1.644ms
+
+1..36

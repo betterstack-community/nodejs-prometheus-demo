@@ -1,0 +1,172 @@
+TAP version 14
+# Subtest: close callback
+    1..4
+    ok 1 - should not error
+    ok 2 - type is [object Object]
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 1 - close callback # time=27.203ms
+
+# Subtest: inside register
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 2 - inside register # time=10.063ms
+
+# Subtest: close order
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 3 - close order # time=4.512ms
+
+# Subtest: close order - async
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 4 - close order - async # time=5.981ms
+
+# Subtest: should not throw an error if the server is not listening
+    1..2
+    ok 1 - type is [object Object]
+    ok 2 - should not error
+ok 5 - should not throw an error if the server is not listening # time=1.148ms
+
+# Subtest: onClose should keep the context
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+ok 6 - onClose should keep the context # time=4.416ms
+
+# Subtest: Should return error while closing (promise) - injection
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 7 - Should return error while closing (promise) - injection # time=8.521ms
+
+# Subtest: Should return error while closing (callback) - injection
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 8 - Should return error while closing (callback) - injection # time=103.539ms
+
+ok 9 - Current opened connection should continue to work after closing and return "connection: close" header - return503OnClosing: false, skip Node >= v18.19.x # SKIP
+# Subtest: Current opened connection should NOT continue to work after closing and return "connection: close" header - return503OnClosing: false, skip Node < v18.19.x
+    1..4
+    ok 1 - should not error
+    ok 2 - should match pattern
+    ok 3 - should match pattern
+    ok 4 - close
+ok 10 - Current opened connection should NOT continue to work after closing and return "connection: close" header - return503OnClosing: false, skip Node < v18.19.x # time=14.943ms
+
+# Subtest: Current opened connection should not accept new incoming connections
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 11 - Current opened connection should not accept new incoming connections # time=271.772ms
+
+# Subtest: rejected incoming connections should be logged
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 12 - rejected incoming connections should be logged # time=270.456ms
+
+# Subtest: Cannot be reopened the closed server without listen callback
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 13 - Cannot be reopened the closed server without listen callback # time=3.057ms
+
+# Subtest: Cannot be reopened the closed server has listen callback
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 14 - Cannot be reopened the closed server has listen callback # time=2.782ms
+
+# Subtest: shutsdown while keep-alive connections are active (non-async, native)
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 15 - shutsdown while keep-alive connections are active (non-async, native) # time=5.629ms
+
+# Subtest: shutsdown while keep-alive connections are active (non-async, idle, native)
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 16 - shutsdown while keep-alive connections are active (non-async, idle, native) # time=4.779ms
+
+# Subtest: triggers on-close hook in the right order with multiple bindings
+    1..1
+    ok 1 - should match pattern
+ok 17 - triggers on-close hook in the right order with multiple bindings # time=2005.266ms
+
+# Subtest: triggers on-close hook in the right order with multiple bindings (forceCloseConnections - idle)
+    1..5
+    ok 1 - should payload match
+    ok 2 - should client not be closed
+    ok 3 - should payload match
+    ok 4 - should client not be closed
+    ok 5 - should match pattern
+ok 18 - triggers on-close hook in the right order with multiple bindings (forceCloseConnections - idle) # time=2011.028ms
+
+# Subtest: triggers on-close hook in the right order with multiple bindings (forceCloseConnections - true)
+    1..5
+    ok 1 - should payload match
+    ok 2 - should client not be closed
+    ok 3 - should payload match
+    ok 4 - should client not be closed
+    ok 5 - should match pattern
+ok 19 - triggers on-close hook in the right order with multiple bindings (forceCloseConnections - true) # time=2007.088ms
+
+# Subtest: shutsdown while keep-alive connections are active (non-async, custom)
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 20 - shutsdown while keep-alive connections are active (non-async, custom) # time=6.087ms
+
+# Subtest: preClose callback
+    1..5
+    ok 1 - should not error
+    ok 2 - type is [object Object]
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 21 - preClose callback # time=3.168ms
+
+# Subtest: preClose async
+    1..2
+    ok 1 - type is [object Object]
+    ok 2 - should be equal
+ok 22 - preClose async # time=2.287ms
+
+# Subtest: preClose execution order
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 23 - preClose execution order # time=405.334ms
+
+1..23

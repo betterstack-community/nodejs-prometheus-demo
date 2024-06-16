@@ -1,0 +1,66 @@
+TAP version 14
+# Subtest: shorthand - output string
+    1..1
+    ok 1 - (unnamed test)
+ok 1 - shorthand - output string # time=5.922ms
+
+# Subtest: shorthand - output number
+    1..1
+    ok 1 - (unnamed test)
+ok 2 - shorthand - output number # time=0.481ms
+
+# Subtest: wrong object for schema - output
+    1..1
+    ok 1 - (unnamed test)
+ok 3 - wrong object for schema - output # time=0.409ms
+
+# Subtest: empty response
+    1..1
+    ok 1 - (unnamed test)
+ok 4 - empty response # time=0.348ms
+
+# Subtest: unlisted response code
+    1..1
+    ok 1 - (unnamed test)
+ok 5 - unlisted response code # time=0.332ms
+
+ok 6 - should not error
+# Subtest: shorthand - string get ok
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 7 - shorthand - string get ok # time=14.009ms
+
+# Subtest: shorthand - number get ok
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 8 - shorthand - number get ok # time=5.35ms
+
+# Subtest: shorthand - wrong-object-for-schema
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 9 - shorthand - wrong-object-for-schema # time=2.53ms
+
+# Subtest: shorthand - empty
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 10 - shorthand - empty # time=0.803ms
+
+# Subtest: shorthand - 400
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 11 - shorthand - 400 # time=2.483ms
+
+1..11

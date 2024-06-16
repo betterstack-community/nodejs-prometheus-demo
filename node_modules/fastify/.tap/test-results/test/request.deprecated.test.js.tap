@@ -1,0 +1,13 @@
+TAP version 14
+# Subtest: Should expose router options via getters on request and reply
+    1..7
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+ok 1 - Should expose router options via getters on request and reply # time=43.775ms
+
+1..1

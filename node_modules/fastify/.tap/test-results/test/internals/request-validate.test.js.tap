@@ -1,0 +1,384 @@
+TAP version 14
+# Subtest: \#compileValidationSchema
+    1..7
+    # Subtest: Should return a function - Route without schema
+        1..3
+        ok 1 - type is Function
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 1 - Should return a function - Route without schema # time=41.136ms
+    
+    # Subtest: Validate function errors property should be null after validation when input is valid
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 2 - Validate function errors property should be null after validation when input is valid # time=9.933ms
+    
+    # Subtest: Validate function errors property should be an array of errors after validation when input is valid
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 3 - Validate function errors property should be an array of errors after validation when input is valid # time=29.349ms
+    
+    # Subtest: Should reuse the validate fn across multiple invocations - Route without schema
+        1..16
+        ok 1 - type is Function
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - Are the same validate function
+        ok 5 - type is Function
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - Are the same validate function
+        ok 9 - type is Function
+        ok 10 - should be equal
+        ok 11 - should be equal
+        ok 12 - Are the same validate function
+        ok 13 - type is Function
+        ok 14 - should be equal
+        ok 15 - should be equal
+        ok 16 - should be equal
+    ok 4 - Should reuse the validate fn across multiple invocations - Route without schema # time=15.675ms
+    
+    # Subtest: Should return a function - Route with schema
+        1..3
+        ok 1 - type is Function
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 5 - Should return a function - Route with schema # time=17.215ms
+    
+    # Subtest: Should use the custom validator compiler for the route
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equivalent
+        ok 7 - should be equal
+        ok 8 - should be equivalent
+        ok 9 - should be equal
+        ok 10 - should be equal
+    ok 6 - Should use the custom validator compiler for the route # time=2.806ms
+    
+    # Subtest: Should instantiate a WeakMap when executed for first time
+        1..5
+        ok 1 - should be equal
+        ok 2 - type is Function
+        ok 3 - type is WeakMap
+        ok 4 - type is Function
+        ok 5 - type is WeakMap
+    ok 7 - Should instantiate a WeakMap when executed for first time # time=7.26ms
+    
+ok 1 - \#compileValidationSchema # time=131.788ms
+
+# Subtest: \#getValidationFunction
+    1..6
+    # Subtest: Should return a validation function
+        1..1
+        ok 1 - should be equal
+    ok 1 - Should return a validation function # time=11.956ms
+    
+    # Subtest: Validate function errors property should be null after validation when input is valid
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 2 - Validate function errors property should be null after validation when input is valid # time=6.218ms
+    
+    # Subtest: Validate function errors property should be an array of errors after validation when input is valid
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 3 - Validate function errors property should be an array of errors after validation when input is valid # time=5.93ms
+    
+    # Subtest: Should return undefined if no schema compiled
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 4 - Should return undefined if no schema compiled # time=1.474ms
+    
+    # Subtest: Should return the validation function from each HTTP part
+        1..15
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+        ok 11 - should be equal
+        ok 12 - should be equal
+        ok 13 - should be equal
+        ok 14 - should be equal
+        ok 15 - should be equal
+    ok 5 - Should return the validation function from each HTTP part # time=20.381ms
+    
+    # Subtest: Should not set a WeakMap if there is no schema
+        1..1
+        ok 1 - should be equal
+    ok 6 - Should not set a WeakMap if there is no schema # time=1.323ms
+    
+ok 2 - \#getValidationFunction # time=61.742ms
+
+# Subtest: \#validate
+    1..7
+    # Subtest: Should return true/false if input valid - Route without schema
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 1 - Should return true/false if input valid - Route without schema # time=7.759ms
+    
+    # Subtest: Should use the custom validator compiler for the route
+        1..9
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equivalent
+        ok 6 - should be equivalent
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+    ok 2 - Should use the custom validator compiler for the route # time=5.558ms
+    
+    # Subtest: Should return true/false if input valid - With Schema for Route defined
+        1..8
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+    ok 3 - Should return true/false if input valid - With Schema for Route defined # time=13.571ms
+    
+    # Subtest: Should throw if missing validation fn for HTTP part and not schema provided
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+    ok 4 - Should throw if missing validation fn for HTTP part and not schema provided # time=3.108ms
+    
+    # Subtest: Should throw if missing validation fn for HTTP part and not valid schema provided
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+    ok 5 - Should throw if missing validation fn for HTTP part and not valid schema provided # time=2.711ms
+    
+    # Subtest: Should throw if invalid schema passed
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+    ok 6 - Should throw if invalid schema passed # time=2.029ms
+    
+    # Subtest: Should set a WeakMap if compiling the very first schema
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - type is WeakMap
+    ok 7 - Should set a WeakMap if compiling the very first schema # time=5.915ms
+    
+ok 3 - \#validate # time=43.838ms
+
+# Subtest: Nested Context
+    1..1
+    # Subtest: Level_1
+        1..3
+        # Subtest: \#compileValidationSchema
+            1..5
+            # Subtest: Should return a function - Route without schema
+                1..3
+                ok 1 - type is Function
+                ok 2 - should be equal
+                ok 3 - should be equal
+            ok 1 - Should return a function - Route without schema # time=19.871ms
+            
+            # Subtest: Should reuse the validate fn across multiple invocations - Route without schema
+                1..16
+                ok 1 - type is Function
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - Are the same validate function
+                ok 5 - type is Function
+                ok 6 - should be equal
+                ok 7 - should be equal
+                ok 8 - Are the same validate function
+                ok 9 - type is Function
+                ok 10 - should be equal
+                ok 11 - should be equal
+                ok 12 - Are the same validate function
+                ok 13 - type is Function
+                ok 14 - should be equal
+                ok 15 - should be equal
+                ok 16 - should be equal
+            ok 2 - Should reuse the validate fn across multiple invocations - Route without schema # time=12.268ms
+            
+            # Subtest: Should return a function - Route with schema
+                1..3
+                ok 1 - type is Function
+                ok 2 - should be equal
+                ok 3 - should be equal
+            ok 3 - Should return a function - Route with schema # time=6.664ms
+            
+            # Subtest: Should use the custom validator compiler for the route
+                1..10
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - should be equal
+                ok 5 - should be equal
+                ok 6 - should be equivalent
+                ok 7 - should be equal
+                ok 8 - should be equivalent
+                ok 9 - should be equal
+                ok 10 - should be equal
+            ok 4 - Should use the custom validator compiler for the route # time=2.558ms
+            
+            # Subtest: Should compile the custom validation - nested with schema.headers
+                1..4
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - should be equal
+            ok 5 - Should compile the custom validation - nested with schema.headers # time=1.96ms
+            
+        ok 1 - \#compileValidationSchema # time=49.167ms
+        
+        # Subtest: \#getValidationFunction
+            1..6
+            # Subtest: Should return a validation function
+                1..1
+                ok 1 - should be equal
+            ok 1 - Should return a validation function # time=10.419ms
+            
+            # Subtest: Should return undefined if no schema compiled
+                1..1
+                ok 1 - should be equal
+            ok 2 - Should return undefined if no schema compiled # time=1.67ms
+            
+            # Subtest: Should return the validation function from each HTTP part
+                1..15
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - should be equal
+                ok 5 - should be equal
+                ok 6 - should be equal
+                ok 7 - should be equal
+                ok 8 - should be equal
+                ok 9 - should be equal
+                ok 10 - should be equal
+                ok 11 - should be equal
+                ok 12 - should be equal
+                ok 13 - should be equal
+                ok 14 - should be equal
+                ok 15 - should be equal
+            ok 3 - Should return the validation function from each HTTP part # time=8.655ms
+            
+            # Subtest: Should return a validation function - nested
+                1..6
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - should be equal
+                ok 5 - should be equal
+                ok 6 - should be equal
+            ok 4 - Should return a validation function - nested # time=1.757ms
+            
+            # Subtest: Should return undefined if no schema compiled - nested
+                1..3
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+            ok 5 - Should return undefined if no schema compiled - nested # time=6.547ms
+            
+            # Subtest: Should per-route defined validation compiler
+                1..5
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should not be equal
+                ok 4 - should be equal
+                ok 5 - should be equal
+            ok 6 - Should per-route defined validation compiler # time=2.26ms
+            
+        ok 2 - \#getValidationFunction # time=33.624ms
+        
+        # Subtest: \#validate
+            1..3
+            # Subtest: Should return true/false if input valid - Route without schema
+                1..2
+                ok 1 - should be equal
+                ok 2 - should be equal
+            ok 1 - Should return true/false if input valid - Route without schema # time=10.732ms
+            
+            # Subtest: Should use the custom validator compiler for the route
+                1..10
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - should be equal
+                ok 5 - should be equivalent
+                ok 6 - should be equivalent
+                ok 7 - should be equal
+                ok 8 - should be equal
+                ok 9 - should be equal
+                ok 10 - should be equal
+            ok 2 - Should use the custom validator compiler for the route # time=2.186ms
+            
+            # Subtest: Should return true/false if input valid - With Schema for Route defined and scoped validator compiler
+                1..13
+                ok 1 - should be equal
+                ok 2 - should be equal
+                ok 3 - should be equal
+                ok 4 - should be equal
+                ok 5 - should be equal
+                ok 6 - should be equal
+                ok 7 - should be equal
+                ok 8 - should be equal
+                ok 9 - should be equal
+                ok 10 - should be equal
+                ok 11 - should be equal
+                ok 12 - should be equal
+                ok 13 - should be equal
+            ok 3 - Should return true/false if input valid - With Schema for Route defined and scoped validator compiler # time=24.968ms
+            
+        ok 3 - \#validate # time=39.25ms
+        
+    ok 1 - Level_1 # time=123.338ms
+    
+ok 4 - Nested Context # time=124.264ms
+
+1..4

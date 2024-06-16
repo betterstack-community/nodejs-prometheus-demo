@@ -1,0 +1,109 @@
+TAP version 14
+# Subtest: trust proxy, not add properties to node req
+    1..14
+    ok 1 - should not error
+    ok 2 - ip is defined
+    ok 3 - gets ip from x-forwarded-for
+    ok 4 - host is defined
+    ok 5 - gets host from x-forwarded-host
+    ok 6 - should be equal
+    ok 7 - gets hostname from x-forwarded-host
+    ok 8 - port is defined
+    ok 9 - port is taken from x-forwarded-for or host
+    ok 10 - ip is defined
+    ok 11 - gets ip from x-forwarded-for
+    ok 12 - gets ips from x-forwarded-for
+    ok 13 - port is defined
+    ok 14 - port is taken from x-forwarded-for or host
+ok 1 - trust proxy, not add properties to node req # time=29.578ms
+
+# Subtest: trust proxy chain
+    1..9
+    ok 1 - should not error
+    ok 2 - ip is defined
+    ok 3 - gets ip from x-forwarded-for
+    ok 4 - host is defined
+    ok 5 - gets host from x-forwarded-host
+    ok 6 - should be equal
+    ok 7 - gets hostname from x-forwarded-host
+    ok 8 - port is defined
+    ok 9 - port is taken from x-forwarded-for or host
+ok 2 - trust proxy chain # time=7.178ms
+
+# Subtest: trust proxy function
+    1..9
+    ok 1 - should not error
+    ok 2 - ip is defined
+    ok 3 - gets ip from x-forwarded-for
+    ok 4 - host is defined
+    ok 5 - gets host from x-forwarded-host
+    ok 6 - should be equal
+    ok 7 - gets hostname from x-forwarded-host
+    ok 8 - port is defined
+    ok 9 - port is taken from x-forwarded-for or host
+ok 3 - trust proxy function # time=8.164ms
+
+# Subtest: trust proxy number
+    1..10
+    ok 1 - should not error
+    ok 2 - ip is defined
+    ok 3 - gets ip from x-forwarded-for
+    ok 4 - host is defined
+    ok 5 - gets host from x-forwarded-host
+    ok 6 - should be equal
+    ok 7 - gets hostname from x-forwarded-host
+    ok 8 - gets ips from x-forwarded-for
+    ok 9 - port is defined
+    ok 10 - port is taken from x-forwarded-for or host
+ok 4 - trust proxy number # time=5.26ms
+
+# Subtest: trust proxy IP addresses
+    1..10
+    ok 1 - should not error
+    ok 2 - ip is defined
+    ok 3 - gets ip from x-forwarded-for
+    ok 4 - host is defined
+    ok 5 - gets host from x-forwarded-host
+    ok 6 - should be equal
+    ok 7 - gets hostname from x-forwarded-host
+    ok 8 - gets ips from x-forwarded-for
+    ok 9 - port is defined
+    ok 10 - port is taken from x-forwarded-for or host
+ok 5 - trust proxy IP addresses # time=8.978ms
+
+# Subtest: trust proxy protocol
+    1..31
+    ok 1 - should not error
+    ok 2 - ip is defined
+    ok 3 - gets ip from x-forwarded-for
+    ok 4 - host is defined
+    ok 5 - gets host from x-forwarded-host
+    ok 6 - should be equal
+    ok 7 - gets hostname from x-forwarded-host
+    ok 8 - protocol is defined
+    ok 9 - gets protocol from x-forwarded-proto
+    ok 10 - port is defined
+    ok 11 - port is taken from x-forwarded-for or host
+    ok 12 - ip is defined
+    ok 13 - gets ip from x-forwarded-for
+    ok 14 - host is defined
+    ok 15 - gets host from x-forwarded-host
+    ok 16 - should be equal
+    ok 17 - gets hostname from x-forwarded-host
+    ok 18 - protocol is defined
+    ok 19 - gets protocol from x-forwarded-proto
+    ok 20 - port is defined
+    ok 21 - port is taken from x-forwarded-for or host
+    ok 22 - ip is defined
+    ok 23 - gets ip from x-forwarded-for
+    ok 24 - host is defined
+    ok 25 - gets host from x-forwarded-host
+    ok 26 - should be equal
+    ok 27 - gets hostname from x-forwarded-host
+    ok 28 - protocol is defined
+    ok 29 - gets protocol from x-forwarded-proto
+    ok 30 - port is defined
+    ok 31 - port is taken from x-forwarded-for or host
+ok 6 - trust proxy protocol # time=9.601ms
+
+1..6

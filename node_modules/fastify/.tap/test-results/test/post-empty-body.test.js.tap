@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: post empty body
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 1 - post empty body # time=40.734ms
+
+1..1

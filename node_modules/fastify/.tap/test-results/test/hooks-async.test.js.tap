@@ -1,0 +1,286 @@
+TAP version 14
+# Subtest: async hooks
+    1..21
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should not error
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equivalent
+    ok 14 - should not error
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should not error
+    ok 20 - should be equal
+    ok 21 - should be equal
+ok 1 - async hooks # time=47.54ms
+
+# Subtest: modify payload
+    1..10
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+ok 2 - modify payload # time=7.068ms
+
+# Subtest: onRequest hooks should be able to block a request
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 3 - onRequest hooks should be able to block a request # time=2.11ms
+
+# Subtest: preParsing hooks should be able to modify the payload
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 4 - preParsing hooks should be able to modify the payload # time=2.694ms
+
+# Subtest: preParsing hooks should be able to supply statusCode
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 5 - preParsing hooks should be able to supply statusCode # time=2.34ms
+
+# Subtest: preParsing hooks should ignore statusCode 200 in stream error
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 6 - preParsing hooks should ignore statusCode 200 in stream error # time=1.642ms
+
+# Subtest: preParsing hooks should ignore non-number statusCode in stream error
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 7 - preParsing hooks should ignore non-number statusCode in stream error # time=2.004ms
+
+# Subtest: preParsing hooks should default to statusCode 400 if stream error
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 8 - preParsing hooks should default to statusCode 400 if stream error # time=1.72ms
+
+# Subtest: preParsing hooks should handle errors
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 9 - preParsing hooks should handle errors # time=1.632ms
+
+# Subtest: preHandler hooks should be able to block a request
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 10 - preHandler hooks should be able to block a request # time=2.243ms
+
+# Subtest: preValidation hooks should be able to block a request
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 11 - preValidation hooks should be able to block a request # time=1.657ms
+
+# Subtest: preValidation hooks should be able to change request body before validation
+    1..4
+    ok 1 - (unnamed test)
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 12 - preValidation hooks should be able to change request body before validation # time=27.356ms
+
+# Subtest: preSerialization hooks should be able to modify the payload
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 13 - preSerialization hooks should be able to modify the payload # time=2.293ms
+
+# Subtest: preSerialization hooks should handle errors
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 14 - preSerialization hooks should handle errors # time=1.464ms
+
+# Subtest: preValidation hooks should handle throwing null
+    1..4
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 15 - preValidation hooks should handle throwing null # time=1.727ms
+
+# Subtest: preValidation hooks should handle throwing a string
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 16 - preValidation hooks should handle throwing a string # time=1.289ms
+
+# Subtest: onRequest hooks should be able to block a request (last hook)
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 17 - onRequest hooks should be able to block a request (last hook) # time=1.667ms
+
+# Subtest: preHandler hooks should be able to block a request (last hook)
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 18 - preHandler hooks should be able to block a request (last hook) # time=1.981ms
+
+# Subtest: onRequest respond with a stream
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 19 - onRequest respond with a stream # time=4.67ms
+
+# Subtest: preHandler respond with a stream
+    1..7
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+ok 20 - preHandler respond with a stream # time=3.404ms
+
+# Subtest: Should log a warning if is an async function with `done`
+    # Subtest: 2 arguments
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 1 - 2 arguments # time=0.547ms
+    
+    # Subtest: 3 arguments
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 2 - 3 arguments # time=0.584ms
+    
+    # Subtest: 4 arguments
+        1..6
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+    ok 3 - 4 arguments # time=0.63ms
+    
+    1..3
+ok 21 - Should log a warning if is an async function with `done` # time=8.336ms
+
+# Subtest: early termination, onRequest async
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 22 - early termination, onRequest async # time=5.388ms
+
+# Subtest: The this should be the same of the encapsulation level
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    1..4
+ok 23 - The this should be the same of the encapsulation level # time=3.739ms
+
+# Subtest: preSerializationEnd should handle errors if the serialize method throws
+    # Subtest: works with sync preSerialization
+        1..2
+        ok 1 - should not error
+        ok 2 - should not be equal
+    ok 1 - works with sync preSerialization # time=4.216ms
+    
+    # Subtest: works with async preSerialization
+        1..2
+        ok 1 - should not error
+        ok 2 - should not be equal
+    ok 2 - works with async preSerialization # time=1.899ms
+    
+    1..2
+ok 24 - preSerializationEnd should handle errors if the serialize method throws # time=6.913ms
+
+# Subtest: nested hooks to do not crash on 404
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 25 - nested hooks to do not crash on 404 # time=3.077ms
+
+# Subtest: Register an hook (preHandler) as route option should fail if mixing async and callback style
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 26 - Register an hook (preHandler) as route option should fail if mixing async and callback style # time=0.457ms
+
+# Subtest: Register an hook (onSend) as route option should fail if mixing async and callback style
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 27 - Register an hook (onSend) as route option should fail if mixing async and callback style # time=0.373ms
+
+# Subtest: Register an hook (preSerialization) as route option should fail if mixing async and callback style
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 28 - Register an hook (preSerialization) as route option should fail if mixing async and callback style # time=0.355ms
+
+# Subtest: Register an hook (onError) as route option should fail if mixing async and callback style
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 29 - Register an hook (onError) as route option should fail if mixing async and callback style # time=0.354ms
+
+# Subtest: Register an hook (preParsing) as route option should fail if mixing async and callback style
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 30 - Register an hook (preParsing) as route option should fail if mixing async and callback style # time=0.354ms
+
+# Subtest: Register an hook (onRequestAbort) as route option should fail if mixing async and callback style
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 31 - Register an hook (onRequestAbort) as route option should fail if mixing async and callback style # time=0.337ms
+
+1..31

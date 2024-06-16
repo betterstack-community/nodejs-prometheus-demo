@@ -1,0 +1,12 @@
+TAP version 14
+# Subtest: connectionTimeout
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 1 - connectionTimeout # time=27.633ms
+
+1..1

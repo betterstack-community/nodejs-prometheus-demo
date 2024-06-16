@@ -1,0 +1,15 @@
+TAP version 14
+# Subtest: Should return 503 while closing - pipelining
+    ok 1 - should be equivalent
+    1..1
+ok 1 - Should return 503 while closing - pipelining # time=33.894ms
+
+# Subtest: Should close the socket abruptly - pipelining - return503OnClosing: false
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    1..4
+ok 2 - Should close the socket abruptly - pipelining - return503OnClosing: false # time=11.305ms
+
+1..2

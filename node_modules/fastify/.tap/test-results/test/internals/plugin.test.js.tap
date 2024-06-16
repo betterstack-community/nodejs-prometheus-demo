@@ -1,0 +1,48 @@
+TAP version 14
+# Subtest: shouldSkipOverride should check the 'skip-override' symbol
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - shouldSkipOverride should check the 'skip-override' symbol # time=4.76ms
+
+# Subtest: getPluginName should return plugin name if the file is cached
+    1..1
+    ok 1 - should be equal
+ok 2 - getPluginName should return plugin name if the file is cached # time=0.655ms
+
+# Subtest: getPluginName should not throw when require.cache is undefined
+    1..1
+    ok 1 - should be equal
+ok 3 - getPluginName should not throw when require.cache is undefined # time=0.532ms
+
+# Subtest: getMeta should return the object stored with the 'plugin-meta' symbol
+    1..1
+    ok 1 - should be equivalent
+ok 4 - getMeta should return the object stored with the 'plugin-meta' symbol # time=0.818ms
+
+# Subtest: checkDecorators should check if the given decorator is present in the instance
+    1..1
+    ok 1 - Everything ok
+ok 5 - checkDecorators should check if the given decorator is present in the instance # time=0.43ms
+
+# Subtest: checkDecorators should check if the given decorator is present in the instance (errored)
+    1..1
+    ok 1 - should be equal
+ok 6 - checkDecorators should check if the given decorator is present in the instance (errored) # time=0.426ms
+
+# Subtest: checkDecorators should accept optional decorators
+    1..1
+    ok 1 - Everything ok
+ok 7 - checkDecorators should accept optional decorators # time=0.3ms
+
+# Subtest: checkDependencies should check if the given dependency is present in the instance
+    1..1
+    ok 1 - Everything ok
+ok 8 - checkDependencies should check if the given dependency is present in the instance # time=0.255ms
+
+# Subtest: checkDependencies should check if the given dependency is present in the instance (errored)
+    1..1
+    ok 1 - should be equal
+ok 9 - checkDependencies should check if the given dependency is present in the instance (errored) # time=0.943ms
+
+1..9

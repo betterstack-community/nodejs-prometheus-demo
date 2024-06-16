@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: esm support
+    ok 1 - should be equal
+    1..1
+ok 1 - esm support # time=37.59ms
+
+ok 2 - should be equal
+1..2

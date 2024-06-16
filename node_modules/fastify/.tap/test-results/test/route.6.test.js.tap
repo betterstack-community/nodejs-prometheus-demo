@@ -1,0 +1,81 @@
+TAP version 14
+# Subtest: Creates a HEAD route for a GET one with prefixTrailingSlash
+    1..1
+    ok 1 - should be equal
+ok 1 - Creates a HEAD route for a GET one with prefixTrailingSlash # time=30.314ms
+
+# Subtest: Will not create a HEAD route that is not GET
+    1..11
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should not error
+    ok 11 - should be equal
+ok 2 - Will not create a HEAD route that is not GET # time=10.544ms
+
+# Subtest: HEAD route should handle properly each response type
+    1..25
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should not error
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should not error
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should be equal
+    ok 20 - should be equal
+    ok 21 - should not error
+    ok 22 - should be equal
+    ok 23 - should be equal
+    ok 24 - should be equal
+    ok 25 - should be equal
+ok 3 - HEAD route should handle properly each response type # time=7.648ms
+
+# Subtest: HEAD route should respect custom onSend handlers
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 4 - HEAD route should respect custom onSend handlers # time=2.183ms
+
+# Subtest: route onSend can be function or array of functions
+    1..12
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+ok 5 - route onSend can be function or array of functions # time=2.029ms
+
+# Subtest: no warning for exposeHeadRoute
+    1..0
+ok 6 - no warning for exposeHeadRoute # time=30.104ms
+
+1..6

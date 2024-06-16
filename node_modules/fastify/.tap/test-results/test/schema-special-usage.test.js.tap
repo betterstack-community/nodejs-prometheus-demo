@@ -1,0 +1,186 @@
+TAP version 14
+# Subtest: Ajv plugins array parameter
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 1 - Ajv plugins array parameter # time=49.666ms
+
+# Subtest: Should handle root $merge keywords in header
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 2 - Should handle root $merge keywords in header # time=18.987ms
+
+# Subtest: Should handle root $patch keywords in header
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 3 - Should handle root $patch keywords in header # time=14.592ms
+
+# Subtest: Should handle $merge keywords in body
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 4 - Should handle $merge keywords in body # time=36.887ms
+
+# Subtest: Should handle $patch keywords in body
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 5 - Should handle $patch keywords in body # time=16.101ms
+
+# Subtest: serializer read validator's schemas
+    1..4
+    ok 1 - is always empty because fastify.addSchema is not called
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 6 - serializer read validator's schemas # time=29.393ms
+
+# Subtest: setSchemaController in a plugin
+    1..5
+    ok 1 - the bucket is created
+    ok 2 - the querystring schema is compiled
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 7 - setSchemaController in a plugin # time=30.223ms
+
+# Subtest: side effect on schema let the server crash
+    1..0
+ok 8 - side effect on schema let the server crash # time=13.138ms
+
+# Subtest: only response schema trigger AJV pollution
+    1..0
+ok 9 - only response schema trigger AJV pollution # time=21.053ms
+
+# Subtest: only response schema trigger AJV pollution \#2
+    1..0
+ok 10 - only response schema trigger AJV pollution \#2 # time=16.319ms
+
+# Subtest: setSchemaController in a plugin with head routes
+    1..6
+    ok 1 - the bucket is created
+    ok 2 - the schema is reused
+    ok 3 - the schema is reused
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 11 - setSchemaController in a plugin with head routes # time=8.034ms
+
+# Subtest: multiple refs with the same ids
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 12 - multiple refs with the same ids # time=11.382ms
+
+# Subtest: JOI validation overwrite request headers
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 13 - JOI validation overwrite request headers # time=4.882ms
+
+# Subtest: Custom schema object should not trigger FST_ERR_SCH_DUPLICATE
+    ok 1 - fastify is ready
+    1..1
+ok 14 - Custom schema object should not trigger FST_ERR_SCH_DUPLICATE # time=4.96ms
+
+# Subtest: The default schema compilers should not be called when overwritten by the user
+    ok 1 - The custom validator compiler should be called
+    ok 2 - The custom serializer compiler should be called
+    1..2
+ok 15 - The default schema compilers should not be called when overwritten by the user # time=34.686ms
+
+# Subtest: Supports async JOI validation
+    1..7
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 16 - Supports async JOI validation # time=4.826ms
+
+# Subtest: Supports async AJV validation
+    1..12
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equivalent
+    ok 10 - should not error
+    ok 11 - should be equal
+    ok 12 - should be equivalent
+ok 17 - Supports async AJV validation # time=20.957ms
+
+# Subtest: Check all the async AJV validation paths
+    1..10
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+ok 18 - Check all the async AJV validation paths # time=20.086ms
+
+# Subtest: Check mixed sync and async AJV validations
+    1..12
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should not error
+    ok 12 - should be equal
+ok 19 - Check mixed sync and async AJV validations # time=13.124ms
+
+# Subtest: Check if hooks and attachValidation work with AJV validations
+    1..16
+    ok 1 - should be equal
+    ok 2 - preHandler called
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - preHandler called
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - preHandler called
+    ok 11 - should not error
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - preHandler called
+    ok 15 - should not error
+    ok 16 - should be equal
+ok 20 - Check if hooks and attachValidation work with AJV validations # time=9.884ms
+
+1..20

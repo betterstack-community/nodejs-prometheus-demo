@@ -1,0 +1,174 @@
+TAP version 14
+# Subtest: OPTIONS can be created
+    1..1
+    ok 1 - (unnamed test)
+ok 1 - OPTIONS can be created # time=8.074ms
+
+# Subtest: OPTIONS without schema can be created
+    1..1
+    ok 1 - (unnamed test)
+ok 2 - OPTIONS without schema can be created # time=0.501ms
+
+# Subtest: OPTIONS with body and querystring
+    1..1
+    ok 1 - (unnamed test)
+ok 3 - OPTIONS with body and querystring # time=0.303ms
+
+# Subtest: OPTIONS with bodyLimit option
+    1..1
+    ok 1 - (unnamed test)
+ok 4 - OPTIONS with bodyLimit option # time=0.387ms
+
+# Subtest: OPTIONS can be created
+    1..1
+    ok 1 - (unnamed test)
+ok 5 - OPTIONS can be created # time=0.647ms
+
+# Subtest: OPTIONS - correctly replies
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 6 - OPTIONS - correctly replies # time=20.203ms
+
+# Subtest: OPTIONS - correctly replies with very large body
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 7 - OPTIONS - correctly replies with very large body # time=3.876ms
+
+# Subtest: OPTIONS - correctly replies if the content type has the charset
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 8 - OPTIONS - correctly replies if the content type has the charset # time=3.496ms
+
+# Subtest: OPTIONS without schema - correctly replies
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 9 - OPTIONS without schema - correctly replies # time=1.892ms
+
+# Subtest: OPTIONS with body and querystring - correctly replies
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 10 - OPTIONS with body and querystring - correctly replies # time=1.714ms
+
+# Subtest: OPTIONS with no body - correctly replies
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 11 - OPTIONS with no body - correctly replies # time=6.258ms
+
+# Subtest: OPTIONS returns 415 - incorrect media type if body is not json
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 12 - OPTIONS returns 415 - incorrect media type if body is not json # time=1.473ms
+
+# Subtest: OPTIONS returns 415 - should return 415 if Content-Type is not json or plain text
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 13 - OPTIONS returns 415 - should return 415 if Content-Type is not json or plain text # time=1.42ms
+
+# Subtest: OPTIONS returns 400 - Bad Request
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 14 - OPTIONS returns 400 - Bad Request # time=4.603ms
+
+# Subtest: OPTIONS returns 413 - Payload Too Large
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 15 - OPTIONS returns 413 - Payload Too Large # time=2.86ms
+
+# Subtest: OPTIONS should fail with empty body and application/json content-type
+    1..0
+ok 16 - OPTIONS should fail with empty body and application/json content-type # time=0.155ms
+
+# Subtest: OPTIONS - correctly replies
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 17 - OPTIONS - correctly replies # time=2.986ms
+
+# Subtest: OPTIONS - 400 on bad parameters
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 18 - OPTIONS - 400 on bad parameters # time=1.852ms
+
+# Subtest: OPTIONS - input-validation coerce
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 19 - OPTIONS - input-validation coerce # time=3.216ms
+
+# Subtest: OPTIONS - input-validation custom schema compiler
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 20 - OPTIONS - input-validation custom schema compiler # time=5.526ms
+
+# Subtest: OPTIONS - input-validation joi schema compiler ok
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 21 - OPTIONS - input-validation joi schema compiler ok # time=6.799ms
+
+# Subtest: OPTIONS - input-validation joi schema compiler ko
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 22 - OPTIONS - input-validation joi schema compiler ko # time=2.502ms
+
+# Subtest: OPTIONS - input-validation yup schema compiler ok
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 23 - OPTIONS - input-validation yup schema compiler ok # time=1.859ms
+
+# Subtest: OPTIONS - input-validation yup schema compiler ko
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should match pattern
+ok 24 - OPTIONS - input-validation yup schema compiler ko # time=2.264ms
+
+# Subtest: OPTIONS - input-validation instance custom schema compiler encapsulated
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 25 - OPTIONS - input-validation instance custom schema compiler encapsulated # time=1.263ms
+
+# Subtest: OPTIONS - input-validation custom schema compiler encapsulated
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 26 - OPTIONS - input-validation custom schema compiler encapsulated # time=0.941ms
+
+1..26

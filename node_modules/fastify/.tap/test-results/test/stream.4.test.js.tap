@@ -1,0 +1,40 @@
+TAP version 14
+# Subtest: Destroying streams prematurely should call abort method
+    1..7
+    ok 1 - should not error
+    ok 2 - Received request
+    ok 3 - should be equal
+    ok 4 - Response closed
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+ok 1 - Destroying streams prematurely should call abort method # time=41.605ms
+
+# Subtest: Destroying streams prematurely, log is disabled
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - Response closed
+    ok 4 - should be equal
+ok 2 - Destroying streams prematurely, log is disabled # time=5.579ms
+
+# Subtest: should respond with a stream1
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 3 - should respond with a stream1 # time=14.99ms
+
+# Subtest: return a 404 if the stream emits a 404 error
+    1..5
+    ok 1 - should not error
+    ok 2 - Received request
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 4 - return a 404 if the stream emits a 404 error # time=9.276ms
+
+ok 5 - should support send module 200 and 404 # SKIP
+1..5

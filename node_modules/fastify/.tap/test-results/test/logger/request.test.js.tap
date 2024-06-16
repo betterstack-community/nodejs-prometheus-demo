@@ -1,0 +1,82 @@
+TAP version 14
+# Subtest: request
+    1..7
+    # Subtest: The request id header key can be customized
+        1..8
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - message is set
+        ok 5 - should be equal
+        ok 6 - message is set
+        ok 7 - should be equal
+        ok 8 - message is set
+    ok 1 - The request id header key can be customized # time=16.878ms
+    
+    # Subtest: The request id header key can be ignored
+        1..8
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - message is set
+        ok 5 - should be equal
+        ok 6 - message is set
+        ok 7 - should be equal
+        ok 8 - message is set
+    ok 2 - The request id header key can be ignored # time=2.64ms
+    
+    # Subtest: The request id header key can be customized along with a custom id generator
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should match pattern
+        ok 6 - should match pattern
+        ok 7 - should match pattern
+        ok 8 - should match pattern
+        ok 9 - should match pattern
+        ok 10 - should match pattern
+    ok 3 - The request id header key can be customized along with a custom id generator # time=4.449ms
+    
+    # Subtest: The request id header key can be ignored along with a custom id generator
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should match pattern
+        ok 6 - should match pattern
+        ok 7 - should match pattern
+        ok 8 - should match pattern
+        ok 9 - should match pattern
+        ok 10 - should match pattern
+    ok 4 - The request id header key can be ignored along with a custom id generator # time=2.921ms
+    
+    # Subtest: The request id log label can be changed
+        1..5
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 5 - The request id log label can be changed # time=2.554ms
+    
+    # Subtest: should redact the authorization header if so specified
+        1..6
+        ok 1 - should be equivalent
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+        ok 6 - should match pattern
+    ok 6 - should redact the authorization header if so specified # time=10.014ms
+    
+    # Subtest: should not throw error when serializing custom req
+        1..1
+        ok 1 - should be equivalent
+    ok 7 - should not throw error when serializing custom req # time=1.329ms
+    
+ok 1 - request # time=54.404ms
+
+1..1

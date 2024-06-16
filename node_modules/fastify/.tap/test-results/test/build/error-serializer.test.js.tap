@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: check generated code syntax
+    1..1
+    ok 1 - should be equal
+ok 1 - check generated code syntax # time=721.998ms
+
+ok 2 - ensure the current error serializer is latest # SKIP
+1..2

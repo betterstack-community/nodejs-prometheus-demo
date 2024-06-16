@@ -1,0 +1,199 @@
+TAP version 14
+# Subtest: contentTypeParser method should exist
+    1..1
+    ok 1 - should be equal
+ok 1 - contentTypeParser method should exist # time=7.839ms
+
+# Subtest: contentTypeParser should add a custom parser
+    1..3
+    ok 1 - should not error
+    # Subtest: in POST
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 2 - in POST # time=8.436ms
+    
+    # Subtest: in OPTIONS
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 3 - in OPTIONS # time=1.779ms
+    
+ok 2 - contentTypeParser should add a custom parser # time=28.143ms
+
+# Subtest: contentTypeParser should handle multiple custom parsers
+    1..7
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 3 - contentTypeParser should handle multiple custom parsers # time=4.957ms
+
+# Subtest: contentTypeParser should handle an array of custom contentTypes
+    1..7
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 4 - contentTypeParser should handle an array of custom contentTypes # time=5.791ms
+
+# Subtest: contentTypeParser should handle errors
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 5 - contentTypeParser should handle errors # time=5.959ms
+
+# Subtest: contentTypeParser should support encapsulation
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 6 - contentTypeParser should support encapsulation # time=3.993ms
+
+# Subtest: contentTypeParser should support encapsulation, second try
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 7 - contentTypeParser should support encapsulation, second try # time=5.004ms
+
+# Subtest: contentTypeParser shouldn't support request with undefined "Content-Type"
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 8 - contentTypeParser shouldn't support request with undefined "Content-Type" # time=6.93ms
+
+# Subtest: the content type should be a string or RegExp
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 9 - the content type should be a string or RegExp # time=0.841ms
+
+# Subtest: the content type cannot be an empty string
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 10 - the content type cannot be an empty string # time=0.471ms
+
+# Subtest: the content type handler should be a function
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 11 - the content type handler should be a function # time=0.367ms
+
+# Subtest: catch all content type parser
+    1..7
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 12 - catch all content type parser # time=12.873ms
+
+# Subtest: catch all content type parser should not interfere with other conte type parsers
+    1..7
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 13 - catch all content type parser should not interfere with other conte type parsers # time=5.071ms
+
+# Subtest: '*' catch undefined Content-Type requests
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 14 - '*' catch undefined Content-Type requests # time=7.066ms
+
+# Subtest: cannot add custom parser after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - (unnamed test)
+ok 15 - cannot add custom parser after binding # time=3.159ms
+
+# Subtest: Can override the default json parser
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 16 - Can override the default json parser # time=4.305ms
+
+# Subtest: Can override the default plain text parser
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 17 - Can override the default plain text parser # time=4.397ms
+
+# Subtest: Can override the default json parser in a plugin
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 18 - Can override the default json parser in a plugin # time=5.353ms
+
+# Subtest: Can't override the json parser multiple times
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 19 - Can't override the json parser multiple times # time=0.508ms
+
+# Subtest: Can't override the plain text parser multiple times
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 20 - Can't override the plain text parser multiple times # time=0.472ms
+
+# Subtest: Should get the body as string
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 21 - Should get the body as string # time=3.711ms
+
+# Subtest: Should return defined body with no custom parser defined and content type = 'text/plain'
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 22 - Should return defined body with no custom parser defined and content type = 'text/plain' # time=4.172ms
+
+# Subtest: Should have typeof body object with no custom parser defined, no body defined and content type = 'text/plain'
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 23 - Should have typeof body object with no custom parser defined, no body defined and content type = 'text/plain' # time=3.835ms
+
+1..23

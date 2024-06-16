@@ -1,0 +1,623 @@
+TAP version 14
+# Subtest: default 404
+    1..5
+    ok 1 - should not error
+    # Subtest: unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 2 - unsupported method # time=9.532ms
+    
+    # Subtest: framework-unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 3 - framework-unsupported method # time=2.322ms
+    
+    # Subtest: unsupported route
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 4 - unsupported route # time=1.37ms
+    
+    # Subtest: using post method and multipart/formdata
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 5 - using post method and multipart/formdata # time=2.364ms
+    
+ok 1 - default 404 # time=53.264ms
+
+# Subtest: customized 404
+    1..6
+    ok 1 - should not error
+    # Subtest: unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 2 - unsupported method # time=2.857ms
+    
+    # Subtest: framework-unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 3 - framework-unsupported method # time=2.251ms
+    
+    # Subtest: unsupported route
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 4 - unsupported route # time=2.636ms
+    
+    # Subtest: with error object
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 5 - with error object # time=2.354ms
+    
+    # Subtest: error object with headers property
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+    ok 6 - error object with headers property # time=1.976ms
+    
+ok 2 - customized 404 # time=18.45ms
+
+# Subtest: custom header in notFound handler
+    1..2
+    ok 1 - should not error
+    # Subtest: not found with custom header
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 2 - not found with custom header # time=1.465ms
+    
+ok 3 - custom header in notFound handler # time=6.612ms
+
+# Subtest: setting a custom 404 handler multiple times is an error
+    1..5
+    # Subtest: at the root level
+        1..2
+        ok 1 - type is Error
+        ok 2 - should be equal
+    ok 1 - at the root level # time=0.812ms
+    
+    # Subtest: at the plugin level
+        1..3
+        ok 1 - type is Error
+        ok 2 - should be equal
+        ok 3 - should not error
+    ok 2 - at the plugin level # time=10.358ms
+    
+    # Subtest: at multiple levels
+        1..3
+        ok 1 - type is Error
+        ok 2 - should be equal
+        ok 3 - should not error
+    ok 3 - at multiple levels # time=7.263ms
+    
+    # Subtest: at multiple levels / 2
+        1..3
+        ok 1 - type is Error
+        ok 2 - should be equal
+        ok 3 - should not error
+    ok 4 - at multiple levels / 2 # time=5.078ms
+    
+    # Subtest: in separate plugins at the same level
+        1..3
+        ok 1 - type is Error
+        ok 2 - should be equal
+        ok 3 - should not error
+    ok 5 - in separate plugins at the same level # time=6.002ms
+    
+ok 4 - setting a custom 404 handler multiple times is an error # time=35.327ms
+
+# Subtest: encapsulated 404
+    1..13
+    ok 1 - should not error
+    # Subtest: root unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 2 - root unsupported method # time=2.571ms
+    
+    # Subtest: root framework-unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 3 - root framework-unsupported method # time=1.398ms
+    
+    # Subtest: root unsupported route
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 4 - root unsupported route # time=0.763ms
+    
+    # Subtest: unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 5 - unsupported method # time=6.298ms
+    
+    # Subtest: framework-unsupported method
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 6 - framework-unsupported method # time=1.458ms
+    
+    # Subtest: unsupported route
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 7 - unsupported route # time=2.971ms
+    
+    # Subtest: unsupported method 2
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 8 - unsupported method 2 # time=1.274ms
+    
+    # Subtest: framework-unsupported method 2
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 9 - framework-unsupported method 2 # time=0.93ms
+    
+    # Subtest: unsupported route 2
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 10 - unsupported route 2 # time=2.264ms
+    
+    # Subtest: unsupported method 3
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 11 - unsupported method 3 # time=3.582ms
+    
+    # Subtest: framework-unsupported method 3
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 12 - framework-unsupported method 3 # time=2.953ms
+    
+    # Subtest: unsupported route 3
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 13 - unsupported route 3 # time=1.975ms
+    
+ok 5 - encapsulated 404 # time=41.532ms
+
+# Subtest: custom 404 hook and handler context
+    1..21
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should not error
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should not error
+    ok 20 - should be equal
+    ok 21 - should be equal
+ok 6 - custom 404 hook and handler context # time=8.487ms
+
+# Subtest: encapsulated custom 404 without - prefix hook and handler context
+    1..13
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should not error
+    ok 12 - should be equal
+    ok 13 - should be equal
+ok 7 - encapsulated custom 404 without - prefix hook and handler context # time=2.087ms
+
+# Subtest: run hooks on default 404
+    1..7
+    ok 1 - should not error
+    ok 2 - onRequest called
+    ok 3 - preHandler called
+    ok 4 - onSend called
+    ok 5 - onResponse called
+    ok 6 - should not error
+    ok 7 - should be equal
+ok 8 - run hooks on default 404 # time=16.279ms
+
+# Subtest: run non-encapsulated plugin hooks on default 404
+    1..6
+    ok 1 - onRequest called
+    ok 2 - preHandler called
+    ok 3 - onSend called
+    ok 4 - onResponse called
+    ok 5 - should not error
+    ok 6 - should be equal
+ok 9 - run non-encapsulated plugin hooks on default 404 # time=2.64ms
+
+# Subtest: run non-encapsulated plugin hooks on custom 404
+    1..11
+    ok 1 - onRequest called
+    ok 2 - onRequest called
+    ok 3 - preHandler called
+    ok 4 - preHandler called
+    ok 5 - onSend called
+    ok 6 - onSend called
+    ok 7 - onResponse called
+    ok 8 - onResponse called
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should be equal
+ok 10 - run non-encapsulated plugin hooks on custom 404 # time=4.437ms
+
+# Subtest: run hook with encapsulated 404
+    1..11
+    ok 1 - should not error
+    ok 2 - onRequest called
+    ok 3 - onRequest 2 called
+    ok 4 - preHandler called
+    ok 5 - preHandler 2 called
+    ok 6 - onSend called
+    ok 7 - onSend 2 called
+    ok 8 - onResponse called
+    ok 9 - onResponse 2 called
+    ok 10 - should not error
+    ok 11 - should be equal
+ok 11 - run hook with encapsulated 404 # time=10.232ms
+
+# Subtest: run hook with encapsulated 404 and framework-unsupported method
+    1..11
+    ok 1 - should not error
+    ok 2 - onRequest called
+    ok 3 - onRequest 2 called
+    ok 4 - preHandler called
+    ok 5 - preHandler 2 called
+    ok 6 - onSend called
+    ok 7 - onSend 2 called
+    ok 8 - onResponse called
+    ok 9 - onResponse 2 called
+    ok 10 - should not error
+    ok 11 - should be equal
+ok 12 - run hook with encapsulated 404 and framework-unsupported method # time=9.571ms
+
+# Subtest: hooks check 404
+    1..13
+    ok 1 - should not error
+    ok 2 - onRequest
+    ok 3 - should be equivalent
+    ok 4 - onSend
+    ok 5 - onResponse
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - onRequest
+    ok 9 - should be equivalent
+    ok 10 - onSend
+    ok 11 - onResponse
+    ok 12 - should not error
+    ok 13 - should be equal
+ok 13 - hooks check 404 # time=6.445ms
+
+# Subtest: setNotFoundHandler should not suppress duplicated routes checking
+    1..1
+    ok 1 - should be equal
+ok 14 - setNotFoundHandler should not suppress duplicated routes checking # time=1.591ms
+
+# Subtest: log debug for 404
+    1..1
+    # Subtest: log debug
+        1..7
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+    ok 1 - log debug # time=9.533ms
+    
+ok 15 - log debug for 404 # time=12.137ms
+
+# Subtest: Unknown method
+    1..5
+    ok 1 - should not error
+    ok 2 - expected to throw
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent strictly
+ok 16 - Unknown method # time=6.114ms
+
+# Subtest: recognizes errors from the http-errors module
+    1..5
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equivalent strictly
+ok 17 - recognizes errors from the http-errors module # time=5.998ms
+
+# Subtest: the default 404 handler can be invoked inside a prefixed plugin
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent strictly
+ok 18 - the default 404 handler can be invoked inside a prefixed plugin # time=1.953ms
+
+# Subtest: an inherited custom 404 handler can be invoked inside a prefixed plugin
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 19 - an inherited custom 404 handler can be invoked inside a prefixed plugin # time=1.735ms
+
+# Subtest: encapsulated custom 404 handler without a prefix is the handler for the entire 404 level
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 20 - encapsulated custom 404 handler without a prefix is the handler for the entire 404 level # time=4.485ms
+
+# Subtest: cannot set notFoundHandler after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - (unnamed test)
+ok 21 - cannot set notFoundHandler after binding # time=4.147ms
+
+# Subtest: 404 inside onSend
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 22 - 404 inside onSend # time=9.811ms
+
+# Subtest: onSend hooks run when an encapsulated route invokes the notFound handler
+    1..3
+    ok 1 - onSend hook called
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 23 - onSend hooks run when an encapsulated route invokes the notFound handler # time=1.791ms
+
+# Subtest: preHandler option for setNotFoundHandler
+    1..10
+    # Subtest: preHandler option
+        1..2
+        ok 1 - should not error
+        ok 2 - should be equivalent
+    ok 1 - preHandler option # time=3.845ms
+    
+    # Subtest: preHandler hook in setNotFoundHandler should be called when callNotFound
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equivalent
+    ok 2 - preHandler hook in setNotFoundHandler should be called when callNotFound # time=1.64ms
+    
+    # Subtest: preHandler hook in setNotFoundHandler should accept an array of functions and be called when callNotFound
+        1..2
+        ok 1 - should not error
+        ok 2 - should be equivalent
+    ok 3 - preHandler hook in setNotFoundHandler should accept an array of functions and be called when callNotFound # time=3.605ms
+    
+    # Subtest: preHandler option should be called after preHandler hook
+        1..2
+        ok 1 - should not error
+        ok 2 - should be equivalent
+    ok 4 - preHandler option should be called after preHandler hook # time=3.618ms
+    
+    # Subtest: preHandler option should be unique per prefix
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equivalent
+        ok 3 - should not error
+        ok 4 - should be equivalent
+    ok 5 - preHandler option should be unique per prefix # time=5.181ms
+    
+    # Subtest: preHandler option should handle errors
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 6 - preHandler option should handle errors # time=1.445ms
+    
+    # Subtest: preHandler option should handle errors with custom status code
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 7 - preHandler option should handle errors with custom status code # time=1.44ms
+    
+    # Subtest: preHandler option could accept an array of functions
+        1..2
+        ok 1 - should not error
+        ok 2 - should be equivalent
+    ok 8 - preHandler option could accept an array of functions # time=1.374ms
+    
+    # Subtest: preHandler option does not interfere with preHandler
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equivalent
+        ok 3 - should not error
+        ok 4 - should be equivalent
+    ok 9 - preHandler option does not interfere with preHandler # time=2.824ms
+    
+    # Subtest: preHandler option should keep the context
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equivalent
+    ok 10 - preHandler option should keep the context # time=1.302ms
+    
+ok 24 - preHandler option for setNotFoundHandler # time=29.204ms
+
+# Subtest: reply.notFound invoked the notFound handler
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 25 - reply.notFound invoked the notFound handler # time=1.424ms
+
+# Subtest: The custom error handler should be invoked after the custom not found handler
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - type is Error
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 26 - The custom error handler should be invoked after the custom not found handler # time=4.089ms
+
+# Subtest: If the custom not found handler does not use an Error, the custom error handler should not be called
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 27 - If the custom not found handler does not use an Error, the custom error handler should not be called # time=8.547ms
+
+# Subtest: preValidation option
+    1..3
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equivalent
+ok 28 - preValidation option # time=1.455ms
+
+# Subtest: preValidation option could accept an array of functions
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equivalent
+ok 29 - preValidation option could accept an array of functions # time=1.433ms
+
+# Subtest: Should fail to invoke callNotFound inside a 404 handler
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 30 - Should fail to invoke callNotFound inside a 404 handler # time=2.132ms
+
+# Subtest: 400 in case of bad url (pre find-my-way v2.2.0 was a 404)
+    # Subtest: Dynamic route
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 1 - Dynamic route # time=2.744ms
+    
+    # Subtest: Wildcard
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 2 - Wildcard # time=1.199ms
+    
+    # Subtest: No route registered
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 3 - No route registered # time=0.989ms
+    
+    # Subtest: Only / is registered
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 4 - Only / is registered # time=1.147ms
+    
+    # Subtest: customized 404
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 5 - customized 404 # time=1.428ms
+    
+    1..5
+ok 31 - 400 in case of bad url (pre find-my-way v2.2.0 was a 404) # time=8.5ms
+
+# Subtest: setNotFoundHandler should be chaining fastify instance
+    # Subtest: Register route after setNotFoundHandler
+        1..6
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should not error
+        ok 5 - should be equal
+        ok 6 - should be equal
+    ok 1 - Register route after setNotFoundHandler # time=5.244ms
+    
+    1..1
+ok 32 - setNotFoundHandler should be chaining fastify instance # time=5.923ms
+
+# Subtest: Send 404 when frameworkError calls reply.callNotFound
+    # Subtest: Dynamic route
+        1..4
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 1 - Dynamic route # time=1.483ms
+    
+    1..1
+ok 33 - Send 404 when frameworkError calls reply.callNotFound # time=2.226ms
+
+# Subtest: hooks are applied to not found handlers /1
+    ok 1 - should be equal
+    1..1
+ok 34 - hooks are applied to not found handlers /1 # time=1.868ms
+
+# Subtest: hooks are applied to not found handlers /2
+    ok 1 - should be equal
+    1..1
+ok 35 - hooks are applied to not found handlers /2 # time=1.171ms
+
+# Subtest: hooks are applied to not found handlers /3
+    ok 1 - should be equal
+    1..1
+ok 36 - hooks are applied to not found handlers /3 # time=1.152ms
+
+1..36

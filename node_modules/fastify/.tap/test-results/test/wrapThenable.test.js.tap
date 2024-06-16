@@ -1,0 +1,11 @@
+TAP version 14
+# Subtest: should resolve immediately when reply[kReplyHijacked] is true
+    1..0
+ok 1 - should resolve immediately when reply[kReplyHijacked] is true # time=1.028ms
+
+# Subtest: should reject immediately when reply[kReplyHijacked] is true
+    1..1
+    ok 1 - should be equal
+ok 2 - should reject immediately when reply[kReplyHijacked] is true # time=3.683ms
+
+1..2

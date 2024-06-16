@@ -1,0 +1,19 @@
+TAP version 14
+# Subtest: sync route
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 1 - sync route # time=15.732ms
+
+# Subtest: sync route return null
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 2 - sync route return null # time=1.773ms
+
+# Subtest: sync route, error
+    ok 1 - should be equal
+    1..1
+ok 3 - sync route, error # time=1.742ms
+
+1..3

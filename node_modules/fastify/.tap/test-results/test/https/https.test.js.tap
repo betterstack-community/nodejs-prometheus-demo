@@ -1,0 +1,45 @@
+TAP version 14
+# Subtest: https
+    1..4
+    ok 1 - Key/cert successfully loaded
+    ok 2 - should not error
+    # Subtest: https get request
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+    ok 3 - https get request # time=13.498ms
+    
+    # Subtest: https get request without trust proxy - protocol
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equivalent
+        ok 3 - should not error
+        ok 4 - should be equivalent
+    ok 4 - https get request without trust proxy - protocol # time=5.126ms
+    
+ok 1 - https # time=69.416ms
+
+# Subtest: https - headers
+    1..4
+    ok 1 - Key/cert successfully loaded
+    ok 2 - should not error
+    # Subtest: https get request
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 3 - https get request # time=4.487ms
+    
+    # Subtest: https get request - test port fall back
+        1..3
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+    ok 4 - https get request - test port fall back # time=3.723ms
+    
+ok 2 - https - headers # time=16.107ms
+
+1..2

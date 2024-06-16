@@ -1,0 +1,104 @@
+TAP version 14
+# Subtest: Should honor ignoreTrailingSlash option
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 1 - Should honor ignoreTrailingSlash option # time=24.387ms
+
+# Subtest: Should honor ignoreDuplicateSlashes option
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 2 - Should honor ignoreDuplicateSlashes option # time=2.69ms
+
+# Subtest: Should honor ignoreTrailingSlash and ignoreDuplicateSlashes options
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 3 - Should honor ignoreTrailingSlash and ignoreDuplicateSlashes options # time=9.899ms
+
+# Subtest: Should honor maxParamLength option
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 4 - Should honor maxParamLength option # time=2.528ms
+
+# Subtest: Should expose router options via getters on request and reply
+    1..9
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+ok 5 - Should expose router options via getters on request and reply # time=25.273ms
+
+# Subtest: Should set is404 flag for unmatched paths
+    1..3
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 6 - Should set is404 flag for unmatched paths # time=1.587ms
+
+# Subtest: Should honor frameworkErrors option - FST_ERR_BAD_URL
+    1..3
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 7 - Should honor frameworkErrors option - FST_ERR_BAD_URL # time=1.687ms
+
+# Subtest: Should supply Fastify request to the logger in frameworkErrors wrapper - FST_ERR_BAD_URL
+    1..8
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+ok 8 - Should supply Fastify request to the logger in frameworkErrors wrapper - FST_ERR_BAD_URL # time=4.376ms
+
+# Subtest: Should honor disableRequestLogging option in frameworkErrors wrapper - FST_ERR_BAD_URL
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 9 - Should honor disableRequestLogging option in frameworkErrors wrapper - FST_ERR_BAD_URL # time=1.672ms
+
+# Subtest: Should honor frameworkErrors option - FST_ERR_ASYNC_CONSTRAINT
+    1..3
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 10 - Should honor frameworkErrors option - FST_ERR_ASYNC_CONSTRAINT # time=1.809ms
+
+# Subtest: Should supply Fastify request to the logger in frameworkErrors wrapper - FST_ERR_ASYNC_CONSTRAINT
+    1..8
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+ok 11 - Should supply Fastify request to the logger in frameworkErrors wrapper - FST_ERR_ASYNC_CONSTRAINT # time=1.813ms
+
+# Subtest: Should honor disableRequestLogging option in frameworkErrors wrapper - FST_ERR_ASYNC_CONSTRAINT
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 12 - Should honor disableRequestLogging option in frameworkErrors wrapper - FST_ERR_ASYNC_CONSTRAINT # time=1.468ms
+
+1..12

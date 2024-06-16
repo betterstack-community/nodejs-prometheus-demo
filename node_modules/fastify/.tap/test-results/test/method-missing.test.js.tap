@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: missing method from http client
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 1 - missing method from http client # time=32.315ms
+
+1..1

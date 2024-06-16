@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: named exports support
+    ok 1 - should be equal
+    1..1
+ok 1 - named exports support # time=11.996ms
+
+ok 2 - should be equal
+1..2

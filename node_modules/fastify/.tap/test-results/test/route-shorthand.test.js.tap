@@ -1,0 +1,190 @@
+TAP version 14
+# Subtest: route-shorthand
+    1..19
+    # Subtest: route-shorthand - get
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 1 - route-shorthand - get # time=30.363ms
+    
+    # Subtest: route-shorthand - head
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 2 - route-shorthand - head # time=4.955ms
+    
+    # Subtest: route-shorthand - trace
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 3 - route-shorthand - trace # time=3.728ms
+    
+    # Subtest: route-shorthand - unlock
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 4 - route-shorthand - unlock # time=3.437ms
+    
+    # Subtest: route-shorthand - delete
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 5 - route-shorthand - delete # time=4.104ms
+    
+    # Subtest: route-shorthand - options
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 6 - route-shorthand - options # time=4.898ms
+    
+    # Subtest: route-shorthand - patch
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 7 - route-shorthand - patch # time=5.26ms
+    
+    # Subtest: route-shorthand - put
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 8 - route-shorthand - put # time=4.229ms
+    
+    # Subtest: route-shorthand - post
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 9 - route-shorthand - post # time=3.483ms
+    
+    # Subtest: route-shorthand - copy
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 10 - route-shorthand - copy # time=4.816ms
+    
+    # Subtest: route-shorthand - lock
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 11 - route-shorthand - lock # time=4.316ms
+    
+    # Subtest: route-shorthand - move
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 12 - route-shorthand - move # time=6.801ms
+    
+    # Subtest: route-shorthand - mkcol
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 13 - route-shorthand - mkcol # time=6.53ms
+    
+    # Subtest: route-shorthand - propfind
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 14 - route-shorthand - propfind # time=3.506ms
+    
+    # Subtest: route-shorthand - proppatch
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 15 - route-shorthand - proppatch # time=3.138ms
+    
+    # Subtest: route-shorthand - report
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 16 - route-shorthand - report # time=4.064ms
+    
+    # Subtest: route-shorthand - search
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 17 - route-shorthand - search # time=4.785ms
+    
+    # Subtest: route-shorthand - mkcalendar
+        1..3
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+    ok 18 - route-shorthand - mkcalendar # time=17.114ms
+    
+    # Subtest: route-shorthand - all
+        1..54
+        ok 1 - should be equal
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should not error
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should not error
+        ok 9 - should be equal
+        ok 10 - should be equal
+        ok 11 - should not error
+        ok 12 - should be equal
+        ok 13 - should be equal
+        ok 14 - should not error
+        ok 15 - should be equal
+        ok 16 - should be equal
+        ok 17 - should not error
+        ok 18 - should be equal
+        ok 19 - should be equal
+        ok 20 - should not error
+        ok 21 - should be equal
+        ok 22 - should be equal
+        ok 23 - should not error
+        ok 24 - should be equal
+        ok 25 - should be equal
+        ok 26 - should not error
+        ok 27 - should be equal
+        ok 28 - should be equal
+        ok 29 - should not error
+        ok 30 - should be equal
+        ok 31 - should be equal
+        ok 32 - should not error
+        ok 33 - should be equal
+        ok 34 - should be equal
+        ok 35 - should not error
+        ok 36 - should be equal
+        ok 37 - should be equal
+        ok 38 - should not error
+        ok 39 - should be equal
+        ok 40 - should be equal
+        ok 41 - should not error
+        ok 42 - should be equal
+        ok 43 - should be equal
+        ok 44 - should not error
+        ok 45 - should be equal
+        ok 46 - should be equal
+        ok 47 - should not error
+        ok 48 - should be equal
+        ok 49 - should be equal
+        ok 50 - should not error
+        ok 51 - should be equal
+        ok 52 - should be equal
+        ok 53 - should not error
+        ok 54 - should be equal
+    ok 19 - route-shorthand - all # time=23.284ms
+    
+ok 1 - route-shorthand # time=150.314ms
+
+1..1

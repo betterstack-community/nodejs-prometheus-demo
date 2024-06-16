@@ -1,0 +1,445 @@
+TAP version 14
+# Subtest: Should expose addSchema function
+    1..1
+    ok 1 - should be equal
+ok 1 - Should expose addSchema function # time=6.888ms
+
+# Subtest: Should expose getSchema function
+    1..1
+    ok 1 - should be equal
+ok 2 - Should expose getSchema function # time=0.492ms
+
+# Subtest: Should expose getSchemas function
+    1..1
+    ok 1 - should be equal
+ok 3 - Should expose getSchemas function # time=0.327ms
+
+# Subtest: Should expose setValidatorCompiler function
+    1..1
+    ok 1 - should be equal
+ok 4 - Should expose setValidatorCompiler function # time=0.307ms
+
+# Subtest: Should expose setSerializerCompiler function
+    1..1
+    ok 1 - should be equal
+ok 5 - Should expose setSerializerCompiler function # time=0.297ms
+
+# Subtest: cannot call setValidatorCompiler after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - (unnamed test)
+ok 6 - cannot call setValidatorCompiler after binding # time=29.653ms
+
+# Subtest: cannot call setSerializerCompiler after binding
+    1..2
+    ok 1 - should not error
+    ok 2 - (unnamed test)
+ok 7 - cannot call setSerializerCompiler after binding # time=12.35ms
+
+# Subtest: The schemas should be added to an internal storage
+    1..1
+    ok 1 - should be equivalent
+ok 8 - The schemas should be added to an internal storage # time=7.014ms
+
+# Subtest: The schemas should be accessible via getSchemas
+    1..1
+    ok 1 - should be equivalent
+ok 9 - The schemas should be accessible via getSchemas # time=1.046ms
+
+# Subtest: The schema should be accessible by id via getSchema
+    1..5
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should not error
+ok 10 - The schema should be accessible by id via getSchema # time=22.152ms
+
+# Subtest: Get validatorCompiler after setValidatorCompiler
+    1..2
+    ok 1 - should be equal
+    ok 2 - should not error
+ok 11 - Get validatorCompiler after setValidatorCompiler # time=1.139ms
+
+# Subtest: Get serializerCompiler after setSerializerCompiler
+    1..2
+    ok 1 - should be equal
+    ok 2 - should not error
+ok 12 - Get serializerCompiler after setSerializerCompiler # time=1.071ms
+
+# Subtest: Get compilers is empty when settle on routes
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 13 - Get compilers is empty when settle on routes # time=17.815ms
+
+# Subtest: Should throw if the $id property is missing
+    1..1
+    ok 1 - should be equal
+ok 14 - Should throw if the $id property is missing # time=0.481ms
+
+# Subtest: Cannot add multiple times the same id
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 15 - Cannot add multiple times the same id # time=0.394ms
+
+# Subtest: Cannot add schema for query and querystring
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 16 - Cannot add schema for query and querystring # time=1.279ms
+
+# Subtest: Should throw of the schema does not exists in input
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 17 - Should throw of the schema does not exists in input # time=35.148ms
+
+# Subtest: Should throw of the schema does not exists in output
+    1..2
+    ok 1 - should be equal
+    ok 2 - should match pattern
+ok 18 - Should throw of the schema does not exists in output # time=5.674ms
+
+# Subtest: Should not change the input schemas
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - the $id is not removed
+    ok 4 - should be equivalent
+ok 19 - Should not change the input schemas # time=19.575ms
+
+# Subtest: Should emit warning if the schema headers is undefined
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 20 - Should emit warning if the schema headers is undefined # time=3.425ms
+
+# Subtest: Should emit warning if the schema body is undefined
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 21 - Should emit warning if the schema body is undefined # time=1.682ms
+
+# Subtest: Should emit warning if the schema query is undefined
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 22 - Should emit warning if the schema query is undefined # time=1.981ms
+
+# Subtest: Should emit warning if the schema params is undefined
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 23 - Should emit warning if the schema params is undefined # time=2.825ms
+
+# Subtest: Should emit a warning for every route with undefined schema
+    1..16
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should not error
+    ok 14 - should be equal
+    ok 15 - should not error
+    ok 16 - should be equal
+ok 24 - Should emit a warning for every route with undefined schema # time=10.619ms
+
+# Subtest: First level $ref
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equivalent
+ok 25 - First level $ref # time=9.493ms
+
+# Subtest: Customize validator compiler in instance and route
+    1..28
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - headers evaluated
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - body evaluated
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - querystring evaluated
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - params evaluated
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should not error
+    ok 20 - should be equal
+    ok 21 - should be equivalent
+    ok 22 - should be equivalent
+    ok 23 - should be equivalent
+    ok 24 - should be equivalent
+    ok 25 - should match pattern
+    ok 26 - should not error
+    ok 27 - should be equal
+    ok 28 - should be equivalent
+ok 26 - Customize validator compiler in instance and route # time=7.242ms
+
+# Subtest: Use the same schema across multiple routes
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 27 - Use the same schema across multiple routes # time=11.051ms
+
+# Subtest: Encapsulation should intervene
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 28 - Encapsulation should intervene # time=7.551ms
+
+# Subtest: Encapsulation isolation
+    1..1
+    ok 1 - should not error
+ok 29 - Encapsulation isolation # time=11.066ms
+
+# Subtest: Add schema after register
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 30 - Add schema after register # time=12.987ms
+
+# Subtest: Encapsulation isolation for getSchemas
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+ok 31 - Encapsulation isolation for getSchemas # time=2.258ms
+
+# Subtest: Use the same schema id in different places
+    1..1
+    ok 1 - should not error
+ok 32 - Use the same schema id in different places # time=11.535ms
+
+# Subtest: Get schema anyway should not add `properties` if allOf is present
+    1..1
+    ok 1 - should not error
+ok 33 - Get schema anyway should not add `properties` if allOf is present # time=23.294ms
+
+# Subtest: Get schema anyway should not add `properties` if oneOf is present
+    1..1
+    ok 1 - should not error
+ok 34 - Get schema anyway should not add `properties` if oneOf is present # time=39.934ms
+
+# Subtest: Get schema anyway should not add `properties` if anyOf is present
+    1..1
+    ok 1 - should not error
+ok 35 - Get schema anyway should not add `properties` if anyOf is present # time=11.178ms
+
+# Subtest: Shared schema should be ignored in string enum
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equivalent
+ok 36 - Shared schema should be ignored in string enum # time=19.395ms
+
+# Subtest: Shared schema should NOT be ignored in != string enum
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equivalent
+ok 37 - Shared schema should NOT be ignored in != string enum # time=8.455ms
+
+# Subtest: Case insensitive header validation
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 38 - Case insensitive header validation # time=12.5ms
+
+# Subtest: Not evaluate json-schema $schema keyword
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equivalent
+ok 39 - Not evaluate json-schema $schema keyword # time=8.042ms
+
+# Subtest: Validation context in validation result
+    1..5
+    ok 1 - should be equal
+    ok 2 - detailed errors
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 40 - Validation context in validation result # time=6.908ms
+
+# Subtest: The schema build should not modify the input
+    1..3
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 41 - The schema build should not modify the input # time=7.925ms
+
+# Subtest: Cross schema reference with encapsulation references
+    1..1
+    ok 1 - should not error
+ok 42 - Cross schema reference with encapsulation references # time=20.029ms
+
+# Subtest: Check how many AJV instances are built \#1
+    1..12
+    ok 1 - validator not initialized
+    ok 2 - validator not initialized
+    ok 3 - validator not initialized
+    ok 4 - validator not initialized
+    ok 5 - should not error
+    ok 6 - validator initialized on preReady
+    ok 7 - validator initialized on preReady
+    ok 8 - validator is only one for all the instances
+    ok 9 - validator initialized on preReady
+    ok 10 - validator is only one for all the instances
+    ok 11 - validator initialized on preReady
+    ok 12 - validator is only one for all the instances
+ok 43 - Check how many AJV instances are built \#1 # time=10.185ms
+
+# Subtest: onReady hook has the compilers ready
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - it is called once
+ok 44 - onReady hook has the compilers ready # time=7.32ms
+
+# Subtest: Check how many AJV instances are built \#2 - verify validatorPool
+    1..13
+    ok 1 - validator not initialized
+    ok 2 - validator not initialized
+    ok 3 - validator not initialized
+    ok 4 - validator not initialized
+    ok 5 - validator not initialized
+    ok 6 - validator not initialized
+    ok 7 - validator not initialized
+    ok 8 - validator is initialized
+    ok 9 - this context must share the validator with the same schemas
+    ok 10 - this context must share the validator of the parent
+    ok 11 - validator is initialized
+    ok 12 - this context has its own compiler
+    ok 13 - should not error
+ok 45 - Check how many AJV instances are built \#2 - verify validatorPool # time=13.086ms
+
+# Subtest: Add schema order should not break the startup
+    1..1
+    ok 1 - should not error
+ok 46 - Add schema order should not break the startup # time=7.093ms
+
+# Subtest: The schema compiler recreate itself if needed
+    1..1
+    ok 1 - should not error
+ok 47 - The schema compiler recreate itself if needed # time=6.582ms
+
+# Subtest: Schema controller setter
+    1..2
+    ok 1 - allow empty object
+    ok 2 - should be equal
+ok 48 - Schema controller setter # time=0.567ms
+
+# Subtest: Schema controller bucket
+    1..10
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - three schema added
+    ok 10 - one bucket built for every register call + 1 for the root instance
+ok 49 - Schema controller bucket # time=1.921ms
+
+# Subtest: setSchemaController per instance
+    1..7
+    ok 1 - instance1 has created the bucket
+    ok 2 - instance2 has created the bucket
+    ok 3 - add is called
+    ok 4 - getSchemas is called
+    ok 5 - getSchema is called
+    ok 6 - the schema are loaded
+    ok 7 - should not error
+ok 50 - setSchemaController per instance # time=1.558ms
+
+# Subtest: setSchemaController: Inherits correctly parent schemas with a customized validator instance
+    1..5
+    ok 1 - Contains same number of schemas
+    ok 2 - Contains expected schemas
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - Should not coerce the string into array
+ok 51 - setSchemaController: Inherits correctly parent schemas with a customized validator instance # time=30.038ms
+
+# Subtest: setSchemaController: Inherits buildSerializer from parent if not present within the instance
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - Should be called from the child
+    ok 4 - Should not be called from the child
+    ok 5 - Should be called from the child
+    ok 6 - Should not coerce the string into array
+ok 52 - setSchemaController: Inherits buildSerializer from parent if not present within the instance # time=6.538ms
+
+# Subtest: setSchemaController: Inherits buildValidator from parent if not present within the instance
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - Should be called from the child
+    ok 4 - Should not be called from the child
+    ok 5 - Should be called from the child
+    ok 6 - Should not coerce the string into array
+ok 53 - setSchemaController: Inherits buildValidator from parent if not present within the instance # time=6.44ms
+
+# Subtest: Should throw if not default validator passed
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - Should not coerce the string into array
+ok 54 - Should throw if not default validator passed # time=6.941ms
+
+# Subtest: Should coerce the array if the default validator is used
+    1..2
+    ok 1 - should be equal
+    ok 2 - Should coerce the string into array
+ok 55 - Should coerce the array if the default validator is used # time=8.457ms
+
+# Subtest: Should return a human-friendly error if response status codes are not specified
+    1..2
+    ok 1 - should be equal
+    ok 2 - should match pattern
+ok 56 - Should return a human-friendly error if response status codes are not specified # time=1.034ms
+
+# Subtest: setSchemaController: custom validator instance should not mutate headers schema
+    1..2
+    ok 1 - type is Headers
+    ok 2 - type is Headers
+ok 57 - setSchemaController: custom validator instance should not mutate headers schema # time=1.048ms
+
+1..57

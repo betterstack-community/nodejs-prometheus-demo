@@ -1,0 +1,36 @@
+TAP version 14
+# Subtest: case insensitive
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 1 - case insensitive # time=42.108ms
+
+# Subtest: case insensitive inject
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 2 - case insensitive inject # time=13.567ms
+
+# Subtest: case insensitive (parametric)
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 3 - case insensitive (parametric) # time=7.451ms
+
+# Subtest: case insensitive (wildcard)
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 4 - case insensitive (wildcard) # time=7.458ms
+
+1..4

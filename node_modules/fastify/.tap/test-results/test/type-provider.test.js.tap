@@ -1,0 +1,12 @@
+TAP version 14
+# Subtest: Should export withTypeProvider function
+    1..1
+    ok 1 - (unnamed test)
+ok 1 - Should export withTypeProvider function # time=8.425ms
+
+# Subtest: Should return same instance
+    1..1
+    ok 1 - should be equal
+ok 2 - Should return same instance # time=0.746ms
+
+1..2

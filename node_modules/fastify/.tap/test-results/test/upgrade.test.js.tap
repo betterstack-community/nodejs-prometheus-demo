@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: upgrade to both servers
+    1..2
+    ok 1 - upgrade event {"address":"127.0.0.1","family":"IPv4","port":51916}
+    ok 2 - upgrade event {"address":"::1","family":"IPv6","port":51916}
+ok 1 - upgrade to both servers # time=28.465ms
+
+1..1

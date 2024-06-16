@@ -1,0 +1,47 @@
+TAP version 14
+# Subtest: proto-poisoning error
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 1 - proto-poisoning error # time=46.184ms
+
+# Subtest: proto-poisoning remove
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 2 - proto-poisoning remove # time=12.261ms
+
+# Subtest: proto-poisoning ignore
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 3 - proto-poisoning ignore # time=4.972ms
+
+# Subtest: constructor-poisoning error (default in v3)
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 4 - constructor-poisoning error (default in v3) # time=5.353ms
+
+# Subtest: constructor-poisoning error
+    1..3
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+ok 5 - constructor-poisoning error # time=5.92ms
+
+# Subtest: constructor-poisoning remove
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 6 - constructor-poisoning remove # time=8.674ms
+
+1..6

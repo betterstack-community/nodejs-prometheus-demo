@@ -1,0 +1,93 @@
+TAP version 14
+# Subtest: route
+    1..10
+    # Subtest: route - get
+        1..4
+        ok 1 - expect to not throw
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+    ok 1 - route - get # time=37.974ms
+    
+    # Subtest: missing schema - route
+        1..4
+        ok 1 - expect to not throw
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+    ok 2 - missing schema - route # time=5.874ms
+    
+    # Subtest: invalid handler attribute - route
+        1..1
+        ok 1 - expected to throw
+    ok 3 - invalid handler attribute - route # time=0.784ms
+    
+    # Subtest: Add Multiple methods per route all uppercase
+        1..7
+        ok 1 - expect to not throw
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+        ok 5 - should not error
+        ok 6 - should be equal
+        ok 7 - should be equivalent
+    ok 4 - Add Multiple methods per route all uppercase # time=5.307ms
+    
+    # Subtest: Add Multiple methods per route all lowercase
+        1..7
+        ok 1 - expect to not throw
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+        ok 5 - should not error
+        ok 6 - should be equal
+        ok 7 - should be equivalent
+    ok 5 - Add Multiple methods per route all lowercase # time=4.583ms
+    
+    # Subtest: Add Multiple methods per route mixed uppercase and lowercase
+        1..7
+        ok 1 - expect to not throw
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+        ok 5 - should not error
+        ok 6 - should be equal
+        ok 7 - should be equivalent
+    ok 6 - Add Multiple methods per route mixed uppercase and lowercase # time=4.867ms
+    
+    # Subtest: Add invalid Multiple methods per route
+        1..1
+        ok 1 - expected to throw
+    ok 7 - Add invalid Multiple methods per route # time=0.948ms
+    
+    # Subtest: Add method
+        1..1
+        ok 1 - expected to throw
+    ok 8 - Add method # time=0.554ms
+    
+    # Subtest: Add additional multiple methods to existing route
+        1..7
+        ok 1 - expect to not throw
+        ok 2 - should not error
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+        ok 5 - should not error
+        ok 6 - should be equal
+        ok 7 - should be equivalent
+    ok 9 - Add additional multiple methods to existing route # time=9.453ms
+    
+    # Subtest: cannot add another route after binding
+        1..1
+        ok 1 - expected to throw
+    ok 10 - cannot add another route after binding # time=3.144ms
+    
+ok 1 - route # time=79.57ms
+
+# Subtest: invalid schema - route
+    1..3
+    ok 1 - the error is throw on preReady
+    ok 2 - should be equal
+    ok 3 - should match pattern
+ok 2 - invalid schema - route # time=19.425ms
+
+1..2

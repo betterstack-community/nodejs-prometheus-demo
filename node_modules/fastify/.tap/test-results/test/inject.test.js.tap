@@ -1,0 +1,165 @@
+TAP version 14
+# Subtest: inject should exist
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - inject should exist # time=8.13ms
+
+# Subtest: should wait for the ready event
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 2 - should wait for the ready event # time=523.102ms
+
+# Subtest: inject get request
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 3 - inject get request # time=1.784ms
+
+# Subtest: inject get request - code check
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 4 - inject get request - code check # time=2.152ms
+
+# Subtest: inject get request - headers check
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 5 - inject get request - headers check # time=1.65ms
+
+# Subtest: inject get request - querystring
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 6 - inject get request - querystring # time=2.088ms
+
+# Subtest: inject get request - params
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 7 - inject get request - params # time=1.772ms
+
+# Subtest: inject get request - wildcard
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 8 - inject get request - wildcard # time=1.543ms
+
+# Subtest: inject get request - headers
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 9 - inject get request - headers # time=1.272ms
+
+# Subtest: inject post request
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 10 - inject post request # time=6.525ms
+
+# Subtest: inject post request - send stream
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 11 - inject post request - send stream # time=4.18ms
+
+# Subtest: inject get request - reply stream
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+ok 12 - inject get request - reply stream # time=2.292ms
+
+# Subtest: inject promisify - waiting for ready event
+    1..1
+    ok 1 - should be equal
+ok 13 - inject promisify - waiting for ready event # time=1.453ms
+
+# Subtest: inject promisify - after the ready event
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 14 - inject promisify - after the ready event # time=1.84ms
+
+# Subtest: inject promisify - when the server is up
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 15 - inject promisify - when the server is up # time=21.324ms
+
+# Subtest: should reject in error case
+    1..1
+    ok 1 - should be equal
+ok 16 - should reject in error case # time=503.186ms
+
+# Subtest: inject a multipart request using form-body
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 17 - inject a multipart request using form-body # time=3.078ms
+
+# Subtest: should error the promise if ready errors
+    1..3
+    ok 1 - after is called
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 18 - should error the promise if ready errors # time=2.632ms
+
+# Subtest: should throw error if callback specified and if ready errors
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 19 - should throw error if callback specified and if ready errors # time=1.562ms
+
+# Subtest: should support builder-style injection with ready app
+    1..3
+    ok 1 - should be equivalent
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 20 - should support builder-style injection with ready app # time=1.484ms
+
+# Subtest: should support builder-style injection with non-ready app
+    1..3
+    ok 1 - should be equivalent
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 21 - should support builder-style injection with non-ready app # time=1.325ms
+
+# Subtest: should handle errors in builder-style injection correctly
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 22 - should handle errors in builder-style injection correctly # time=2.054ms
+
+# Subtest: Should not throw on access to routeConfig frameworkErrors handler - FST_ERR_BAD_URL
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 23 - Should not throw on access to routeConfig frameworkErrors handler - FST_ERR_BAD_URL # time=2.856ms
+
+1..23

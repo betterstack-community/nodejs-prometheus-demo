@@ -1,0 +1,106 @@
+TAP version 14
+# Subtest: Should accept a custom genReqId function
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 1 - Should accept a custom genReqId function # time=31.721ms
+
+# Subtest: Custom genReqId function gets raw request as argument
+    1..9
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+ok 2 - Custom genReqId function gets raw request as argument # time=5.643ms
+
+# Subtest: Should handle properly requestIdHeader option
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 3 - Should handle properly requestIdHeader option # time=1.045ms
+
+# Subtest: Should accept option to set genReqId with setGenReqId option
+    1..9
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+ok 4 - Should accept option to set genReqId with setGenReqId option # time=4.695ms
+
+# Subtest: Should encapsulate setGenReqId
+    1..12
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should not error
+    ok 12 - should be equal
+ok 5 - Should encapsulate setGenReqId # time=6.058ms
+
+# Subtest: Should encapsulate setGenReqId
+    1..12
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should not error
+    ok 12 - should be equal
+ok 6 - Should encapsulate setGenReqId # time=4.664ms
+
+# Subtest: Should not alter parent of genReqId
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+ok 7 - Should not alter parent of genReqId # time=3.369ms
+
+# Subtest: Should have child instance user parent genReqId
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+ok 8 - Should have child instance user parent genReqId # time=2.551ms
+
+# Subtest: genReqId set on root scope when using fastify-plugin
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+ok 9 - genReqId set on root scope when using fastify-plugin # time=3.203ms
+
+1..9

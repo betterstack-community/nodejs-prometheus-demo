@@ -1,0 +1,78 @@
+TAP version 14
+# Subtest: require a plugin
+    1..1
+    ok 1 - should be equal
+ok 1 - require a plugin # time=14.874ms
+
+# Subtest: plugin metadata - ignore prefix
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 2 - plugin metadata - ignore prefix # time=10.994ms
+
+# Subtest: plugin metadata - naming plugins
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 3 - plugin metadata - naming plugins # time=5.757ms
+
+# Subtest: fastify.register with fastify-plugin should not encapsulate his code
+    1..10
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equivalent
+ok 4 - fastify.register with fastify-plugin should not encapsulate his code # time=20.195ms
+
+# Subtest: fastify.register with fastify-plugin should provide access to external fastify instance if opts argument is a function
+    1..22
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should not error
+    ok 18 - should be equal
+    ok 19 - should not error
+    ok 20 - should be equal
+    ok 21 - should be equal
+    ok 22 - should be equivalent
+ok 5 - fastify.register with fastify-plugin should provide access to external fastify instance if opts argument is a function # time=11.248ms
+
+# Subtest: fastify.register with fastify-plugin registers fastify level plugins
+    1..15
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equivalent
+    ok 11 - should be equal
+    ok 12 - should not error
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equivalent
+ok 6 - fastify.register with fastify-plugin registers fastify level plugins # time=8.788ms
+
+1..6

@@ -1,0 +1,8 @@
+TAP version 14
+# Subtest: should throw when http2 module cannot be found
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - should throw when http2 module cannot be found # time=6.881ms
+
+1..1

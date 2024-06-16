@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: context
+    1..1
+    # Subtest: Should not contain undefined as key prop
+        ok 1 - type is Context
+        ok 2 - type is Context
+        ok 3 - should be equal
+        ok 4 - should be equal
+        1..4
+    ok 1 - Should not contain undefined as key prop # time=16.691ms
+    
+ok 1 - context # time=21.286ms
+
+1..1

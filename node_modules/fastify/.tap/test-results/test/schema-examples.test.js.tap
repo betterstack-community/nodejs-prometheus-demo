@@ -1,0 +1,85 @@
+TAP version 14
+# Subtest: Example - URI $id
+    1..1
+    ok 1 - should not error
+ok 1 - Example - URI $id # time=50.985ms
+
+# Subtest: Example - string $id
+    1..1
+    ok 1 - should not error
+ok 2 - Example - string $id # time=24.654ms
+
+# Subtest: Example - get schema
+    1..1
+    ok 1 - should be equivalent
+ok 3 - Example - get schema # time=0.887ms
+
+# Subtest: Example - get schema encapsulated
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    1..3
+ok 4 - Example - get schema encapsulated # time=11.204ms
+
+# Subtest: Example - validation
+    1..1
+    ok 1 - should not error
+ok 5 - Example - validation # time=40.06ms
+
+# Subtest: Example - ajv config
+    1..1
+    ok 1 - should not error
+ok 6 - Example - ajv config # time=35.104ms
+
+# Subtest: Example Joi
+    1..1
+    ok 1 - should not error
+ok 7 - Example Joi # time=23.845ms
+
+# Subtest: Example yup
+    1..1
+    ok 1 - should not error
+ok 8 - Example yup # time=12.832ms
+
+# Subtest: Example - serialization
+    1..1
+    ok 1 - should not error
+ok 9 - Example - serialization # time=3.385ms
+
+# Subtest: Example - serialization 2
+    1..1
+    ok 1 - should not error
+ok 10 - Example - serialization 2 # time=1.872ms
+
+# Subtest: Example - serializator
+    1..1
+    ok 1 - should not error
+ok 11 - Example - serializator # time=1.293ms
+
+# Subtest: Example - schemas examples
+    1..1
+    ok 1 - should not error
+ok 12 - Example - schemas examples # time=28.623ms
+
+# Subtest: should return custom error messages with ajv-errors
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+ok 13 - should return custom error messages with ajv-errors # time=32.176ms
+
+# Subtest: should be able to handle formats of ajv-formats when added by plugins option
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 14 - should be able to handle formats of ajv-formats when added by plugins option # time=27.206ms
+
+# Subtest: should return localized error messages with ajv-i18n
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+ok 15 - should return localized error messages with ajv-i18n # time=20.679ms
+
+1..15

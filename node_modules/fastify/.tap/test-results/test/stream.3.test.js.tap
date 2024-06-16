@@ -1,0 +1,34 @@
+TAP version 14
+# Subtest: Destroying streams prematurely
+    1..6
+    ok 1 - should not error
+    ok 2 - Received request
+    ok 3 - should be equal
+    ok 4 - Response closed
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 1 - Destroying streams prematurely # time=34.225ms
+
+# Subtest: Destroying streams prematurely should call close method
+    1..7
+    ok 1 - should not error
+    ok 2 - Received request
+    ok 3 - should be equal
+    ok 4 - Response closed
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+ok 2 - Destroying streams prematurely should call close method # time=5.874ms
+
+# Subtest: Destroying streams prematurely should call close method when destroy is not a function
+    1..7
+    ok 1 - should not error
+    ok 2 - Received request
+    ok 3 - should be equal
+    ok 4 - Response closed
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+ok 3 - Destroying streams prematurely should call close method when destroy is not a function # time=6.887ms
+
+1..3

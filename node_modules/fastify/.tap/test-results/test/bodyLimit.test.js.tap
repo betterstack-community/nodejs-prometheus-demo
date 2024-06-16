@@ -1,0 +1,48 @@
+TAP version 14
+# Subtest: bodyLimit
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should not error
+    ok 5 - should be equal
+ok 1 - bodyLimit # time=42.332ms
+
+# Subtest: bodyLimit is applied to decoded content
+    1..9
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equivalent
+ok 2 - bodyLimit is applied to decoded content # time=12.433ms
+
+# Subtest: default request.routeOptions.bodyLimit should be 1048576
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 3 - default request.routeOptions.bodyLimit should be 1048576 # time=6.208ms
+
+# Subtest: request.routeOptions.bodyLimit should be equal to route limit
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 4 - request.routeOptions.bodyLimit should be equal to route limit # time=4.927ms
+
+# Subtest: request.routeOptions.bodyLimit should be equal to server limit
+    1..4
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+ok 5 - request.routeOptions.bodyLimit should be equal to server limit # time=7.958ms
+
+1..5

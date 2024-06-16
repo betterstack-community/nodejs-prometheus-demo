@@ -1,0 +1,32 @@
+TAP version 14
+# Subtest: A route supports host constraints under http2 protocol and secure connection
+    1..6
+    ok 1 - Key/cert successfully loaded
+    ok 2 - should not error
+    # Subtest: https get request - no constrain
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 3 - https get request - no constrain # time=14.698ms
+    
+    # Subtest: https get request - constrain
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 4 - https get request - constrain # time=7.289ms
+    
+    # Subtest: https get request - constrain - not found
+        1..1
+        ok 1 - should be equal
+    ok 5 - https get request - constrain - not found # time=3.642ms
+    
+    # Subtest: https get request - constrain - verify hostname and port from request
+        1..1
+        ok 1 - should be equal
+    ok 6 - https get request - constrain - verify hostname and port from request # time=8.908ms
+    
+ok 1 - A route supports host constraints under http2 protocol and secure connection # time=80.552ms
+
+1..1

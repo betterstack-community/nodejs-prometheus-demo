@@ -1,0 +1,28 @@
+TAP version 14
+# Subtest: same route definition object on multiple prefixes
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - same route definition object on multiple prefixes # time=13.834ms
+
+# Subtest: path can be specified in place of uri
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 2 - path can be specified in place of uri # time=9.219ms
+
+# Subtest: invalid bodyLimit option - route
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 3 - invalid bodyLimit option - route # time=0.775ms
+
+# Subtest: handler function in options of shorthand route should works correctly
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 4 - handler function in options of shorthand route should works correctly # time=1.74ms
+
+1..4

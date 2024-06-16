@@ -1,0 +1,18 @@
+TAP version 14
+# Subtest: encapsulates an child logger factory
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 1 - encapsulates an child logger factory # time=22.581ms
+
+# Subtest: child logger factory set on root scope when using fastify-plugin
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 2 - child logger factory set on root scope when using fastify-plugin # time=3.38ms
+
+1..2

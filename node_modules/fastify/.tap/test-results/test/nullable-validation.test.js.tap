@@ -1,0 +1,36 @@
+TAP version 14
+# Subtest: nullable string
+    1..3
+    ok 1 - should be equivalent
+    ok 2 - should not error
+    ok 3 - should be equivalent
+ok 1 - nullable string # time=44.656ms
+
+# Subtest: object or null body
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 2 - object or null body # time=35.08ms
+
+# Subtest: nullable body
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+ok 3 - nullable body # time=20.942ms
+
+# Subtest: Nullable body with 204
+    1..5
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 4 - Nullable body with 204 # time=23.769ms
+
+1..4

@@ -1,0 +1,38 @@
+TAP version 14
+# Subtest: response serialization
+    1..4
+    # Subtest: Should use serializers from plugin and route
+        1..4
+        ok 1 - should be equivalent
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+    ok 1 - Should use serializers from plugin and route # time=22.007ms
+    
+    # Subtest: Should use serializers from instance fastify and route
+        1..4
+        ok 1 - should be equivalent
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+    ok 2 - Should use serializers from instance fastify and route # time=5.28ms
+    
+    # Subtest: Should use serializers inherit from contexts
+        1..4
+        ok 1 - should be equivalent
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+    ok 3 - Should use serializers inherit from contexts # time=4.014ms
+    
+    # Subtest: should serialize request and response
+        1..4
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+    ok 4 - should serialize request and response # time=3.132ms
+    
+ok 1 - response serialization # time=40.103ms
+
+1..1

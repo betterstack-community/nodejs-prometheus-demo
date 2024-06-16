@@ -1,0 +1,74 @@
+TAP version 14
+# Subtest: should create incremental ids deterministically
+    1..1
+    ok 1 - (unnamed test)
+ok 1 - should create incremental ids deterministically # time=9.41ms
+
+# Subtest: should have prefix "req-"
+    1..1
+    ok 1 - should be equal
+ok 2 - should have prefix "req-" # time=0.67ms
+
+# Subtest: different id generator functions should have separate internal counters
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 3 - different id generator functions should have separate internal counters # time=0.607ms
+
+# Subtest: should start counting with 1
+    1..1
+    ok 1 - should be equal
+ok 4 - should start counting with 1 # time=0.23ms
+
+# Subtest: should handle requestIdHeader and return provided id in header
+    1..1
+    ok 1 - should be equal
+ok 5 - should handle requestIdHeader and return provided id in header # time=0.251ms
+
+# Subtest: should handle requestIdHeader and fallback if id is not provided in header
+    1..1
+    ok 1 - should be equal
+ok 6 - should handle requestIdHeader and fallback if id is not provided in header # time=0.685ms
+
+# Subtest: should handle requestIdHeader and increment internal counter if no header was provided
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 7 - should handle requestIdHeader and increment internal counter if no header was provided # time=0.353ms
+
+# Subtest: should use optGenReqId to generate ids
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 8 - should use optGenReqId to generate ids # time=0.323ms
+
+# Subtest: should use optGenReqId to generate ids if requestIdHeader is used but not provided
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 9 - should use optGenReqId to generate ids if requestIdHeader is used but not provided # time=6.708ms
+
+# Subtest: should not use optGenReqId to generate ids if requestIdHeader is used and provided
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 10 - should not use optGenReqId to generate ids if requestIdHeader is used and provided # time=0.293ms
+
+# Subtest: should fallback to use optGenReqId to generate ids if requestIdHeader is sometimes provided
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 11 - should fallback to use optGenReqId to generate ids if requestIdHeader is sometimes provided # time=0.324ms
+
+1..11

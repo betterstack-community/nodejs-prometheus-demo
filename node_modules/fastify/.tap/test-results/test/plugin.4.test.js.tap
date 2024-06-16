@@ -1,0 +1,164 @@
+TAP version 14
+# Subtest: pluginTimeout
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 1 - pluginTimeout # time=30.747ms
+
+# Subtest: pluginTimeout - named function
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 2 - pluginTimeout - named function # time=14.284ms
+
+# Subtest: pluginTimeout default
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 3 - pluginTimeout default # time=3.465ms
+
+# Subtest: plugin metadata - version
+    1..1
+    ok 1 - everything right
+ok 4 - plugin metadata - version # time=2.786ms
+
+# Subtest: plugin metadata - version range
+    1..1
+    ok 1 - everything right
+ok 5 - plugin metadata - version range # time=1.681ms
+
+# Subtest: plugin metadata - version not matching requirement
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 6 - plugin metadata - version not matching requirement # time=1.726ms
+
+# Subtest: plugin metadata - version not matching requirement 2
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 7 - plugin metadata - version not matching requirement 2 # time=1.17ms
+
+# Subtest: plugin metadata - version not matching requirement 3
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 8 - plugin metadata - version not matching requirement 3 # time=1.085ms
+
+# Subtest: plugin metadata - release candidate
+    1..2
+    ok 1 - should not error
+    ok 2 - everything right
+ok 9 - plugin metadata - release candidate # time=1.963ms
+
+# Subtest: fastify-rc loads prior version plugins
+    1..2
+    ok 1 - should not error
+    ok 2 - everything right
+ok 10 - fastify-rc loads prior version plugins # time=1.273ms
+
+# Subtest: hasPlugin method exists as a function
+    1..1
+    ok 1 - should be equal
+ok 11 - hasPlugin method exists as a function # time=0.378ms
+
+# Subtest: hasPlugin returns true if the specified plugin has been registered
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 12 - hasPlugin returns true if the specified plugin has been registered # time=2.168ms
+
+# Subtest: hasPlugin returns false if the specified plugin has not been registered
+    1..1
+    ok 1 - should be equal
+ok 13 - hasPlugin returns false if the specified plugin has not been registered # time=0.599ms
+
+# Subtest: hasPlugin returns false when using encapsulation
+    1..25
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should be equal
+    ok 20 - should be equal
+    ok 21 - should be equal
+    ok 22 - should be equal
+    ok 23 - should be equal
+    ok 24 - should be equal
+    ok 25 - should be equal
+ok 14 - hasPlugin returns false when using encapsulation # time=3.009ms
+
+# Subtest: hasPlugin returns true when using no encapsulation
+    1..26
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equal
+    ok 13 - should be equal
+    ok 14 - should be equal
+    ok 15 - should be equal
+    ok 16 - should be equal
+    ok 17 - should be equal
+    ok 18 - should be equal
+    ok 19 - should be equal
+    ok 20 - should be equal
+    ok 21 - should be equal
+    ok 22 - should be equal
+    ok 23 - should be equal
+    ok 24 - should be equal
+    ok 25 - should be equal
+    ok 26 - should be equal
+ok 15 - hasPlugin returns true when using no encapsulation # time=2.149ms
+
+# Subtest: hasPlugin returns true when using encapsulation
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 16 - hasPlugin returns true when using encapsulation # time=1.619ms
+
+# Subtest: registering anonymous plugin with mixed style should throw
+    1..2
+    ok 1 - type is FastifyError
+    ok 2 - should be equal
+ok 17 - registering anonymous plugin with mixed style should throw # time=5.449ms
+
+# Subtest: registering named plugin with mixed style should throw
+    1..2
+    ok 1 - type is FastifyError
+    ok 2 - should be equal
+ok 18 - registering named plugin with mixed style should throw # time=1.539ms
+
+1..18

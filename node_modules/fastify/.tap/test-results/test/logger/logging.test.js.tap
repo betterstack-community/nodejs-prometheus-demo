@@ -1,0 +1,117 @@
+TAP version 14
+# Subtest: logging
+    1..13
+    # Subtest: The default 404 handler logs the incoming request
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 1 - The default 404 handler logs the incoming request # time=16.056ms
+    
+    # Subtest: should not rely on raw request to log errors
+        1..5
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 2 - should not rely on raw request to log errors # time=11.291ms
+    
+    # Subtest: should log the error if no error handler is defined
+        1..5
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 3 - should log the error if no error handler is defined # time=4.047ms
+    
+    # Subtest: should log as info if error status code >= 400 and < 500 if no error handler is defined
+        1..5
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 4 - should log as info if error status code >= 400 and < 500 if no error handler is defined # time=3.415ms
+    
+    # Subtest: should log as error if error status code >= 500 if no error handler is defined
+        1..5
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 5 - should log as error if error status code >= 500 if no error handler is defined # time=3.215ms
+    
+    # Subtest: should not log the error if error handler is defined and it does not error
+        1..5
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        ok 5 - should match pattern
+    ok 6 - should not log the error if error handler is defined and it does not error # time=3.102ms
+    
+    # Subtest: reply.send logs an error if called twice in a row
+        1..5
+        ok 1 - should be equivalent
+        ok 2 - should be equivalent
+        ok 3 - should be equivalent
+        ok 4 - should be equivalent
+        ok 5 - should be equivalent
+    ok 7 - reply.send logs an error if called twice in a row # time=2.865ms
+    
+    # Subtest: should not log incoming request and outgoing response when disabled
+        1..1
+        ok 1 - should be equal
+    ok 8 - should not log incoming request and outgoing response when disabled # time=1.807ms
+    
+    # Subtest: should not log incoming request, outgoing response  and route not found for 404 onBadUrl when disabled
+        1..1
+        ok 1 - should be equal
+    ok 9 - should not log incoming request, outgoing response  and route not found for 404 onBadUrl when disabled # time=1.517ms
+    
+    # Subtest: defaults to info level
+        1..5
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should match pattern
+        ok 4 - should be equal
+        ok 5 - should match pattern
+    ok 10 - defaults to info level # time=6.251ms
+    
+    # Subtest: test log stream
+        1..6
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should be equal
+        ok 4 - should match pattern
+        ok 5 - should be equal
+        ok 6 - should match pattern
+    ok 11 - test log stream # time=3.094ms
+    
+    # Subtest: test error log stream
+        1..8
+        ok 1 - should be equal
+        ok 2 - should match pattern
+        ok 3 - should be equal
+        ok 4 - should match pattern
+        ok 5 - should be equal
+        ok 6 - should match pattern
+        ok 7 - should be equal
+        ok 8 - should match pattern
+    ok 12 - test error log stream # time=3.476ms
+    
+    # Subtest: should not log the error if request logging is disabled
+        1..4
+        ok 1 - should be equal
+        ok 2 - type is string
+        ok 3 - message is set
+        ok 4 - should be equal
+    ok 13 - should not log the error if request logging is disabled # time=5.169ms
+    
+ok 1 - logging # time=81.922ms
+
+1..1

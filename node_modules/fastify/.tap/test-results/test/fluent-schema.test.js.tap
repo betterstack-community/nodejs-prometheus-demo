@@ -1,0 +1,36 @@
+TAP version 14
+# Subtest: use fluent-json-schema object
+    1..15
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equivalent
+    ok 10 - should not error
+    ok 11 - should be equal
+    ok 12 - should be equivalent
+    ok 13 - should not error
+    ok 14 - should be equal
+    ok 15 - should be equivalent
+ok 1 - use fluent-json-schema object # time=58.275ms
+
+# Subtest: use complex fluent-json-schema object
+    1..1
+    ok 1 - should not error
+ok 2 - use complex fluent-json-schema object # time=14.906ms
+
+# Subtest: use fluent schema and plain JSON schema
+    1..1
+    ok 1 - should not error
+ok 3 - use fluent schema and plain JSON schema # time=11.818ms
+
+# Subtest: Should call valueOf internally
+    1..1
+    ok 1 - should not error
+ok 4 - Should call valueOf internally # time=19.018ms
+
+1..4

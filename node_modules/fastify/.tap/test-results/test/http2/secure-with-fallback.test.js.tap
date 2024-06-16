@@ -1,0 +1,40 @@
+TAP version 14
+# Subtest: secure with fallback
+    1..7
+    ok 1 - Key/cert successfully loaded
+    ok 2 - should not error
+    # Subtest: https get error
+        1..1
+        ok 1 - should be equal
+    ok 3 - https get error # time=13.972ms
+    
+    # Subtest: https post
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+    ok 4 - https post # time=6.459ms
+    
+    # Subtest: https get request
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equivalent
+    ok 5 - https get request # time=4.039ms
+    
+    # Subtest: http1 get request
+        1..4
+        ok 1 - should not error
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equivalent
+    ok 6 - http1 get request # time=10.178ms
+    
+    # Subtest: http1 get error
+        1..2
+        ok 1 - should not error
+        ok 2 - should be equal
+    ok 7 - http1 get error # time=4.157ms
+    
+ok 1 - secure with fallback # time=81.956ms
+
+1..1

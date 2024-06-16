@@ -1,0 +1,17 @@
+TAP version 14
+# Subtest: Should be able to override the default use API
+    1..1
+    ok 1 - should be equal
+ok 1 - Should be able to override the default use API # time=10.126ms
+
+# Subtest: Cannot decorate use twice
+    1..1
+    ok 1 - should be equal
+ok 2 - Cannot decorate use twice # time=0.688ms
+
+# Subtest: Encapsulation works
+    1..1
+    ok 1 - should be equal
+ok 3 - Encapsulation works # time=3.713ms
+
+1..3

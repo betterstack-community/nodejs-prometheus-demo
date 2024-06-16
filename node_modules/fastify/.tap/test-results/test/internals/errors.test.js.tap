@@ -1,0 +1,1212 @@
+TAP version 14
+# Subtest: should expose 84 errors
+    1..1
+    ok 1 - should be equal
+ok 1 - should expose 84 errors # time=4.709ms
+
+# Subtest: ensure name and codes of Errors are identical
+    1..84
+    ok 1 - FST_ERR_NOT_FOUND
+    ok 2 - FST_ERR_OPTIONS_NOT_OBJ
+    ok 3 - FST_ERR_QSP_NOT_FN
+    ok 4 - FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN
+    ok 5 - FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN
+    ok 6 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ
+    ok 7 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR
+    ok 8 - FST_ERR_VERSION_CONSTRAINT_NOT_STR
+    ok 9 - FST_ERR_VALIDATION
+    ok 10 - FST_ERR_LISTEN_OPTIONS_INVALID
+    ok 11 - FST_ERR_ERROR_HANDLER_NOT_FN
+    ok 12 - FST_ERR_CTP_ALREADY_PRESENT
+    ok 13 - FST_ERR_CTP_INVALID_TYPE
+    ok 14 - FST_ERR_CTP_EMPTY_TYPE
+    ok 15 - FST_ERR_CTP_INVALID_HANDLER
+    ok 16 - FST_ERR_CTP_INVALID_PARSE_TYPE
+    ok 17 - FST_ERR_CTP_BODY_TOO_LARGE
+    ok 18 - FST_ERR_CTP_INVALID_MEDIA_TYPE
+    ok 19 - FST_ERR_CTP_INVALID_CONTENT_LENGTH
+    ok 20 - FST_ERR_CTP_EMPTY_JSON_BODY
+    ok 21 - FST_ERR_CTP_INSTANCE_ALREADY_STARTED
+    ok 22 - FST_ERR_DEC_ALREADY_PRESENT
+    ok 23 - FST_ERR_DEC_DEPENDENCY_INVALID_TYPE
+    ok 24 - FST_ERR_DEC_MISSING_DEPENDENCY
+    ok 25 - FST_ERR_DEC_AFTER_START
+    ok 26 - FST_ERR_DEC_REFERENCE_TYPE
+    ok 27 - FST_ERR_HOOK_INVALID_TYPE
+    ok 28 - FST_ERR_HOOK_INVALID_HANDLER
+    ok 29 - FST_ERR_HOOK_INVALID_ASYNC_HANDLER
+    ok 30 - FST_ERR_HOOK_NOT_SUPPORTED
+    ok 31 - FST_ERR_MISSING_MIDDLEWARE
+    ok 32 - FST_ERR_HOOK_TIMEOUT
+    ok 33 - FST_ERR_LOG_INVALID_DESTINATION
+    ok 34 - FST_ERR_LOG_INVALID_LOGGER
+    ok 35 - FST_ERR_LOG_INVALID_LOGGER_INSTANCE
+    ok 36 - FST_ERR_LOG_INVALID_LOGGER_CONFIG
+    ok 37 - FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED
+    ok 38 - FST_ERR_REP_INVALID_PAYLOAD_TYPE
+    ok 39 - FST_ERR_REP_RESPONSE_BODY_CONSUMED
+    ok 40 - FST_ERR_REP_ALREADY_SENT
+    ok 41 - FST_ERR_REP_SENT_VALUE
+    ok 42 - FST_ERR_SEND_INSIDE_ONERR
+    ok 43 - FST_ERR_SEND_UNDEFINED_ERR
+    ok 44 - FST_ERR_BAD_STATUS_CODE
+    ok 45 - FST_ERR_BAD_TRAILER_NAME
+    ok 46 - FST_ERR_BAD_TRAILER_VALUE
+    ok 47 - FST_ERR_FAILED_ERROR_SERIALIZATION
+    ok 48 - FST_ERR_MISSING_SERIALIZATION_FN
+    ok 49 - FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN
+    ok 50 - FST_ERR_REQ_INVALID_VALIDATION_INVOCATION
+    ok 51 - FST_ERR_SCH_MISSING_ID
+    ok 52 - FST_ERR_SCH_ALREADY_PRESENT
+    ok 53 - FST_ERR_SCH_CONTENT_MISSING_SCHEMA
+    ok 54 - FST_ERR_SCH_DUPLICATE
+    ok 55 - FST_ERR_SCH_VALIDATION_BUILD
+    ok 56 - FST_ERR_SCH_SERIALIZATION_BUILD
+    ok 57 - FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX
+    ok 58 - FST_ERR_HTTP2_INVALID_VERSION
+    ok 59 - FST_ERR_INIT_OPTS_INVALID
+    ok 60 - FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE
+    ok 61 - FST_ERR_DUPLICATED_ROUTE
+    ok 62 - FST_ERR_BAD_URL
+    ok 63 - FST_ERR_ASYNC_CONSTRAINT
+    ok 64 - FST_ERR_INVALID_URL
+    ok 65 - FST_ERR_ROUTE_OPTIONS_NOT_OBJ
+    ok 66 - FST_ERR_ROUTE_DUPLICATED_HANDLER
+    ok 67 - FST_ERR_ROUTE_HANDLER_NOT_FN
+    ok 68 - FST_ERR_ROUTE_MISSING_HANDLER
+    ok 69 - FST_ERR_ROUTE_METHOD_INVALID
+    ok 70 - FST_ERR_ROUTE_METHOD_NOT_SUPPORTED
+    ok 71 - FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED
+    ok 72 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    ok 73 - FST_ERR_ROUTE_REWRITE_NOT_STR
+    ok 74 - FST_ERR_REOPENED_CLOSE_SERVER
+    ok 75 - FST_ERR_REOPENED_SERVER
+    ok 76 - FST_ERR_INSTANCE_ALREADY_LISTENING
+    ok 77 - FST_ERR_PLUGIN_VERSION_MISMATCH
+    ok 78 - FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE
+    ok 79 - FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER
+    ok 80 - FST_ERR_PLUGIN_CALLBACK_NOT_FN
+    ok 81 - FST_ERR_PLUGIN_NOT_VALID
+    ok 82 - FST_ERR_ROOT_PLG_BOOTED
+    ok 83 - FST_ERR_PARENT_PLUGIN_BOOTED
+    ok 84 - FST_ERR_PLUGIN_TIMEOUT
+ok 2 - ensure name and codes of Errors are identical # time=3.894ms
+
+# Subtest: FST_ERR_NOT_FOUND
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 3 - FST_ERR_NOT_FOUND # time=0.381ms
+
+# Subtest: FST_ERR_OPTIONS_NOT_OBJ
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 4 - FST_ERR_OPTIONS_NOT_OBJ # time=3.333ms
+
+# Subtest: FST_ERR_QSP_NOT_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 5 - FST_ERR_QSP_NOT_FN # time=0.36ms
+
+# Subtest: FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 6 - FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN # time=0.311ms
+
+# Subtest: FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 7 - FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN # time=0.3ms
+
+# Subtest: FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 8 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ # time=0.291ms
+
+# Subtest: FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 9 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR # time=0.291ms
+
+# Subtest: FST_ERR_VERSION_CONSTRAINT_NOT_STR
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 10 - FST_ERR_VERSION_CONSTRAINT_NOT_STR # time=0.344ms
+
+# Subtest: FST_ERR_CTP_ALREADY_PRESENT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 11 - FST_ERR_CTP_ALREADY_PRESENT # time=0.278ms
+
+# Subtest: FST_ERR_CTP_INVALID_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 12 - FST_ERR_CTP_INVALID_TYPE # time=0.33ms
+
+# Subtest: FST_ERR_CTP_EMPTY_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 13 - FST_ERR_CTP_EMPTY_TYPE # time=0.269ms
+
+# Subtest: FST_ERR_CTP_INVALID_HANDLER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 14 - FST_ERR_CTP_INVALID_HANDLER # time=0.781ms
+
+# Subtest: FST_ERR_CTP_INVALID_PARSE_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 15 - FST_ERR_CTP_INVALID_PARSE_TYPE # time=0.288ms
+
+# Subtest: FST_ERR_CTP_BODY_TOO_LARGE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 16 - FST_ERR_CTP_BODY_TOO_LARGE # time=0.489ms
+
+# Subtest: FST_ERR_CTP_INVALID_MEDIA_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 17 - FST_ERR_CTP_INVALID_MEDIA_TYPE # time=0.27ms
+
+# Subtest: FST_ERR_CTP_INVALID_CONTENT_LENGTH
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 18 - FST_ERR_CTP_INVALID_CONTENT_LENGTH # time=0.266ms
+
+# Subtest: FST_ERR_CTP_EMPTY_JSON_BODY
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 19 - FST_ERR_CTP_EMPTY_JSON_BODY # time=0.258ms
+
+# Subtest: FST_ERR_CTP_INSTANCE_ALREADY_STARTED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 20 - FST_ERR_CTP_INSTANCE_ALREADY_STARTED # time=0.259ms
+
+# Subtest: FST_ERR_DEC_ALREADY_PRESENT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 21 - FST_ERR_DEC_ALREADY_PRESENT # time=0.358ms
+
+# Subtest: FST_ERR_DEC_DEPENDENCY_INVALID_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 22 - FST_ERR_DEC_DEPENDENCY_INVALID_TYPE # time=0.26ms
+
+# Subtest: FST_ERR_DEC_MISSING_DEPENDENCY
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 23 - FST_ERR_DEC_MISSING_DEPENDENCY # time=0.256ms
+
+# Subtest: FST_ERR_DEC_AFTER_START
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 24 - FST_ERR_DEC_AFTER_START # time=0.269ms
+
+# Subtest: FST_ERR_DEC_REFERENCE_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 25 - FST_ERR_DEC_REFERENCE_TYPE # time=0.314ms
+
+# Subtest: FST_ERR_HOOK_INVALID_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 26 - FST_ERR_HOOK_INVALID_TYPE # time=0.248ms
+
+# Subtest: FST_ERR_HOOK_INVALID_HANDLER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 27 - FST_ERR_HOOK_INVALID_HANDLER # time=0.25ms
+
+# Subtest: FST_ERR_HOOK_INVALID_ASYNC_HANDLER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 28 - FST_ERR_HOOK_INVALID_ASYNC_HANDLER # time=0.314ms
+
+# Subtest: FST_ERR_HOOK_NOT_SUPPORTED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 29 - FST_ERR_HOOK_NOT_SUPPORTED # time=0.272ms
+
+# Subtest: FST_ERR_MISSING_MIDDLEWARE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 30 - FST_ERR_MISSING_MIDDLEWARE # time=0.249ms
+
+# Subtest: FST_ERR_HOOK_TIMEOUT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 31 - FST_ERR_HOOK_TIMEOUT # time=0.25ms
+
+# Subtest: FST_ERR_LOG_INVALID_DESTINATION
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 32 - FST_ERR_LOG_INVALID_DESTINATION # time=0.249ms
+
+# Subtest: FST_ERR_LOG_INVALID_LOGGER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 33 - FST_ERR_LOG_INVALID_LOGGER # time=0.246ms
+
+# Subtest: FST_ERR_LOG_INVALID_LOGGER_INSTANCE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 34 - FST_ERR_LOG_INVALID_LOGGER_INSTANCE # time=0.726ms
+
+# Subtest: FST_ERR_LOG_INVALID_LOGGER_CONFIG
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 35 - FST_ERR_LOG_INVALID_LOGGER_CONFIG # time=0.293ms
+
+# Subtest: FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 36 - FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED # time=0.269ms
+
+# Subtest: FST_ERR_REP_INVALID_PAYLOAD_TYPE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 37 - FST_ERR_REP_INVALID_PAYLOAD_TYPE # time=0.281ms
+
+# Subtest: FST_ERR_REP_RESPONSE_BODY_CONSUMED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 38 - FST_ERR_REP_RESPONSE_BODY_CONSUMED # time=0.339ms
+
+# Subtest: FST_ERR_REP_ALREADY_SENT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 39 - FST_ERR_REP_ALREADY_SENT # time=0.319ms
+
+# Subtest: FST_ERR_REP_SENT_VALUE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 40 - FST_ERR_REP_SENT_VALUE # time=0.27ms
+
+# Subtest: FST_ERR_SEND_INSIDE_ONERR
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 41 - FST_ERR_SEND_INSIDE_ONERR # time=0.257ms
+
+# Subtest: FST_ERR_SEND_UNDEFINED_ERR
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 42 - FST_ERR_SEND_UNDEFINED_ERR # time=0.251ms
+
+# Subtest: FST_ERR_BAD_STATUS_CODE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 43 - FST_ERR_BAD_STATUS_CODE # time=0.249ms
+
+# Subtest: FST_ERR_BAD_TRAILER_NAME
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 44 - FST_ERR_BAD_TRAILER_NAME # time=0.269ms
+
+# Subtest: FST_ERR_BAD_TRAILER_VALUE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 45 - FST_ERR_BAD_TRAILER_VALUE # time=0.249ms
+
+# Subtest: FST_ERR_FAILED_ERROR_SERIALIZATION
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 46 - FST_ERR_FAILED_ERROR_SERIALIZATION # time=0.244ms
+
+# Subtest: FST_ERR_MISSING_SERIALIZATION_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 47 - FST_ERR_MISSING_SERIALIZATION_FN # time=0.243ms
+
+# Subtest: FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 48 - FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN # time=0.317ms
+
+# Subtest: FST_ERR_REQ_INVALID_VALIDATION_INVOCATION
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 49 - FST_ERR_REQ_INVALID_VALIDATION_INVOCATION # time=0.242ms
+
+# Subtest: FST_ERR_SCH_MISSING_ID
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 50 - FST_ERR_SCH_MISSING_ID # time=0.258ms
+
+# Subtest: FST_ERR_SCH_ALREADY_PRESENT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 51 - FST_ERR_SCH_ALREADY_PRESENT # time=0.263ms
+
+# Subtest: FST_ERR_SCH_CONTENT_MISSING_SCHEMA
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 52 - FST_ERR_SCH_CONTENT_MISSING_SCHEMA # time=0.297ms
+
+# Subtest: FST_ERR_SCH_DUPLICATE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 53 - FST_ERR_SCH_DUPLICATE # time=0.244ms
+
+# Subtest: FST_ERR_SCH_VALIDATION_BUILD
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 54 - FST_ERR_SCH_VALIDATION_BUILD # time=0.237ms
+
+# Subtest: FST_ERR_SCH_SERIALIZATION_BUILD
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 55 - FST_ERR_SCH_SERIALIZATION_BUILD # time=0.237ms
+
+# Subtest: FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 56 - FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX # time=0.233ms
+
+# Subtest: FST_ERR_HTTP2_INVALID_VERSION
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 57 - FST_ERR_HTTP2_INVALID_VERSION # time=0.249ms
+
+# Subtest: FST_ERR_INIT_OPTS_INVALID
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 58 - FST_ERR_INIT_OPTS_INVALID # time=0.244ms
+
+# Subtest: FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 59 - FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE # time=1.415ms
+
+# Subtest: FST_ERR_DUPLICATED_ROUTE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 60 - FST_ERR_DUPLICATED_ROUTE # time=0.294ms
+
+# Subtest: FST_ERR_BAD_URL
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 61 - FST_ERR_BAD_URL # time=0.25ms
+
+# Subtest: FST_ERR_ASYNC_CONSTRAINT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 62 - FST_ERR_ASYNC_CONSTRAINT # time=0.304ms
+
+# Subtest: FST_ERR_INVALID_URL
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 63 - FST_ERR_INVALID_URL # time=0.233ms
+
+# Subtest: FST_ERR_ROUTE_OPTIONS_NOT_OBJ
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 64 - FST_ERR_ROUTE_OPTIONS_NOT_OBJ # time=0.228ms
+
+# Subtest: FST_ERR_ROUTE_DUPLICATED_HANDLER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 65 - FST_ERR_ROUTE_DUPLICATED_HANDLER # time=0.223ms
+
+# Subtest: FST_ERR_ROUTE_HANDLER_NOT_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 66 - FST_ERR_ROUTE_HANDLER_NOT_FN # time=0.293ms
+
+# Subtest: FST_ERR_ROUTE_MISSING_HANDLER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 67 - FST_ERR_ROUTE_MISSING_HANDLER # time=0.222ms
+
+# Subtest: FST_ERR_ROUTE_METHOD_INVALID
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 68 - FST_ERR_ROUTE_METHOD_INVALID # time=0.383ms
+
+# Subtest: FST_ERR_ROUTE_METHOD_NOT_SUPPORTED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 69 - FST_ERR_ROUTE_METHOD_NOT_SUPPORTED # time=0.25ms
+
+# Subtest: FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 70 - FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED # time=0.239ms
+
+# Subtest: FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 71 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT # time=0.236ms
+
+# Subtest: FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 72 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT # time=0.221ms
+
+# Subtest: FST_ERR_ROUTE_REWRITE_NOT_STR
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 73 - FST_ERR_ROUTE_REWRITE_NOT_STR # time=0.22ms
+
+# Subtest: FST_ERR_REOPENED_CLOSE_SERVER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 74 - FST_ERR_REOPENED_CLOSE_SERVER # time=0.239ms
+
+# Subtest: FST_ERR_REOPENED_SERVER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 75 - FST_ERR_REOPENED_SERVER # time=0.229ms
+
+# Subtest: FST_ERR_INSTANCE_ALREADY_LISTENING
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 76 - FST_ERR_INSTANCE_ALREADY_LISTENING # time=0.235ms
+
+# Subtest: FST_ERR_PLUGIN_VERSION_MISMATCH
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 77 - FST_ERR_PLUGIN_VERSION_MISMATCH # time=0.246ms
+
+# Subtest: FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 78 - FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE # time=0.23ms
+
+# Subtest: FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 79 - FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER # time=0.226ms
+
+# Subtest: FST_ERR_PLUGIN_CALLBACK_NOT_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 80 - FST_ERR_PLUGIN_CALLBACK_NOT_FN # time=0.21ms
+
+# Subtest: FST_ERR_PLUGIN_NOT_VALID
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 81 - FST_ERR_PLUGIN_NOT_VALID # time=0.214ms
+
+# Subtest: FST_ERR_ROOT_PLG_BOOTED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 82 - FST_ERR_ROOT_PLG_BOOTED # time=0.228ms
+
+# Subtest: FST_ERR_PARENT_PLUGIN_BOOTED
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 83 - FST_ERR_PARENT_PLUGIN_BOOTED # time=0.212ms
+
+# Subtest: FST_ERR_PLUGIN_TIMEOUT
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 84 - FST_ERR_PLUGIN_TIMEOUT # time=0.22ms
+
+# Subtest: FST_ERR_VALIDATION
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 85 - FST_ERR_VALIDATION # time=0.235ms
+
+# Subtest: FST_ERR_LISTEN_OPTIONS_INVALID
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 86 - FST_ERR_LISTEN_OPTIONS_INVALID # time=0.222ms
+
+# Subtest: FST_ERR_ERROR_HANDLER_NOT_FN
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 87 - FST_ERR_ERROR_HANDLER_NOT_FN # time=0.218ms
+
+# Subtest: Ensure that all errors are in Errors.md TOC
+    1..84
+    ok 1 - FST_ERR_NOT_FOUND
+    ok 2 - FST_ERR_OPTIONS_NOT_OBJ
+    ok 3 - FST_ERR_QSP_NOT_FN
+    ok 4 - FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN
+    ok 5 - FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN
+    ok 6 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ
+    ok 7 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR
+    ok 8 - FST_ERR_VERSION_CONSTRAINT_NOT_STR
+    ok 9 - FST_ERR_VALIDATION
+    ok 10 - FST_ERR_LISTEN_OPTIONS_INVALID
+    ok 11 - FST_ERR_ERROR_HANDLER_NOT_FN
+    ok 12 - FST_ERR_CTP_ALREADY_PRESENT
+    ok 13 - FST_ERR_CTP_INVALID_TYPE
+    ok 14 - FST_ERR_CTP_EMPTY_TYPE
+    ok 15 - FST_ERR_CTP_INVALID_HANDLER
+    ok 16 - FST_ERR_CTP_INVALID_PARSE_TYPE
+    ok 17 - FST_ERR_CTP_BODY_TOO_LARGE
+    ok 18 - FST_ERR_CTP_INVALID_MEDIA_TYPE
+    ok 19 - FST_ERR_CTP_INVALID_CONTENT_LENGTH
+    ok 20 - FST_ERR_CTP_EMPTY_JSON_BODY
+    ok 21 - FST_ERR_CTP_INSTANCE_ALREADY_STARTED
+    ok 22 - FST_ERR_DEC_ALREADY_PRESENT
+    ok 23 - FST_ERR_DEC_DEPENDENCY_INVALID_TYPE
+    ok 24 - FST_ERR_DEC_MISSING_DEPENDENCY
+    ok 25 - FST_ERR_DEC_AFTER_START
+    ok 26 - FST_ERR_DEC_REFERENCE_TYPE
+    ok 27 - FST_ERR_HOOK_INVALID_TYPE
+    ok 28 - FST_ERR_HOOK_INVALID_HANDLER
+    ok 29 - FST_ERR_HOOK_INVALID_ASYNC_HANDLER
+    ok 30 - FST_ERR_HOOK_NOT_SUPPORTED
+    ok 31 - FST_ERR_MISSING_MIDDLEWARE
+    ok 32 - FST_ERR_HOOK_TIMEOUT
+    ok 33 - FST_ERR_LOG_INVALID_DESTINATION
+    ok 34 - FST_ERR_LOG_INVALID_LOGGER
+    ok 35 - FST_ERR_LOG_INVALID_LOGGER_INSTANCE
+    ok 36 - FST_ERR_LOG_INVALID_LOGGER_CONFIG
+    ok 37 - FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED
+    ok 38 - FST_ERR_REP_INVALID_PAYLOAD_TYPE
+    ok 39 - FST_ERR_REP_RESPONSE_BODY_CONSUMED
+    ok 40 - FST_ERR_REP_ALREADY_SENT
+    ok 41 - FST_ERR_REP_SENT_VALUE
+    ok 42 - FST_ERR_SEND_INSIDE_ONERR
+    ok 43 - FST_ERR_SEND_UNDEFINED_ERR
+    ok 44 - FST_ERR_BAD_STATUS_CODE
+    ok 45 - FST_ERR_BAD_TRAILER_NAME
+    ok 46 - FST_ERR_BAD_TRAILER_VALUE
+    ok 47 - FST_ERR_FAILED_ERROR_SERIALIZATION
+    ok 48 - FST_ERR_MISSING_SERIALIZATION_FN
+    ok 49 - FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN
+    ok 50 - FST_ERR_REQ_INVALID_VALIDATION_INVOCATION
+    ok 51 - FST_ERR_SCH_MISSING_ID
+    ok 52 - FST_ERR_SCH_ALREADY_PRESENT
+    ok 53 - FST_ERR_SCH_CONTENT_MISSING_SCHEMA
+    ok 54 - FST_ERR_SCH_DUPLICATE
+    ok 55 - FST_ERR_SCH_VALIDATION_BUILD
+    ok 56 - FST_ERR_SCH_SERIALIZATION_BUILD
+    ok 57 - FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX
+    ok 58 - FST_ERR_HTTP2_INVALID_VERSION
+    ok 59 - FST_ERR_INIT_OPTS_INVALID
+    ok 60 - FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE
+    ok 61 - FST_ERR_DUPLICATED_ROUTE
+    ok 62 - FST_ERR_BAD_URL
+    ok 63 - FST_ERR_ASYNC_CONSTRAINT
+    ok 64 - FST_ERR_INVALID_URL
+    ok 65 - FST_ERR_ROUTE_OPTIONS_NOT_OBJ
+    ok 66 - FST_ERR_ROUTE_DUPLICATED_HANDLER
+    ok 67 - FST_ERR_ROUTE_HANDLER_NOT_FN
+    ok 68 - FST_ERR_ROUTE_MISSING_HANDLER
+    ok 69 - FST_ERR_ROUTE_METHOD_INVALID
+    ok 70 - FST_ERR_ROUTE_METHOD_NOT_SUPPORTED
+    ok 71 - FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED
+    ok 72 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    ok 73 - FST_ERR_ROUTE_REWRITE_NOT_STR
+    ok 74 - FST_ERR_REOPENED_CLOSE_SERVER
+    ok 75 - FST_ERR_REOPENED_SERVER
+    ok 76 - FST_ERR_INSTANCE_ALREADY_LISTENING
+    ok 77 - FST_ERR_PLUGIN_VERSION_MISMATCH
+    ok 78 - FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE
+    ok 79 - FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER
+    ok 80 - FST_ERR_PLUGIN_CALLBACK_NOT_FN
+    ok 81 - FST_ERR_PLUGIN_NOT_VALID
+    ok 82 - FST_ERR_ROOT_PLG_BOOTED
+    ok 83 - FST_ERR_PARENT_PLUGIN_BOOTED
+    ok 84 - FST_ERR_PLUGIN_TIMEOUT
+ok 88 - Ensure that all errors are in Errors.md TOC # time=1.93ms
+
+# Subtest: Ensure that non-existing errors are not in Errors.md TOC
+    1..84
+    ok 1 - FST_ERR_NOT_FOUND
+    ok 2 - FST_ERR_OPTIONS_NOT_OBJ
+    ok 3 - FST_ERR_QSP_NOT_FN
+    ok 4 - FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN
+    ok 5 - FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN
+    ok 6 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ
+    ok 7 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR
+    ok 8 - FST_ERR_VERSION_CONSTRAINT_NOT_STR
+    ok 9 - FST_ERR_CTP_ALREADY_PRESENT
+    ok 10 - FST_ERR_CTP_INVALID_TYPE
+    ok 11 - FST_ERR_CTP_EMPTY_TYPE
+    ok 12 - FST_ERR_CTP_INVALID_HANDLER
+    ok 13 - FST_ERR_CTP_INVALID_PARSE_TYPE
+    ok 14 - FST_ERR_CTP_BODY_TOO_LARGE
+    ok 15 - FST_ERR_CTP_INVALID_MEDIA_TYPE
+    ok 16 - FST_ERR_CTP_INVALID_CONTENT_LENGTH
+    ok 17 - FST_ERR_CTP_EMPTY_JSON_BODY
+    ok 18 - FST_ERR_CTP_INSTANCE_ALREADY_STARTED
+    ok 19 - FST_ERR_INSTANCE_ALREADY_LISTENING
+    ok 20 - FST_ERR_DEC_ALREADY_PRESENT
+    ok 21 - FST_ERR_DEC_DEPENDENCY_INVALID_TYPE
+    ok 22 - FST_ERR_DEC_MISSING_DEPENDENCY
+    ok 23 - FST_ERR_DEC_AFTER_START
+    ok 24 - FST_ERR_DEC_REFERENCE_TYPE
+    ok 25 - FST_ERR_HOOK_INVALID_TYPE
+    ok 26 - FST_ERR_HOOK_INVALID_HANDLER
+    ok 27 - FST_ERR_HOOK_INVALID_ASYNC_HANDLER
+    ok 28 - FST_ERR_HOOK_NOT_SUPPORTED
+    ok 29 - FST_ERR_MISSING_MIDDLEWARE
+    ok 30 - FST_ERR_HOOK_TIMEOUT
+    ok 31 - FST_ERR_LOG_INVALID_DESTINATION
+    ok 32 - FST_ERR_LOG_INVALID_LOGGER
+    ok 33 - FST_ERR_LOG_INVALID_LOGGER_INSTANCE
+    ok 34 - FST_ERR_LOG_INVALID_LOGGER_CONFIG
+    ok 35 - FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED
+    ok 36 - FST_ERR_REP_INVALID_PAYLOAD_TYPE
+    ok 37 - FST_ERR_REP_RESPONSE_BODY_CONSUMED
+    ok 38 - FST_ERR_REP_ALREADY_SENT
+    ok 39 - FST_ERR_REP_SENT_VALUE
+    ok 40 - FST_ERR_SEND_INSIDE_ONERR
+    ok 41 - FST_ERR_SEND_UNDEFINED_ERR
+    ok 42 - FST_ERR_BAD_STATUS_CODE
+    ok 43 - FST_ERR_BAD_TRAILER_NAME
+    ok 44 - FST_ERR_BAD_TRAILER_VALUE
+    ok 45 - FST_ERR_FAILED_ERROR_SERIALIZATION
+    ok 46 - FST_ERR_MISSING_SERIALIZATION_FN
+    ok 47 - FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN
+    ok 48 - FST_ERR_REQ_INVALID_VALIDATION_INVOCATION
+    ok 49 - FST_ERR_SCH_MISSING_ID
+    ok 50 - FST_ERR_SCH_ALREADY_PRESENT
+    ok 51 - FST_ERR_SCH_CONTENT_MISSING_SCHEMA
+    ok 52 - FST_ERR_SCH_DUPLICATE
+    ok 53 - FST_ERR_SCH_VALIDATION_BUILD
+    ok 54 - FST_ERR_SCH_SERIALIZATION_BUILD
+    ok 55 - FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX
+    ok 56 - FST_ERR_HTTP2_INVALID_VERSION
+    ok 57 - FST_ERR_INIT_OPTS_INVALID
+    ok 58 - FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE
+    ok 59 - FST_ERR_DUPLICATED_ROUTE
+    ok 60 - FST_ERR_BAD_URL
+    ok 61 - FST_ERR_ASYNC_CONSTRAINT
+    ok 62 - FST_ERR_INVALID_URL
+    ok 63 - FST_ERR_ROUTE_OPTIONS_NOT_OBJ
+    ok 64 - FST_ERR_ROUTE_DUPLICATED_HANDLER
+    ok 65 - FST_ERR_ROUTE_HANDLER_NOT_FN
+    ok 66 - FST_ERR_ROUTE_MISSING_HANDLER
+    ok 67 - FST_ERR_ROUTE_METHOD_INVALID
+    ok 68 - FST_ERR_ROUTE_METHOD_NOT_SUPPORTED
+    ok 69 - FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED
+    ok 70 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    ok 71 - FST_ERR_ROUTE_REWRITE_NOT_STR
+    ok 72 - FST_ERR_REOPENED_CLOSE_SERVER
+    ok 73 - FST_ERR_REOPENED_SERVER
+    ok 74 - FST_ERR_PLUGIN_VERSION_MISMATCH
+    ok 75 - FST_ERR_PLUGIN_CALLBACK_NOT_FN
+    ok 76 - FST_ERR_PLUGIN_NOT_VALID
+    ok 77 - FST_ERR_ROOT_PLG_BOOTED
+    ok 78 - FST_ERR_PARENT_PLUGIN_BOOTED
+    ok 79 - FST_ERR_PLUGIN_TIMEOUT
+    ok 80 - FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE
+    ok 81 - FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER
+    ok 82 - FST_ERR_VALIDATION
+    ok 83 - FST_ERR_LISTEN_OPTIONS_INVALID
+    ok 84 - FST_ERR_ERROR_HANDLER_NOT_FN
+ok 89 - Ensure that non-existing errors are not in Errors.md TOC # time=1.642ms
+
+# Subtest: Ensure that all errors are in Errors.md documented
+    1..84
+    ok 1 - FST_ERR_NOT_FOUND
+    ok 2 - FST_ERR_OPTIONS_NOT_OBJ
+    ok 3 - FST_ERR_QSP_NOT_FN
+    ok 4 - FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN
+    ok 5 - FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN
+    ok 6 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ
+    ok 7 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR
+    ok 8 - FST_ERR_VERSION_CONSTRAINT_NOT_STR
+    ok 9 - FST_ERR_VALIDATION
+    ok 10 - FST_ERR_LISTEN_OPTIONS_INVALID
+    ok 11 - FST_ERR_ERROR_HANDLER_NOT_FN
+    ok 12 - FST_ERR_CTP_ALREADY_PRESENT
+    ok 13 - FST_ERR_CTP_INVALID_TYPE
+    ok 14 - FST_ERR_CTP_EMPTY_TYPE
+    ok 15 - FST_ERR_CTP_INVALID_HANDLER
+    ok 16 - FST_ERR_CTP_INVALID_PARSE_TYPE
+    ok 17 - FST_ERR_CTP_BODY_TOO_LARGE
+    ok 18 - FST_ERR_CTP_INVALID_MEDIA_TYPE
+    ok 19 - FST_ERR_CTP_INVALID_CONTENT_LENGTH
+    ok 20 - FST_ERR_CTP_EMPTY_JSON_BODY
+    ok 21 - FST_ERR_CTP_INSTANCE_ALREADY_STARTED
+    ok 22 - FST_ERR_DEC_ALREADY_PRESENT
+    ok 23 - FST_ERR_DEC_DEPENDENCY_INVALID_TYPE
+    ok 24 - FST_ERR_DEC_MISSING_DEPENDENCY
+    ok 25 - FST_ERR_DEC_AFTER_START
+    ok 26 - FST_ERR_DEC_REFERENCE_TYPE
+    ok 27 - FST_ERR_HOOK_INVALID_TYPE
+    ok 28 - FST_ERR_HOOK_INVALID_HANDLER
+    ok 29 - FST_ERR_HOOK_INVALID_ASYNC_HANDLER
+    ok 30 - FST_ERR_HOOK_NOT_SUPPORTED
+    ok 31 - FST_ERR_MISSING_MIDDLEWARE
+    ok 32 - FST_ERR_HOOK_TIMEOUT
+    ok 33 - FST_ERR_LOG_INVALID_DESTINATION
+    ok 34 - FST_ERR_LOG_INVALID_LOGGER
+    ok 35 - FST_ERR_LOG_INVALID_LOGGER_INSTANCE
+    ok 36 - FST_ERR_LOG_INVALID_LOGGER_CONFIG
+    ok 37 - FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED
+    ok 38 - FST_ERR_REP_INVALID_PAYLOAD_TYPE
+    ok 39 - FST_ERR_REP_RESPONSE_BODY_CONSUMED
+    ok 40 - FST_ERR_REP_ALREADY_SENT
+    ok 41 - FST_ERR_REP_SENT_VALUE
+    ok 42 - FST_ERR_SEND_INSIDE_ONERR
+    ok 43 - FST_ERR_SEND_UNDEFINED_ERR
+    ok 44 - FST_ERR_BAD_STATUS_CODE
+    ok 45 - FST_ERR_BAD_TRAILER_NAME
+    ok 46 - FST_ERR_BAD_TRAILER_VALUE
+    ok 47 - FST_ERR_FAILED_ERROR_SERIALIZATION
+    ok 48 - FST_ERR_MISSING_SERIALIZATION_FN
+    ok 49 - FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN
+    ok 50 - FST_ERR_REQ_INVALID_VALIDATION_INVOCATION
+    ok 51 - FST_ERR_SCH_MISSING_ID
+    ok 52 - FST_ERR_SCH_ALREADY_PRESENT
+    ok 53 - FST_ERR_SCH_CONTENT_MISSING_SCHEMA
+    ok 54 - FST_ERR_SCH_DUPLICATE
+    ok 55 - FST_ERR_SCH_VALIDATION_BUILD
+    ok 56 - FST_ERR_SCH_SERIALIZATION_BUILD
+    ok 57 - FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX
+    ok 58 - FST_ERR_HTTP2_INVALID_VERSION
+    ok 59 - FST_ERR_INIT_OPTS_INVALID
+    ok 60 - FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE
+    ok 61 - FST_ERR_DUPLICATED_ROUTE
+    ok 62 - FST_ERR_BAD_URL
+    ok 63 - FST_ERR_ASYNC_CONSTRAINT
+    ok 64 - FST_ERR_INVALID_URL
+    ok 65 - FST_ERR_ROUTE_OPTIONS_NOT_OBJ
+    ok 66 - FST_ERR_ROUTE_DUPLICATED_HANDLER
+    ok 67 - FST_ERR_ROUTE_HANDLER_NOT_FN
+    ok 68 - FST_ERR_ROUTE_MISSING_HANDLER
+    ok 69 - FST_ERR_ROUTE_METHOD_INVALID
+    ok 70 - FST_ERR_ROUTE_METHOD_NOT_SUPPORTED
+    ok 71 - FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED
+    ok 72 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    ok 73 - FST_ERR_ROUTE_REWRITE_NOT_STR
+    ok 74 - FST_ERR_REOPENED_CLOSE_SERVER
+    ok 75 - FST_ERR_REOPENED_SERVER
+    ok 76 - FST_ERR_INSTANCE_ALREADY_LISTENING
+    ok 77 - FST_ERR_PLUGIN_VERSION_MISMATCH
+    ok 78 - FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE
+    ok 79 - FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER
+    ok 80 - FST_ERR_PLUGIN_CALLBACK_NOT_FN
+    ok 81 - FST_ERR_PLUGIN_NOT_VALID
+    ok 82 - FST_ERR_ROOT_PLG_BOOTED
+    ok 83 - FST_ERR_PARENT_PLUGIN_BOOTED
+    ok 84 - FST_ERR_PLUGIN_TIMEOUT
+ok 90 - Ensure that all errors are in Errors.md documented # time=1.765ms
+
+# Subtest: Ensure that non-existing errors are not in Errors.md documented
+    1..84
+    ok 1 - FST_ERR_NOT_FOUND
+    ok 2 - FST_ERR_OPTIONS_NOT_OBJ
+    ok 3 - FST_ERR_QSP_NOT_FN
+    ok 4 - FST_ERR_SCHEMA_CONTROLLER_BUCKET_OPT_NOT_FN
+    ok 5 - FST_ERR_SCHEMA_ERROR_FORMATTER_NOT_FN
+    ok 6 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_OBJ
+    ok 7 - FST_ERR_AJV_CUSTOM_OPTIONS_OPT_NOT_ARR
+    ok 8 - FST_ERR_VERSION_CONSTRAINT_NOT_STR
+    ok 9 - FST_ERR_CTP_ALREADY_PRESENT
+    ok 10 - FST_ERR_CTP_INVALID_TYPE
+    ok 11 - FST_ERR_CTP_EMPTY_TYPE
+    ok 12 - FST_ERR_CTP_INVALID_HANDLER
+    ok 13 - FST_ERR_CTP_INVALID_PARSE_TYPE
+    ok 14 - FST_ERR_CTP_BODY_TOO_LARGE
+    ok 15 - FST_ERR_CTP_INVALID_MEDIA_TYPE
+    ok 16 - FST_ERR_CTP_INVALID_CONTENT_LENGTH
+    ok 17 - FST_ERR_CTP_EMPTY_JSON_BODY
+    ok 18 - FST_ERR_CTP_INSTANCE_ALREADY_STARTED
+    ok 19 - FST_ERR_INSTANCE_ALREADY_LISTENING
+    ok 20 - FST_ERR_DEC_ALREADY_PRESENT
+    ok 21 - FST_ERR_DEC_DEPENDENCY_INVALID_TYPE
+    ok 22 - FST_ERR_DEC_MISSING_DEPENDENCY
+    ok 23 - FST_ERR_DEC_AFTER_START
+    ok 24 - FST_ERR_DEC_REFERENCE_TYPE
+    ok 25 - FST_ERR_HOOK_INVALID_TYPE
+    ok 26 - FST_ERR_HOOK_INVALID_HANDLER
+    ok 27 - FST_ERR_HOOK_INVALID_ASYNC_HANDLER
+    ok 28 - FST_ERR_HOOK_NOT_SUPPORTED
+    ok 29 - FST_ERR_MISSING_MIDDLEWARE
+    ok 30 - FST_ERR_HOOK_TIMEOUT
+    ok 31 - FST_ERR_LOG_INVALID_DESTINATION
+    ok 32 - FST_ERR_LOG_INVALID_LOGGER
+    ok 33 - FST_ERR_LOG_INVALID_LOGGER_INSTANCE
+    ok 34 - FST_ERR_LOG_INVALID_LOGGER_CONFIG
+    ok 35 - FST_ERR_LOG_LOGGER_AND_LOGGER_INSTANCE_PROVIDED
+    ok 36 - FST_ERR_REP_INVALID_PAYLOAD_TYPE
+    ok 37 - FST_ERR_REP_RESPONSE_BODY_CONSUMED
+    ok 38 - FST_ERR_REP_ALREADY_SENT
+    ok 39 - FST_ERR_REP_SENT_VALUE
+    ok 40 - FST_ERR_SEND_INSIDE_ONERR
+    ok 41 - FST_ERR_SEND_UNDEFINED_ERR
+    ok 42 - FST_ERR_BAD_STATUS_CODE
+    ok 43 - FST_ERR_BAD_TRAILER_NAME
+    ok 44 - FST_ERR_BAD_TRAILER_VALUE
+    ok 45 - FST_ERR_FAILED_ERROR_SERIALIZATION
+    ok 46 - FST_ERR_MISSING_SERIALIZATION_FN
+    ok 47 - FST_ERR_MISSING_CONTENTTYPE_SERIALIZATION_FN
+    ok 48 - FST_ERR_REQ_INVALID_VALIDATION_INVOCATION
+    ok 49 - FST_ERR_SCH_MISSING_ID
+    ok 50 - FST_ERR_SCH_ALREADY_PRESENT
+    ok 51 - FST_ERR_SCH_CONTENT_MISSING_SCHEMA
+    ok 52 - FST_ERR_SCH_DUPLICATE
+    ok 53 - FST_ERR_SCH_VALIDATION_BUILD
+    ok 54 - FST_ERR_SCH_SERIALIZATION_BUILD
+    ok 55 - FST_ERR_SCH_RESPONSE_SCHEMA_NOT_NESTED_2XX
+    ok 56 - FST_ERR_HTTP2_INVALID_VERSION
+    ok 57 - FST_ERR_INIT_OPTS_INVALID
+    ok 58 - FST_ERR_FORCE_CLOSE_CONNECTIONS_IDLE_NOT_AVAILABLE
+    ok 59 - FST_ERR_DUPLICATED_ROUTE
+    ok 60 - FST_ERR_BAD_URL
+    ok 61 - FST_ERR_ASYNC_CONSTRAINT
+    ok 62 - FST_ERR_INVALID_URL
+    ok 63 - FST_ERR_ROUTE_OPTIONS_NOT_OBJ
+    ok 64 - FST_ERR_ROUTE_DUPLICATED_HANDLER
+    ok 65 - FST_ERR_ROUTE_HANDLER_NOT_FN
+    ok 66 - FST_ERR_ROUTE_MISSING_HANDLER
+    ok 67 - FST_ERR_ROUTE_METHOD_INVALID
+    ok 68 - FST_ERR_ROUTE_METHOD_NOT_SUPPORTED
+    ok 69 - FST_ERR_ROUTE_BODY_VALIDATION_SCHEMA_NOT_SUPPORTED
+    ok 70 - FST_ERR_ROUTE_BODY_LIMIT_OPTION_NOT_INT
+    ok 71 - FST_ERR_ROUTE_REWRITE_NOT_STR
+    ok 72 - FST_ERR_REOPENED_CLOSE_SERVER
+    ok 73 - FST_ERR_REOPENED_SERVER
+    ok 74 - FST_ERR_PLUGIN_VERSION_MISMATCH
+    ok 75 - FST_ERR_PLUGIN_CALLBACK_NOT_FN
+    ok 76 - FST_ERR_PLUGIN_NOT_VALID
+    ok 77 - FST_ERR_ROOT_PLG_BOOTED
+    ok 78 - FST_ERR_PARENT_PLUGIN_BOOTED
+    ok 79 - FST_ERR_PLUGIN_TIMEOUT
+    ok 80 - FST_ERR_PLUGIN_NOT_PRESENT_IN_INSTANCE
+    ok 81 - FST_ERR_PLUGIN_INVALID_ASYNC_HANDLER
+    ok 82 - FST_ERR_VALIDATION
+    ok 83 - FST_ERR_LISTEN_OPTIONS_INVALID
+    ok 84 - FST_ERR_ERROR_HANDLER_NOT_FN
+ok 91 - Ensure that non-existing errors are not in Errors.md documented # time=1.559ms
+
+1..91

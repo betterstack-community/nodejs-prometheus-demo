@@ -1,0 +1,166 @@
+TAP version 14
+# Subtest: Reply\#compileSerializationSchema
+    1..4
+    # Subtest: Should return a serialization function
+        1..4
+        ok 1 - type is Function
+        ok 2 - type is string
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 1 - Should return a serialization function # time=22.399ms
+    
+    # Subtest: Should reuse the serialize fn across multiple invocations - Route without schema
+        1..17
+        ok 1 - build the schema compilation function
+        ok 2 - type is Function
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - Are the same validate function
+        ok 6 - type is Function
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - Are the same validate function
+        ok 10 - type is Function
+        ok 11 - should be equal
+        ok 12 - should be equal
+        ok 13 - Are the same validate function
+        ok 14 - type is Function
+        ok 15 - should be equal
+        ok 16 - should be equal
+        ok 17 - should be equal
+    ok 2 - Should reuse the serialize fn across multiple invocations - Route without schema # time=3.375ms
+    
+    # Subtest: Should use the custom serializer compiler for the route
+        1..17
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equivalent
+        ok 7 - {"hello":"world"}
+        ok 8 - should be equivalent
+        ok 9 - {"hello":"world"}
+        ok 10 - should be equal
+        ok 11 - should be equal
+        ok 12 - should be equal
+        ok 13 - should be equal
+        ok 14 - should be equal
+        ok 15 - should be equal
+        ok 16 - should be equivalent
+        ok 17 - {"fullName":"Jone","phone":1090243795}
+    ok 3 - Should use the custom serializer compiler for the route # time=6.795ms
+    
+    # Subtest: Should build a WeakMap for cache when called
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - type is WeakMap
+        ok 4 - should be equal
+    ok 4 - Should build a WeakMap for cache when called # time=2.265ms
+    
+ok 1 - Reply\#compileSerializationSchema # time=41.651ms
+
+# Subtest: Reply\#getSerializationFunction
+    1..3
+    # Subtest: Should retrieve the serialization function from the Schema definition
+        1..13
+        ok 1 - type is Function
+        ok 2 - type is Function
+        ok 3 - type is Function
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+        ok 11 - should be equal
+        ok 12 - should be equal
+        ok 13 - should be equal
+    ok 1 - Should retrieve the serialization function from the Schema definition # time=5.574ms
+    
+    # Subtest: Should retrieve the serialization function from the cached one
+        1..6
+        ok 1 - type is Function
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+    ok 2 - Should retrieve the serialization function from the cached one # time=1.9ms
+    
+    # Subtest: Should not instantiate a WeakMap if it is not needed
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 3 - Should not instantiate a WeakMap if it is not needed # time=1.296ms
+    
+ok 2 - Reply\#getSerializationFunction # time=11.983ms
+
+# Subtest: Reply\#serializeInput
+    1..6
+    # Subtest: Should throw if missed serialization function from HTTP status
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+    ok 1 - Should throw if missed serialization function from HTTP status # time=3.875ms
+    
+    # Subtest: Should throw if missed serialization function from HTTP status with specific content type
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+    ok 2 - Should throw if missed serialization function from HTTP status with specific content type # time=5.067ms
+    
+    # Subtest: Should use a serializer fn from HTTP status
+        1..6
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+    ok 3 - Should use a serializer fn from HTTP status # time=3.483ms
+    
+    # Subtest: Should compile a serializer out of a schema if serializer fn missed
+        1..10
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+    ok 4 - Should compile a serializer out of a schema if serializer fn missed # time=4.587ms
+    
+    # Subtest: Should use a cached serializer fn
+        1..12
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+        ok 5 - should be equal
+        ok 6 - should be equal
+        ok 7 - should be equal
+        ok 8 - should be equal
+        ok 9 - should be equal
+        ok 10 - should be equal
+        ok 11 - should be equal
+        ok 12 - should be equal
+    ok 5 - Should use a cached serializer fn # time=1.61ms
+    
+    # Subtest: Should instantiate a WeakMap after first call
+        1..3
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - type is WeakMap
+    ok 6 - Should instantiate a WeakMap after first call # time=9.099ms
+    
+ok 3 - Reply\#serializeInput # time=29.553ms
+
+1..3

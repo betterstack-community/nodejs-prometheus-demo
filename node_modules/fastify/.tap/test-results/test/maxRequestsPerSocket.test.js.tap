@@ -1,0 +1,44 @@
+TAP version 14
+# Subtest: maxRequestsPerSocket on node version >= 16.10.0
+    1..8
+    ok 1 - should not error
+    ok 2 - should match pattern
+    ok 3 - should match pattern
+    ok 4 - should match pattern
+    ok 5 - should match pattern
+    ok 6 - should match pattern
+    ok 7 - should match pattern
+    ok 8 - should match pattern
+ok 1 - maxRequestsPerSocket on node version >= 16.10.0 # time=40.623ms
+
+# Subtest: maxRequestsPerSocket zero should behave same as null
+    1..10
+    ok 1 - should not error
+    ok 2 - should match pattern
+    ok 3 - should match pattern
+    ok 4 - should match pattern
+    ok 5 - should match pattern
+    ok 6 - should match pattern
+    ok 7 - should match pattern
+    ok 8 - should match pattern
+    ok 9 - should match pattern
+    ok 10 - should match pattern
+ok 2 - maxRequestsPerSocket zero should behave same as null # time=5.461ms
+
+# Subtest: maxRequestsPerSocket should be set
+    1..1
+    ok 1 - should be equivalent
+ok 3 - maxRequestsPerSocket should be set # time=0.911ms
+
+# Subtest: maxRequestsPerSocket should 0
+    1..1
+    ok 1 - should be equivalent
+ok 4 - maxRequestsPerSocket should 0 # time=0.649ms
+
+# Subtest: requestTimeout passed to server
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 5 - requestTimeout passed to server # time=16.28ms
+
+1..5

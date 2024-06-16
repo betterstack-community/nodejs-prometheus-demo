@@ -1,0 +1,10 @@
+TAP version 14
+# Subtest: serialize the response for a Bad Request error, as defined on the schema
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    1..4
+ok 1 - serialize the response for a Bad Request error, as defined on the schema # time=71.999ms
+
+1..1

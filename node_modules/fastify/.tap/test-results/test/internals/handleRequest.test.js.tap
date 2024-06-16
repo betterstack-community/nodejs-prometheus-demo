@@ -1,0 +1,69 @@
+TAP version 14
+# Subtest: handleRequest function - sent reply
+    1..1
+    ok 1 - should be equal
+ok 1 - handleRequest function - sent reply # time=5.535ms
+
+# Subtest: handleRequest function - invoke with error
+    1..1
+    ok 1 - should be equal
+ok 2 - handleRequest function - invoke with error # time=0.37ms
+
+# Subtest: handler function - invalid schema
+    1..1
+    ok 1 - errorHandler called
+ok 3 - handler function - invalid schema # time=22.321ms
+
+# Subtest: handler function - reply
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - (unnamed test)
+ok 4 - handler function - reply # time=0.688ms
+
+# Subtest: handler function - preValidationCallback with finished response
+    1..0
+ok 5 - handler function - preValidationCallback with finished response # time=0.203ms
+
+# Subtest: request should be defined in onSend Hook on post request with content type application/json
+    1..8
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+ok 6 - request should be defined in onSend Hook on post request with content type application/json # time=55.481ms
+
+# Subtest: request should be defined in onSend Hook on post request with content type application/x-www-form-urlencoded
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+ok 7 - request should be defined in onSend Hook on post request with content type application/x-www-form-urlencoded # time=4.953ms
+
+# Subtest: request should be defined in onSend Hook on options request with content type application/x-www-form-urlencoded
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+ok 8 - request should be defined in onSend Hook on options request with content type application/x-www-form-urlencoded # time=5.119ms
+
+# Subtest: request should respond with an error if an unserialized payload is sent inside an async handler
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent strictly
+ok 9 - request should respond with an error if an unserialized payload is sent inside an async handler # time=7.682ms
+
+1..9

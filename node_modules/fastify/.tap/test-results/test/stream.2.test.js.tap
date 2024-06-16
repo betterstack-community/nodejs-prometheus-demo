@@ -1,0 +1,20 @@
+TAP version 14
+# Subtest: onSend hook stream
+    1..4
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+ok 1 - onSend hook stream # time=26.278ms
+
+# Subtest: onSend hook stream should work even if payload is not a proper stream
+    1..1
+    ok 1 - should be equal
+ok 2 - onSend hook stream should work even if payload is not a proper stream # time=10.09ms
+
+# Subtest: onSend hook stream should work on payload with "close" ending function
+    1..1
+    ok 1 - (unnamed test)
+ok 3 - onSend hook stream should work on payload with "close" ending function # time=6.599ms
+
+1..3

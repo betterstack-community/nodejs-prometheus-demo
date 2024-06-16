@@ -1,0 +1,93 @@
+TAP version 14
+# Subtest: HEAD route should handle stream.on('error')
+    1..6
+    ok 1 - should be equivalent
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 1 - HEAD route should handle stream.on('error') # time=23.55ms
+
+# Subtest: HEAD route should be exposed by default
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+ok 2 - HEAD route should be exposed by default # time=8.81ms
+
+# Subtest: HEAD route should be exposed if route exposeHeadRoute is set
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+ok 3 - HEAD route should be exposed if route exposeHeadRoute is set # time=2.291ms
+
+# Subtest: Set a custom HEAD route before GET one without disabling exposeHeadRoutes (global)
+    1..6
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 4 - Set a custom HEAD route before GET one without disabling exposeHeadRoutes (global) # time=1.598ms
+
+# Subtest: Set a custom HEAD route before GET one without disabling exposeHeadRoutes (route)
+    1..7
+    ok 1 - warning emitted
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equal
+ok 5 - Set a custom HEAD route before GET one without disabling exposeHeadRoutes (route) # time=13.935ms
+
+# Subtest: HEAD routes properly auto created for GET routes when prefixTrailingSlash: 'no-slash'
+    1..2
+    ok 1 - should not error
+    ok 2 - should be equal
+ok 6 - HEAD routes properly auto created for GET routes when prefixTrailingSlash: 'no-slash' # time=2.634ms
+
+# Subtest: HEAD routes properly auto created for GET routes when prefixTrailingSlash: 'both'
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 7 - HEAD routes properly auto created for GET routes when prefixTrailingSlash: 'both' # time=2.35ms
+
+# Subtest: GET route with body schema should throw
+    1..1
+    ok 1 - expected to throw
+ok 8 - GET route with body schema should throw # time=0.999ms
+
+# Subtest: HEAD route with body schema should throw
+    1..1
+    ok 1 - expected to throw
+ok 9 - HEAD route with body schema should throw # time=0.415ms
+
+# Subtest: [HEAD, GET] route with body schema should throw
+    1..1
+    ok 1 - expected to throw
+ok 10 - [HEAD, GET] route with body schema should throw # time=3.725ms
+
+# Subtest: GET route with body schema should throw - shorthand
+    1..1
+    ok 1 - expected to throw
+ok 11 - GET route with body schema should throw - shorthand # time=1.757ms
+
+# Subtest: HEAD route with body schema should throw - shorthand
+    1..1
+    ok 1 - expected to throw
+ok 12 - HEAD route with body schema should throw - shorthand # time=0.809ms
+
+1..12

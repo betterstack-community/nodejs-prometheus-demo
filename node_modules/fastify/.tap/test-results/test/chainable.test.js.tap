@@ -1,0 +1,17 @@
+TAP version 14
+# Subtest: chainable - get
+    1..1
+    ok 1 - type is [object Object]
+ok 1 - chainable - get # time=5.861ms
+
+# Subtest: chainable - post
+    1..1
+    ok 1 - type is [object Object]
+ok 2 - chainable - post # time=0.429ms
+
+# Subtest: chainable - route
+    1..1
+    ok 1 - type is [object Object]
+ok 3 - chainable - route # time=0.482ms
+
+1..3

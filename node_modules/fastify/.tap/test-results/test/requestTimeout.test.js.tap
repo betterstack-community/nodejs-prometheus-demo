@@ -1,0 +1,21 @@
+TAP version 14
+# Subtest: requestTimeout passed to server
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+ok 1 - requestTimeout passed to server # time=24.185ms
+
+# Subtest: requestTimeout should be set
+    1..1
+    ok 1 - should be equivalent
+ok 2 - requestTimeout should be set # time=0.835ms
+
+# Subtest: requestTimeout should 0
+    1..1
+    ok 1 - should be equivalent
+ok 3 - requestTimeout should 0 # time=0.421ms
+
+1..3

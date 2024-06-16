@@ -1,0 +1,51 @@
+TAP version 14
+# Subtest: decorate should add the given method to its instance
+    1..1
+    ok 1 - should be equal
+ok 1 - decorate should add the given method to its instance # time=5.299ms
+
+# Subtest: decorate is chainable
+    1..3
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+ok 2 - decorate is chainable # time=0.394ms
+
+# Subtest: checkExistence should check if a property is part of the given instance
+    1..1
+    ok 1 - should be equal
+ok 3 - checkExistence should check if a property is part of the given instance # time=0.243ms
+
+# Subtest: checkExistence should find the instance if not given
+    1..1
+    ok 1 - should be equal
+ok 4 - checkExistence should find the instance if not given # time=0.242ms
+
+# Subtest: checkExistence should check the prototype as well
+    1..1
+    ok 1 - should be equal
+ok 5 - checkExistence should check the prototype as well # time=0.229ms
+
+# Subtest: checkDependencies should throw if a dependency is not present
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 6 - checkDependencies should throw if a dependency is not present # time=0.507ms
+
+# Subtest: decorate should internally call checkDependencies
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 7 - decorate should internally call checkDependencies # time=0.288ms
+
+# Subtest: decorate should recognize getter/setter objects
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - (unnamed test)
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 8 - decorate should recognize getter/setter objects # time=0.451ms
+
+1..8

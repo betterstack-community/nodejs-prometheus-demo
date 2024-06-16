@@ -1,0 +1,22 @@
+TAP version 14
+# Subtest: same shape on Request
+    1..1
+    ok 1 - should be equal
+ok 1 - same shape on Request # time=20.589ms
+
+# Subtest: same shape on Request when object
+    1..1
+    ok 1 - should be equal
+ok 2 - same shape on Request when object # time=1.625ms
+
+# Subtest: same shape on Reply
+    1..1
+    ok 1 - should be equal
+ok 3 - same shape on Reply # time=1.517ms
+
+# Subtest: same shape on Reply when object
+    1..1
+    ok 1 - should be equal
+ok 4 - same shape on Reply when object # time=1.31ms
+
+1..4

@@ -1,0 +1,116 @@
+TAP version 14
+# Subtest: Fastify should throw on wrong options
+    1..2
+    ok 1 - should be equal
+    ok 2 - (unnamed test)
+ok 1 - Fastify should throw on wrong options # time=5.363ms
+
+# Subtest: Fastify should throw on multiple assignment to the same route
+    1..1
+    ok 1 - should be equal
+ok 2 - Fastify should throw on multiple assignment to the same route # time=4.578ms
+
+# Subtest: Fastify should throw for an invalid schema, printing the error route - headers
+    1..2
+    ok 1 - should be equal
+    ok 2 - should match pattern
+ok 3 - Fastify should throw for an invalid schema, printing the error route - headers # time=29.157ms
+
+# Subtest: Fastify should throw for an invalid schema, printing the error route - body
+    1..2
+    ok 1 - should be equal
+    ok 2 - should match pattern
+ok 4 - Fastify should throw for an invalid schema, printing the error route - body # time=10.649ms
+
+# Subtest: Fastify should throw for an invalid shorthand option type
+    1..3
+    ok 1 - should be equal
+    ok 2 - should match pattern
+    ok 3 - (unnamed test)
+ok 5 - Fastify should throw for an invalid shorthand option type # time=0.523ms
+
+# Subtest: Should throw on unsupported method
+    1..1
+    ok 1 - (unnamed test)
+ok 6 - Should throw on unsupported method # time=0.445ms
+
+# Subtest: Should throw on missing handler
+    1..1
+    ok 1 - (unnamed test)
+ok 7 - Should throw on missing handler # time=0.355ms
+
+# Subtest: Should throw if one method is unsupported
+    1..1
+    ok 1 - (unnamed test)
+ok 8 - Should throw if one method is unsupported # time=0.344ms
+
+# Subtest: Should throw on duplicate content type parser
+    1..1
+    ok 1 - (unnamed test)
+ok 9 - Should throw on duplicate content type parser # time=0.469ms
+
+# Subtest: Should throw on duplicate decorator
+    1..1
+    ok 1 - (unnamed test)
+ok 10 - Should throw on duplicate decorator # time=0.392ms
+
+# Subtest: Should not throw on duplicate decorator encapsulation
+    1..1
+    ok 1 - expect to not throw
+ok 11 - Should not throw on duplicate decorator encapsulation # time=1.474ms
+
+# Subtest: Should throw on duplicate request decorator
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 12 - Should throw on duplicate request decorator # time=0.493ms
+
+# Subtest: Should throw if request decorator dependencies are not met
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 13 - Should throw if request decorator dependencies are not met # time=0.39ms
+
+# Subtest: Should throw on duplicate reply decorator
+    1..1
+    ok 1 - should be equal
+ok 14 - Should throw on duplicate reply decorator # time=0.39ms
+
+# Subtest: Should throw if reply decorator dependencies are not met
+    1..1
+    ok 1 - should be equal
+ok 15 - Should throw if reply decorator dependencies are not met # time=0.375ms
+
+# Subtest: Should throw if handler as the third parameter to the shortcut method is missing and the second parameter is not a function and also not an object
+    1..5
+    ok 1 - (unnamed test)
+    ok 2 - (unnamed test)
+    ok 3 - (unnamed test)
+    ok 4 - (unnamed test)
+    ok 5 - (unnamed test)
+ok 16 - Should throw if handler as the third parameter to the shortcut method is missing and the second parameter is not a function and also not an object # time=0.535ms
+
+# Subtest: Should throw if handler as the third parameter to the shortcut method is missing and the second parameter is not a function and also not an object
+    1..5
+    ok 1 - (unnamed test)
+    ok 2 - (unnamed test)
+    ok 3 - (unnamed test)
+    ok 4 - (unnamed test)
+    ok 5 - (unnamed test)
+ok 17 - Should throw if handler as the third parameter to the shortcut method is missing and the second parameter is not a function and also not an object # time=0.511ms
+
+# Subtest: Should throw if there is handler function as the third parameter to the shortcut method and options as the second parameter is not an object
+    1..5
+    ok 1 - (unnamed test)
+    ok 2 - (unnamed test)
+    ok 3 - (unnamed test)
+    ok 4 - (unnamed test)
+    ok 5 - (unnamed test)
+ok 18 - Should throw if there is handler function as the third parameter to the shortcut method and options as the second parameter is not an object # time=0.635ms
+
+# Subtest: Should throw if found duplicate handler as the third parameter to the shortcut method and in options
+    1..1
+    ok 1 - (unnamed test)
+ok 19 - Should throw if found duplicate handler as the third parameter to the shortcut method and in options # time=1.191ms
+
+1..19

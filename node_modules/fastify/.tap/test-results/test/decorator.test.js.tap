@@ -1,0 +1,465 @@
+TAP version 14
+# Subtest: server methods should exist
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 1 - server methods should exist # time=7.867ms
+
+# Subtest: should check if the given decoration already exist when null
+    1..1
+    ok 1 - should be equal
+ok 2 - should check if the given decoration already exist when null # time=7.782ms
+
+# Subtest: server methods should be encapsulated via .register
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 3 - server methods should be encapsulated via .register # time=2.081ms
+
+# Subtest: hasServerMethod should check if the given method already exist
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 4 - hasServerMethod should check if the given method already exist # time=4.242ms
+
+# Subtest: decorate should throw if a declared dependency is not present
+    1..3
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - (unnamed test)
+ok 5 - decorate should throw if a declared dependency is not present # time=2.064ms
+
+# Subtest: decorate should throw if declared dependency is not array
+    1..3
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - (unnamed test)
+ok 6 - decorate should throw if declared dependency is not array # time=1.643ms
+
+# Subtest: should pass error for missing request decorator
+    1..2
+    ok 1 - type is Error
+    ok 2 - should match pattern
+ok 7 - should pass error for missing request decorator # time=2.07ms
+
+# Subtest: decorateReply inside register
+    1..11
+    ok 1 - should not error
+    ok 2 - test exists
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+ok 8 - decorateReply inside register # time=26.61ms
+
+# Subtest: decorateReply as plugin (inside .after)
+    1..11
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+ok 9 - decorateReply as plugin (inside .after) # time=7.246ms
+
+# Subtest: decorateReply as plugin (outside .after)
+    1..11
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+ok 10 - decorateReply as plugin (outside .after) # time=7.119ms
+
+# Subtest: decorateRequest inside register
+    1..11
+    ok 1 - should not error
+    ok 2 - test exists
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+ok 11 - decorateRequest inside register # time=9.262ms
+
+# Subtest: decorateRequest as plugin (inside .after)
+    1..11
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+ok 12 - decorateRequest as plugin (inside .after) # time=11.792ms
+
+# Subtest: decorateRequest as plugin (outside .after)
+    1..11
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should be equal
+    ok 8 - should not error
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equivalent
+ok 13 - decorateRequest as plugin (outside .after) # time=8.79ms
+
+# Subtest: decorators should be instance separated
+    1..1
+    ok 1 - (unnamed test)
+ok 14 - decorators should be instance separated # time=0.521ms
+
+# Subtest: hasRequestDecorator
+    # Subtest: is a function
+        1..1
+        ok 1 - should be equal
+    ok 1 - is a function # time=0.405ms
+    
+    # Subtest: should check if the given request decoration already exist
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 2 - should check if the given request decoration already exist # time=0.778ms
+    
+    # Subtest: should check if the given request decoration already exist when null
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 3 - should check if the given request decoration already exist when null # time=0.881ms
+    
+    # Subtest: should be plugin encapsulable
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 4 - should be plugin encapsulable # time=2.058ms
+    
+    # Subtest: should be inherited
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 5 - should be inherited # time=1.225ms
+    
+    1..5
+ok 15 - hasRequestDecorator # time=12.476ms
+
+# Subtest: hasReplyDecorator
+    # Subtest: is a function
+        1..1
+        ok 1 - should be equal
+    ok 1 - is a function # time=0.365ms
+    
+    # Subtest: should check if the given reply decoration already exist
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 2 - should check if the given reply decoration already exist # time=0.424ms
+    
+    # Subtest: should check if the given reply decoration already exist when null
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 3 - should check if the given reply decoration already exist when null # time=0.367ms
+    
+    # Subtest: should be plugin encapsulable
+        1..4
+        ok 1 - should be equal
+        ok 2 - should be equal
+        ok 3 - should be equal
+        ok 4 - should be equal
+    ok 4 - should be plugin encapsulable # time=1.912ms
+    
+    # Subtest: should be inherited
+        1..2
+        ok 1 - should be equal
+        ok 2 - should be equal
+    ok 5 - should be inherited # time=1.122ms
+    
+    1..5
+ok 16 - hasReplyDecorator # time=7.049ms
+
+# Subtest: should register properties via getter/setter objects
+    1..3
+    ok 1 - should be equal
+    ok 2 - a getter
+    ok 3 - should be equal
+ok 17 - should register properties via getter/setter objects # time=1.351ms
+
+# Subtest: decorateRequest should work with getter/setter
+    1..5
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - (unnamed test)
+ok 18 - decorateRequest should work with getter/setter # time=6.269ms
+
+# Subtest: decorateReply should work with getter/setter
+    1..5
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should be equivalent
+    ok 4 - should not error
+    ok 5 - (unnamed test)
+ok 19 - decorateReply should work with getter/setter # time=2.265ms
+
+# Subtest: should register empty values
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 20 - should register empty values # time=1.139ms
+
+# Subtest: nested plugins can override things
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+ok 21 - nested plugins can override things # time=1.424ms
+
+# Subtest: a decorator should addSchema to all the encapsulated tree
+    1..1
+    ok 1 - should not error
+ok 22 - a decorator should addSchema to all the encapsulated tree # time=1.752ms
+
+# Subtest: after can access to a decorated instance and previous plugin decoration
+    1..11
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equal
+    ok 11 - should be equal
+ok 23 - after can access to a decorated instance and previous plugin decoration # time=8.729ms
+
+# Subtest: decorate* should throw if called after ready
+    1..6
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+    ok 6 - should be equivalent
+ok 24 - decorate* should throw if called after ready # time=5.161ms
+
+# Subtest: decorate* should emit error if an array is passed
+    1..2
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+ok 25 - decorate* should emit error if an array is passed # time=0.484ms
+
+# Subtest: server.decorate should not emit error if reference type is passed
+    1..1
+    ok 1 - Done
+ok 26 - server.decorate should not emit error if reference type is passed # time=0.805ms
+
+# Subtest: decorate* should emit warning if object type is passed
+    1..2
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+ok 27 - decorate* should emit warning if object type is passed # time=0.343ms
+
+# Subtest: decorate* should not emit warning if object with getter/setter is passed
+    1..0
+ok 28 - decorate* should not emit warning if object with getter/setter is passed # time=0.173ms
+
+# Subtest: decorateRequest with getter/setter can handle encapsulation
+    1..24
+{"level":30,"time":1717936669808,"pid":44497,"hostname":"mcl","reqId":"req-1","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+    ok 1 - a getter
+    ok 2 - should be equivalent
+    ok 3 - a getter
+    ok 4 - should be equivalent
+    ok 5 - a getter
+    ok 6 - should be equivalent
+    ok 7 - a getter
+    ok 8 - should be equivalent
+    ok 9 - a getter
+    ok 10 - should be equivalent
+    ok 11 - a getter
+    ok 12 - should be equivalent
+    ok 13 - should be equivalent
+    ok 14 - should be equivalent
+    ok 15 - should be equivalent
+    ok 16 - should be equivalent
+    ok 17 - should be equivalent
+    ok 18 - should be equivalent
+    ok 19 - should be equivalent
+    ok 20 - should be equivalent
+    ok 21 - should be equivalent
+    ok 22 - should be equivalent
+    ok 23 - should be equivalent
+    ok 24 - should be equivalent
+ok 29 - decorateRequest with getter/setter can handle encapsulation # time=5.375ms
+
+# Subtest: decorateRequest with getter/setter can handle encapsulation with arrays
+    1..24
+{"level":30,"time":1717936669812,"pid":44497,"hostname":"mcl","reqId":"req-1","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    ok 3 - should be equivalent
+    ok 4 - should be equivalent
+    ok 5 - should be equivalent
+    ok 6 - should be equivalent
+    ok 7 - should be equivalent
+    ok 8 - should be equivalent
+    ok 9 - should be equivalent
+    ok 10 - should be equivalent
+    ok 11 - should be equivalent
+    ok 12 - should be equivalent
+    ok 13 - should be equivalent
+    ok 14 - should be equivalent
+    ok 15 - should be equivalent
+    ok 16 - should be equivalent
+    ok 17 - should be equivalent
+    ok 18 - should be equivalent
+    ok 19 - should be equivalent
+    ok 20 - should be equivalent
+    ok 21 - should be equivalent
+    ok 22 - should be equivalent
+    ok 23 - should be equivalent
+    ok 24 - should be equivalent
+ok 30 - decorateRequest with getter/setter can handle encapsulation with arrays # time=3.188ms
+
+# Subtest: decorate* should not emit error if string,bool,numbers are passed
+    1..0
+ok 31 - decorate* should not emit error if string,bool,numbers are passed # time=0.226ms
+
+# Subtest: Request/reply decorators should be able to access the server instance
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should not be equal
+    ok 4 - should be equal
+    ok 5 - should not be equal
+    ok 6 - should be equal
+ok 32 - Request/reply decorators should be able to access the server instance # time=2.368ms
+
+# Subtest: plugin required decorators
+    1..0
+ok 33 - plugin required decorators # time=0.851ms
+
+# Subtest: decorateRequest/decorateReply empty string
+    1..7
+{"level":30,"time":1717936669809,"pid":44497,"hostname":"mcl","reqId":"req-2","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669809,"pid":44497,"hostname":"mcl","reqId":"req-3","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669809,"pid":44497,"hostname":"mcl","reqId":"req-4","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669809,"pid":44497,"hostname":"mcl","reqId":"req-5","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669809,"pid":44497,"hostname":"mcl","reqId":"req-6","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669810,"pid":44497,"hostname":"mcl","reqId":"req-1","res":{"statusCode":200},"responseTime":1.0310840606689453,"msg":"request completed"}
+{"level":30,"time":1717936669810,"pid":44497,"hostname":"mcl","reqId":"req-2","res":{"statusCode":200},"responseTime":0.8437919616699219,"msg":"request completed"}
+{"level":30,"time":1717936669810,"pid":44497,"hostname":"mcl","reqId":"req-3","res":{"statusCode":200},"responseTime":0.8081660270690918,"msg":"request completed"}
+{"level":30,"time":1717936669810,"pid":44497,"hostname":"mcl","reqId":"req-4","res":{"statusCode":200},"responseTime":0.7690000534057617,"msg":"request completed"}
+{"level":30,"time":1717936669810,"pid":44497,"hostname":"mcl","reqId":"req-5","res":{"statusCode":200},"responseTime":0.7347919940948486,"msg":"request completed"}
+{"level":30,"time":1717936669810,"pid":44497,"hostname":"mcl","reqId":"req-6","res":{"statusCode":200},"responseTime":0.6991660594940186,"msg":"request completed"}
+{"level":30,"time":1717936669812,"pid":44497,"hostname":"mcl","reqId":"req-2","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-3","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-4","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-5","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-6","req":{"method":"GET","url":"/","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-1","res":{"statusCode":200},"responseTime":0.9168329238891602,"msg":"request completed"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-2","res":{"statusCode":200},"responseTime":0.6294999122619629,"msg":"request completed"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-3","res":{"statusCode":200},"responseTime":0.5902080535888672,"msg":"request completed"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-4","res":{"statusCode":200},"responseTime":0.568166971206665,"msg":"request completed"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-5","res":{"statusCode":200},"responseTime":0.5433750152587891,"msg":"request completed"}
+{"level":30,"time":1717936669813,"pid":44497,"hostname":"mcl","reqId":"req-6","res":{"statusCode":200},"responseTime":0.5132920742034912,"msg":"request completed"}
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 34 - decorateRequest/decorateReply empty string # time=10.893ms
+
+# Subtest: decorateRequest/decorateReply is undefined
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 35 - decorateRequest/decorateReply is undefined # time=5.179ms
+
+# Subtest: decorateRequest/decorateReply is not set to a value
+    1..7
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 36 - decorateRequest/decorateReply is not set to a value # time=5.633ms
+
+# Subtest: decorateRequest with dependencies
+    1..2
+    ok 1 - expect to not throw
+    ok 2 - should be equal
+ok 37 - decorateRequest with dependencies # time=0.564ms
+
+# Subtest: decorateRequest with dependencies (functions)
+    1..2
+    ok 1 - expect to not throw
+    ok 2 - should be equal
+ok 38 - decorateRequest with dependencies (functions) # time=0.379ms
+
+# Subtest: chain of decorators on Request
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    1..6
+ok 39 - chain of decorators on Request # time=4.189ms
+
+# Subtest: chain of decorators on Reply
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    1..6
+ok 40 - chain of decorators on Reply # time=8.219ms
+
+1..40

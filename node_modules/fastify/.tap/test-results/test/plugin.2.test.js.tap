@@ -1,0 +1,102 @@
+TAP version 14
+# Subtest: check dependencies - should not throw
+    1..12
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equivalent
+ok 1 - check dependencies - should not throw # time=45.493ms
+
+# Subtest: check dependencies - should throw
+    1..12
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - should be equal
+    ok 9 - should not error
+    ok 10 - should be equal
+    ok 11 - should be equal
+    ok 12 - should be equivalent
+ok 2 - check dependencies - should throw # time=9.534ms
+
+# Subtest: set the plugin name based on the plugin displayName symbol
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+ok 3 - set the plugin name based on the plugin displayName symbol # time=4.51ms
+
+# Subtest: plugin name will change when using no encapsulation
+    1..6
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should not error
+ok 4 - plugin name will change when using no encapsulation # time=3.34ms
+
+# Subtest: plugin name is undefined when accessing in no plugin context
+    1..2
+    ok 1 - should be equal
+    ok 2 - should not error
+ok 5 - plugin name is undefined when accessing in no plugin context # time=2.31ms
+
+# Subtest: set the plugin name based on the plugin function name
+    1..5
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should not error
+ok 6 - set the plugin name based on the plugin function name # time=3.876ms
+
+# Subtest: approximate a plugin name when no meta data is available
+    1..7
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equal
+    ok 7 - should not error
+ok 7 - approximate a plugin name when no meta data is available # time=3.989ms
+
+# Subtest: approximate a plugin name also when fastify-plugin has no meta data
+    1..4
+    ok 1 - should match pattern
+    ok 2 - should match pattern
+    ok 3 - should match pattern
+    ok 4 - should not error
+ok 8 - approximate a plugin name also when fastify-plugin has no meta data # time=8.442ms
+
+# Subtest: plugin encapsulation
+    1..10
+    ok 1 - should be equal
+    ok 2 - should not error
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+    ok 7 - should not error
+    ok 8 - should be equal
+    ok 9 - should be equal
+    ok 10 - should be equivalent
+ok 9 - plugin encapsulation # time=9.446ms
+
+1..9

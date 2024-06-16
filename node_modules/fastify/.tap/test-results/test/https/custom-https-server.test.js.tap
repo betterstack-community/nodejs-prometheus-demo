@@ -1,0 +1,10 @@
+TAP version 14
+# Subtest: Should support a custom https server
+    1..4
+    ok 1 - it is called once for localhost
+    ok 2 - should be equal
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 1 - Should support a custom https server # time=54.413ms
+
+1..1

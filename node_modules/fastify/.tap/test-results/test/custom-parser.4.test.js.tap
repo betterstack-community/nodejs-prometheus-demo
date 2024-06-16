@@ -1,0 +1,45 @@
+TAP version 14
+# Subtest: should prefer string content types over RegExp ones
+    1..7
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should be equivalent
+ok 1 - should prefer string content types over RegExp ones # time=33.221ms
+
+# Subtest: removeContentTypeParser should support arrays of content types to remove
+    1..8
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+    ok 5 - should not error
+    ok 6 - should be equal
+    ok 7 - should not error
+    ok 8 - should be equal
+ok 2 - removeContentTypeParser should support arrays of content types to remove # time=6.441ms
+
+# Subtest: removeContentTypeParser should support encapsulation
+    1..6
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 3 - removeContentTypeParser should support encapsulation # time=6.688ms
+
+# Subtest: removeAllContentTypeParsers should support encapsulation
+    1..6
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should be equal
+    ok 4 - should not error
+    ok 5 - should be equal
+    ok 6 - should be equivalent
+ok 4 - removeAllContentTypeParsers should support encapsulation # time=7.335ms
+
+1..4

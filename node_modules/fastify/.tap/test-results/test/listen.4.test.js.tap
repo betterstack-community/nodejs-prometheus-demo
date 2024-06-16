@@ -1,0 +1,51 @@
+TAP version 14
+# Subtest: listen twice on the same port without callback rejects
+    1..1
+    ok 1 - should be equal
+ok 1 - listen twice on the same port without callback rejects # time=34.988ms
+
+# Subtest: listen twice on the same port without callback rejects with (address)
+    1..2
+    ok 1 - should be equal
+    ok 2 - should be equal
+ok 2 - listen twice on the same port without callback rejects with (address) # time=8.496ms
+
+# Subtest: listen on invalid port without callback rejects
+    ok 1 - should be equal
+    1..1
+ok 3 - listen on invalid port without callback rejects # time=4.884ms
+
+# Subtest: listen logs the port as info
+    1..1
+    ok 1 - should be equal
+ok 4 - listen logs the port as info # time=8.18ms
+
+# Subtest: listen on localhost binds IPv4 and IPv6 - promise interface
+    1..4
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    ok 3 - should be equal
+    ok 4 - should be equivalent
+ok 5 - listen on localhost binds IPv4 and IPv6 - promise interface # time=24.452ms
+
+# Subtest: listen on localhost binds to all interfaces (both IPv4 and IPv6 if present) - callback interface
+    1..8
+    ok 1 - should not error
+    ok 2 - should not error
+    ok 3 - should not error
+    ok 4 - should be equal
+    ok 5 - should be equivalent
+    ok 6 - should not error
+    ok 7 - should be equal
+    ok 8 - should be equivalent
+ok 6 - listen on localhost binds to all interfaces (both IPv4 and IPv6 if present) - callback interface # time=7.251ms
+
+# Subtest: addresses getter
+    1..4
+    ok 1 - before ready
+    ok 2 - after ready
+    ok 3 - after listen
+    ok 4 - after close
+ok 7 - addresses getter # time=9.305ms
+
+1..7

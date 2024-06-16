@@ -1,0 +1,37 @@
+TAP version 14
+# Subtest: findRoute should return null when route cannot be found due to a different method
+    1..1
+    ok 1 - should be equal
+ok 1 - findRoute should return null when route cannot be found due to a different method # time=9.466ms
+
+# Subtest: findRoute should return an immutable route to avoid leaking and runtime route modifications
+    1..1
+    ok 1 - should be equivalent
+ok 2 - findRoute should return an immutable route to avoid leaking and runtime route modifications # time=1.523ms
+
+# Subtest: findRoute should return null when when url is not passed
+    1..1
+    ok 1 - should be equal
+ok 3 - findRoute should return null when when url is not passed # time=0.492ms
+
+# Subtest: findRoute should return null when route cannot be found due to a different path
+    1..1
+    ok 1 - should be equal
+ok 4 - findRoute should return null when route cannot be found due to a different path # time=0.471ms
+
+# Subtest: findRoute should return the route when found
+    1..1
+    ok 1 - should be equivalent
+ok 5 - findRoute should return the route when found # time=0.476ms
+
+# Subtest: findRoute should work correctly when used within plugins
+    1..1
+    ok 1 - should be equal
+ok 6 - findRoute should work correctly when used within plugins # time=38.695ms
+
+# Subtest: findRoute should not expose store
+    1..1
+    ok 1 - should be equal
+ok 7 - findRoute should not expose store # time=0.611ms
+
+1..7

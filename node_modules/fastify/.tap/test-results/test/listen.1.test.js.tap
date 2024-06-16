@@ -1,0 +1,31 @@
+TAP version 14
+# Subtest: listen works without arguments
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 1 - listen works without arguments # time=13.342ms
+
+# Subtest: Async/await listen with arguments
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 2 - Async/await listen with arguments # time=2.865ms
+
+# Subtest: listen accepts a callback
+    1..2
+    ok 1 - should be equal
+    ok 2 - should not error
+ok 3 - listen accepts a callback # time=4.92ms
+
+# Subtest: listen accepts options and a callback
+    1..1
+    ok 1 - should not error
+ok 4 - listen accepts options and a callback # time=4.733ms
+
+# Subtest: listen after Promise.resolve()
+    1..2
+    ok 1 - should be equal
+    ok 2 - should not error
+ok 5 - listen after Promise.resolve() # time=3.958ms
+
+1..5

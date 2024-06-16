@@ -1,0 +1,7 @@
+TAP version 14
+# Subtest: setErrorHandler should throw an error if the handler is not a function
+    1..1
+    ok 1 - expected to throw
+ok 1 - setErrorHandler should throw an error if the handler is not a function # time=9.184ms
+
+1..1
