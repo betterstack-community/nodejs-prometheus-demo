@@ -1,27 +1,31 @@
-# Title of the project
+# Movies App
 
-Description of the project.
+Learn how to monitor Node.js applications with Prometheus.
 
-**Tutorial**: [Link to corresponding BetterStack tutorial]()
-
-![Screenshot or GIF of the application in action](screenshot.png)
+**Tutorial**: [Monitoring Node.js Apps with Prometheus
+](https://betterstack.com/community/guides/scaling-nodejs/nodejs-prometheus/)
 
 ## 🟢 Prerequisites
 
-A list of requirements and package versions that the reader needs to build and
-run the project.
-
-- The first thing.
-- The second thing.
+Ensure you have Node.js and npm installed on your machine.
 
 ## 📦 Getting started
 
-A brief guide to setting up the project.
+- Clone this repository to your machine:
 
-- Do the first thing.
-- Do the next thing.
+```bash
+git clone https://github.com/betterstack-community/nodejs-prometheus-demo
+```
+
+- `cd` into the project folder and run `npm install` to download dependencies.
+- Execute the command below to start the development server:
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000/` in your browser to view a list of movies.
 
 ## ⚖ License
 
-The code used in this project and in the linked tutorial are licensed under the
-[Apache License, Version 2.0](LICENSE)
+The code used in this project and in the linked tutorial are licensed under the [Apache License, Version 2.0](LICENSE).
